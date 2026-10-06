@@ -1,0 +1,14 @@
+{
+  "name": "fframe-asset-line",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "cut": "node scripts/cut.js",
+    "flip": "node scripts/flip.js",
+    "measure": "node scripts/measure.js",
+    "html": "node scripts/html.js"
+  },
+  "dependencies": {
+    "pngjs": "^7.0.0"
+  }
+}
