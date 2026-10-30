@@ -1,0 +1,57 @@
+{
+    "importBase": "import",
+    "nativeBase": "native",
+    "name": "GameUI",
+    "deps": [
+        "GMUI"
+    ],
+    "uuids": [
+        "02d7c36a3",
+        "084243c20",
+        "74c34df9-f233-43c9-abec-7ca45db63ede",
+        "b8d4f2c1-5a3b-4e9f-8d22-7c6b9f3e5a81",
+        "c27b0465-d1a7-47b7-97d5-55c004c6f3c0",
+        "c27b0465-d1a7-47b7-97d5-55c004c6f3c0@6c48a",
+        "c27b0465-d1a7-47b7-97d5-55c004c6f3c0@f9941",
+        "e55f6607-188c-4999-caab-bccdef000006",
+        "ee40121d-0b21-4bb3-b95c-fa7d2df322b4",
+        "f5cd60bb-b119-4432-a9c4-9a59aa476106",
+        "f5cd60bb-b119-4432-a9c4-9a59aa476106@6c48a",
+        "f5cd60bb-b119-4432-a9c4-9a59aa476106@f9941"
+    ],
+    "paths": {
+        "e55f6607-188c-4999-caab-bccdef000006": [
+            "LyAlert",
+            "cc.Prefab",
+            1
+        ]
+    },
+    "scenes": {},
+    "packs": {
+        "084243c20": [
+            "c27b0465-d1a7-47b7-97d5-55c004c6f3c0@6c48a",
+            "f5cd60bb-b119-4432-a9c4-9a59aa476106@6c48a"
+        ],
+        "02d7c36a3": [
+            "c27b0465-d1a7-47b7-97d5-55c004c6f3c0@f9941",
+            "e55f6607-188c-4999-caab-bccdef000006",
+            "f5cd60bb-b119-4432-a9c4-9a59aa476106@f9941"
+        ]
+    },
+    "versions": {
+        "import": [],
+        "native": []
+    },
+    "redirect": [
+        "74c34df9-f233-43c9-abec-7ca45db63ede",
+        "0",
+        "b8d4f2c1-5a3b-4e9f-8d22-7c6b9f3e5a81",
+        "0",
+        "ee40121d-0b21-4bb3-b95c-fa7d2df322b4",
+        "0"
+    ],
+    "debug": true,
+    "extensionMap": {},
+    "hasPreloadScript": true,
+    "dependencyRelationships": {}
+}

@@ -1,0 +1,21 @@
+[STYLE]
+Same pixel craft as a bright cozy zoo map: lawn green, sand-path cream, pond blue, sunflower yellow, and the pale oak of wooden animal signs. Chubby rounded ends, visible medium pixel grain, crisp edges, clean color blocks, thin dark-olive outlines. High-key and saturated. Not glossy, not 8-bit, not photoreal.
+
+[CAMERA]
+flat front view, zero perspective, orthographic, face-on.
+
+[LIGHTING]
+even soft light. One-pixel darker rim. No cast shadows, no glossy highlights.
+
+[ASSETS]
+Two separate widgets, stacked, with a wide empty gap between them. They must not touch or nest.
+- xp track 720x80, the background bar: a chunky horizontal capsule, pale oak rim, flat cream groove inside, empty, no fill, no icon, no text. Left cap and right cap are matching rounded ends. The long middle is a flat repeatable band so it can be 9-sliced horizontally.
+- xp fill 720x52, the foreground bar: a shorter solid lawn-green capsule, same rounded caps, flat green middle for a horizontal 9-slice. No track behind it, no icon, no text.
+
+[BACKGROUND]
+Fully transparent. Real alpha channel, every empty pixel alpha 0.
+No cream backdrop, no white, no gray, no checkerboard, no floor, no shadow plate.
+Cream exists only inside the track groove. The gap around both bars is empty transparency.
+
+[RESTRICTIONS]
+no words, no digits, no labels, no watermark, no animals, no people. No overlapping. These bars are tall capsules, not hairlines. The canvas background must be transparent, not a solid color.

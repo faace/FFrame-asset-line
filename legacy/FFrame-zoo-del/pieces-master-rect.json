@@ -1,0 +1,1146 @@
+[
+  {
+    "id": "opening",
+    "zone": "开场",
+    "layer": "background",
+    "inQueue": false,
+    "master": [
+      0,
+      0,
+      1440,
+      2560
+    ],
+    "pngFile": "res/opening.png"
+  },
+  {
+    "id": "SouthGate/gate_01",
+    "zone": "南门",
+    "layer": "building",
+    "inQueue": true,
+    "master": [
+      538,
+      2081,
+      910,
+      2345
+    ],
+    "pngFile": "res/SouthGate/gate_01.png"
+  },
+  {
+    "id": "SouthGate/ticket_booth_01",
+    "zone": "南门",
+    "layer": "building",
+    "inQueue": true,
+    "master": [
+      351,
+      2136,
+      545,
+      2333
+    ],
+    "pngFile": "res/SouthGate/ticket_booth_01.png"
+  },
+  {
+    "id": "SouthGate/info_booth_01",
+    "zone": "南门",
+    "layer": "building",
+    "inQueue": true,
+    "master": [
+      919,
+      2124,
+      1113,
+      2331
+    ],
+    "pngFile": "res/SouthGate/info_booth_01.png"
+  },
+  {
+    "id": "SouthGate/balloon_left_01",
+    "zone": "南门",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      514,
+      2174,
+      620,
+      2355
+    ],
+    "pngFile": "res/SouthGate/balloon_left_01.png"
+  },
+  {
+    "id": "SouthGate/balloon_right_01",
+    "zone": "南门",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      817,
+      2165,
+      923,
+      2346
+    ],
+    "pngFile": "res/SouthGate/balloon_right_01.png"
+  },
+  {
+    "id": "SouthGate/visitor_ticket_blue_01",
+    "zone": "南门",
+    "layer": "person",
+    "inQueue": true,
+    "master": [
+      269,
+      2322,
+      347,
+      2455
+    ],
+    "pngFile": "res/SouthGate/visitor_ticket_blue_01.png"
+  },
+  {
+    "id": "SouthGate/visitor_ticket_red_01",
+    "zone": "南门",
+    "layer": "person",
+    "inQueue": true,
+    "master": [
+      410,
+      2325,
+      488,
+      2455
+    ],
+    "pngFile": "res/SouthGate/visitor_ticket_red_01.png"
+  },
+  {
+    "id": "SouthGate/visitor_arch_pair_01",
+    "zone": "南门",
+    "layer": "person",
+    "inQueue": true,
+    "master": [
+      629,
+      2291,
+      743,
+      2439
+    ],
+    "pngFile": "res/SouthGate/visitor_arch_pair_01.png"
+  },
+  {
+    "id": "SouthGate/guard_arch_01",
+    "zone": "南门",
+    "layer": "person",
+    "inQueue": true,
+    "master": [
+      753,
+      2301,
+      835,
+      2439
+    ],
+    "pngFile": "res/SouthGate/guard_arch_01.png"
+  },
+  {
+    "id": "SouthGate/visitor_info_family_01",
+    "zone": "南门",
+    "layer": "person",
+    "inQueue": true,
+    "master": [
+      953,
+      2302,
+      1055,
+      2439
+    ],
+    "pngFile": "res/SouthGate/visitor_info_family_01.png"
+  },
+  {
+    "id": "Panda/habitat",
+    "zone": "熊猫馆",
+    "layer": "ground",
+    "inQueue": true,
+    "master": [
+      480,
+      1072,
+      1104,
+      1520
+    ],
+    "pngFile": "res/Panda/habitat.png"
+  },
+  {
+    "id": "Panda/house_01",
+    "zone": "熊猫馆",
+    "layer": "building",
+    "inQueue": true,
+    "master": [
+      480,
+      753,
+      980,
+      1227
+    ],
+    "pngFile": "res/Panda/house_01.png"
+  },
+  {
+    "id": "Panda/panda_left_01",
+    "zone": "熊猫馆",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      569,
+      1146,
+      691,
+      1304
+    ],
+    "pngFile": "res/Panda/panda_left_01.png"
+  },
+  {
+    "id": "Panda/panda_right_01",
+    "zone": "熊猫馆",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      791,
+      1151,
+      909,
+      1309
+    ],
+    "pngFile": "res/Panda/panda_right_01.png"
+  },
+  {
+    "id": "Panda/panda_small_01",
+    "zone": "熊猫馆",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      677,
+      1208,
+      773,
+      1322
+    ],
+    "pngFile": "res/Panda/panda_small_01.png"
+  },
+  {
+    "id": "Panda/sign_panda_01",
+    "zone": "熊猫馆",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      601,
+      1304,
+      759,
+      1456
+    ],
+    "pngFile": "res/Panda/sign_panda_01.png"
+  },
+  {
+    "id": "Panda/sign_small_01",
+    "zone": "熊猫馆",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      741,
+      1309,
+      899,
+      1461
+    ],
+    "pngFile": "res/Panda/sign_small_01.png"
+  },
+  {
+    "id": "Panda/bench_01",
+    "zone": "熊猫馆",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      643,
+      1459,
+      817,
+      1571
+    ],
+    "pngFile": "res/Panda/bench_01.png"
+  },
+  {
+    "id": "Panda/fountain_01",
+    "zone": "熊猫馆",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      583,
+      1457,
+      657,
+      1533
+    ],
+    "pngFile": "res/Panda/fountain_01.png"
+  },
+  {
+    "id": "Panda/lamp_01",
+    "zone": "熊猫馆",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      989,
+      1278,
+      1071,
+      1452
+    ],
+    "pngFile": "res/Panda/lamp_01.png"
+  },
+  {
+    "id": "Panda/person_sit_01",
+    "zone": "熊猫馆",
+    "layer": "person",
+    "inQueue": true,
+    "master": [
+      681,
+      1446,
+      759,
+      1544
+    ],
+    "pngFile": "res/Panda/person_sit_01.png"
+  },
+  {
+    "id": "Panda/visitor_front_01",
+    "zone": "熊猫馆",
+    "layer": "person",
+    "inQueue": true,
+    "master": [
+      687,
+      1569,
+      793,
+      1691
+    ],
+    "pngFile": "res/Panda/visitor_front_01.png"
+  },
+  {
+    "id": "Panda/visitor_cap_01",
+    "zone": "熊猫馆",
+    "layer": "person",
+    "inQueue": true,
+    "master": [
+      826,
+      704,
+      894,
+      811
+    ],
+    "pngFile": "res/Panda/visitor_cap_01.png"
+  },
+  {
+    "id": "Savannah/habitat",
+    "zone": "非洲草原",
+    "layer": "ground",
+    "inQueue": true,
+    "master": [
+      64,
+      256,
+      704,
+      768
+    ],
+    "pngFile": "res/Savannah/habitat.png"
+  },
+  {
+    "id": "Savannah/giraffe_01",
+    "zone": "非洲草原",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      126,
+      249,
+      314,
+      521
+    ],
+    "pngFile": "res/Savannah/giraffe_01.png"
+  },
+  {
+    "id": "Savannah/elephant_01",
+    "zone": "非洲草原",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      367,
+      354,
+      565,
+      546
+    ],
+    "pngFile": "res/Savannah/elephant_01.png"
+  },
+  {
+    "id": "Savannah/feeder_01",
+    "zone": "非洲草原",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      275,
+      318,
+      385,
+      482
+    ],
+    "pngFile": "res/Savannah/feeder_01.png"
+  },
+  {
+    "id": "Savannah/hay_01",
+    "zone": "非洲草原",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      211,
+      514,
+      339,
+      616
+    ],
+    "pngFile": "res/Savannah/hay_01.png"
+  },
+  {
+    "id": "Savannah/basin_01",
+    "zone": "非洲草原",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      119,
+      495,
+      211,
+      570
+    ],
+    "pngFile": "res/Savannah/basin_01.png"
+  },
+  {
+    "id": "Savannah/sign_giraffe_01",
+    "zone": "非洲草原",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      165,
+      596,
+      321,
+      756
+    ],
+    "pngFile": "res/Savannah/sign_giraffe_01.png"
+  },
+  {
+    "id": "Savannah/sign_elephant_01",
+    "zone": "非洲草原",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      331,
+      596,
+      489,
+      756
+    ],
+    "pngFile": "res/Savannah/sign_elephant_01.png"
+  },
+  {
+    "id": "Savannah/bench_01",
+    "zone": "非洲草原",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      232,
+      751,
+      368,
+      829
+    ],
+    "pngFile": "res/Savannah/bench_01.png"
+  },
+  {
+    "id": "Savannah/lamp_upper_01",
+    "zone": "非洲草原",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      602,
+      249,
+      678,
+      411
+    ],
+    "pngFile": "res/Savannah/lamp_upper_01.png"
+  },
+  {
+    "id": "Savannah/lamp_lower_01",
+    "zone": "非洲草原",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      592,
+      409,
+      668,
+      571
+    ],
+    "pngFile": "res/Savannah/lamp_lower_01.png"
+  },
+  {
+    "id": "Savannah/visitor_back_01",
+    "zone": "非洲草原",
+    "layer": "person",
+    "inQueue": true,
+    "master": [
+      667,
+      323,
+      733,
+      432
+    ],
+    "pngFile": "res/Savannah/visitor_back_01.png"
+  },
+  {
+    "id": "Savannah/visitor_blue_01",
+    "zone": "非洲草原",
+    "layer": "person",
+    "inQueue": true,
+    "master": [
+      680,
+      449,
+      740,
+      551
+    ],
+    "pngFile": "res/Savannah/visitor_blue_01.png"
+  },
+  {
+    "id": "Savannah/visitor_pair_01",
+    "zone": "非洲草原",
+    "layer": "person",
+    "inQueue": true,
+    "master": [
+      646,
+      618,
+      734,
+      732
+    ],
+    "pngFile": "res/Savannah/visitor_pair_01.png"
+  },
+  {
+    "id": "Savannah/visitor_bald_01",
+    "zone": "非洲草原",
+    "layer": "person",
+    "inQueue": true,
+    "master": [
+      517,
+      743,
+      603,
+      852
+    ],
+    "pngFile": "res/Savannah/visitor_bald_01.png"
+  },
+  {
+    "id": "IceBay/habitat",
+    "zone": "浮冰湾",
+    "layer": "ground",
+    "inQueue": true,
+    "master": [
+      800,
+      256,
+      1392,
+      752
+    ],
+    "pngFile": "res/IceBay/habitat.png"
+  },
+  {
+    "id": "IceBay/penguin_left_01",
+    "zone": "浮冰湾",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      882,
+      466,
+      962,
+      565
+    ],
+    "pngFile": "res/IceBay/penguin_left_01.png"
+  },
+  {
+    "id": "IceBay/penguin_right_01",
+    "zone": "浮冰湾",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      945,
+      446,
+      1025,
+      545
+    ],
+    "pngFile": "res/IceBay/penguin_right_01.png"
+  },
+  {
+    "id": "IceBay/penguin_low_01",
+    "zone": "浮冰湾",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      1080,
+      544,
+      1156,
+      644
+    ],
+    "pngFile": "res/IceBay/penguin_low_01.png"
+  },
+  {
+    "id": "IceBay/monkey_left_01",
+    "zone": "浮冰湾",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      1113,
+      306,
+      1207,
+      418
+    ],
+    "pngFile": "res/IceBay/monkey_left_01.png"
+  },
+  {
+    "id": "IceBay/monkey_right_01",
+    "zone": "浮冰湾",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      1214,
+      306,
+      1306,
+      418
+    ],
+    "pngFile": "res/IceBay/monkey_right_01.png"
+  },
+  {
+    "id": "IceBay/sign_01",
+    "zone": "浮冰湾",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      1003,
+      645,
+      1229,
+      787
+    ],
+    "pngFile": "res/IceBay/sign_01.png"
+  },
+  {
+    "id": "IceBay/duck_01",
+    "zone": "浮冰湾",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      942,
+      620,
+      994,
+      672
+    ],
+    "pngFile": "res/IceBay/duck_01.png"
+  },
+  {
+    "id": "IceBay/bench_01",
+    "zone": "浮冰湾",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      1091,
+      771,
+      1249,
+      858
+    ],
+    "pngFile": "res/IceBay/bench_01.png"
+  },
+  {
+    "id": "PetVillage/habitat",
+    "zone": "小动物村",
+    "layer": "ground",
+    "inQueue": true,
+    "master": [
+      116,
+      1489,
+      624,
+      1922
+    ],
+    "pngFile": "res/PetVillage/habitat.png"
+  },
+  {
+    "id": "PetVillage/rabbit_01",
+    "zone": "小动物村",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      162,
+      1613,
+      250,
+      1745
+    ],
+    "pngFile": "res/PetVillage/rabbit_01.png"
+  },
+  {
+    "id": "PetVillage/duck_01",
+    "zone": "小动物村",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      270,
+      1552,
+      380,
+      1689
+    ],
+    "pngFile": "res/PetVillage/duck_01.png"
+  },
+  {
+    "id": "PetVillage/sheep_01",
+    "zone": "小动物村",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      367,
+      1634,
+      519,
+      1792
+    ],
+    "pngFile": "res/PetVillage/sheep_01.png"
+  },
+  {
+    "id": "PetVillage/hay_01",
+    "zone": "小动物村",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      133,
+      1725,
+      281,
+      1871
+    ],
+    "pngFile": "res/PetVillage/hay_01.png"
+  },
+  {
+    "id": "PetVillage/bush_01",
+    "zone": "小动物村",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      262,
+      1679,
+      374,
+      1801
+    ],
+    "pngFile": "res/PetVillage/bush_01.png"
+  },
+  {
+    "id": "PetVillage/sign_01",
+    "zone": "小动物村",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      203,
+      1789,
+      497,
+      1936
+    ],
+    "pngFile": "res/PetVillage/sign_01.png"
+  },
+  {
+    "id": "PetVillage/bench_01",
+    "zone": "小动物村",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      268,
+      1935,
+      412,
+      2025
+    ],
+    "pngFile": "res/PetVillage/bench_01.png"
+  },
+  {
+    "id": "PetVillage/lamp_01",
+    "zone": "小动物村",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      463,
+      1462,
+      545,
+      1636
+    ],
+    "pngFile": "res/PetVillage/lamp_01.png"
+  },
+  {
+    "id": "PetVillage/person_sit_01",
+    "zone": "小动物村",
+    "layer": "person",
+    "inQueue": true,
+    "master": [
+      284,
+      1914,
+      356,
+      2014
+    ],
+    "pngFile": "res/PetVillage/person_sit_01.png"
+  },
+  {
+    "id": "PetVillage/basin_01",
+    "zone": "小动物村",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      360,
+      1574,
+      513,
+      1663
+    ],
+    "pngFile": "res/PetVillage/basin_01.png"
+  },
+  {
+    "id": "Flamingo/habitat",
+    "zone": "火烈鸟",
+    "layer": "ground",
+    "inQueue": false,
+    "master": [
+      870,
+      1435,
+      1344,
+      2046
+    ],
+    "pngFile": "res/Flamingo/habitat.png"
+  },
+  {
+    "id": "Flamingo/shore_rock_01",
+    "zone": "火烈鸟",
+    "layer": "building",
+    "inQueue": true,
+    "master": [
+      1050,
+      1731,
+      1189,
+      1847
+    ],
+    "pngFile": "res/Flamingo/shore_rock_01.png"
+  },
+  {
+    "id": "Flamingo/flamingo_top_01",
+    "zone": "火烈鸟",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      1041,
+      1562,
+      1146,
+      1715
+    ],
+    "pngFile": "res/Flamingo/flamingo_top_01.png"
+  },
+  {
+    "id": "Flamingo/flamingo_right_01",
+    "zone": "火烈鸟",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      1169,
+      1682,
+      1269,
+      1814
+    ],
+    "pngFile": "res/Flamingo/flamingo_right_01.png"
+  },
+  {
+    "id": "Flamingo/flamingo_left_01",
+    "zone": "火烈鸟",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      947,
+      1726,
+      1055,
+      1873
+    ],
+    "pngFile": "res/Flamingo/flamingo_left_01.png"
+  },
+  {
+    "id": "Flamingo/flamingo_low_01",
+    "zone": "火烈鸟",
+    "layer": "animal",
+    "inQueue": true,
+    "master": [
+      1009,
+      1838,
+      1123,
+      1970
+    ],
+    "pngFile": "res/Flamingo/flamingo_low_01.png"
+  },
+  {
+    "id": "Flamingo/flamingo_sign_01",
+    "zone": "火烈鸟",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      884,
+      1885,
+      1025,
+      2021
+    ],
+    "pngFile": "res/Flamingo/flamingo_sign_01.png"
+  },
+  {
+    "id": "Flamingo/umbrella_01",
+    "zone": "火烈鸟",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      1114,
+      1888,
+      1287,
+      2083
+    ],
+    "pngFile": "res/Flamingo/umbrella_01.png"
+  },
+  {
+    "id": "Flamingo/table_01",
+    "zone": "火烈鸟",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      1131,
+      1997,
+      1235,
+      2108
+    ],
+    "pngFile": "res/Flamingo/table_01.png"
+  },
+  {
+    "id": "Flamingo/chair_left_01",
+    "zone": "火烈鸟",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      1103,
+      1980,
+      1168,
+      2090
+    ],
+    "pngFile": "res/Flamingo/chair_left_01.png"
+  },
+  {
+    "id": "Flamingo/chair_right_01",
+    "zone": "火烈鸟",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      1208,
+      1981,
+      1273,
+      2091
+    ],
+    "pngFile": "res/Flamingo/chair_right_01.png"
+  },
+  {
+    "id": "Flamingo/bench_01",
+    "zone": "火烈鸟",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      809,
+      1981,
+      908,
+      2060
+    ],
+    "pngFile": "res/Flamingo/bench_01.png"
+  },
+  {
+    "id": "Flamingo/lamp_01",
+    "zone": "火烈鸟",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      1257,
+      1319,
+      1337,
+      1490
+    ],
+    "pngFile": "res/Flamingo/lamp_01.png"
+  },
+  {
+    "id": "Kiosk/house_01",
+    "zone": "小卖部",
+    "layer": "building",
+    "inQueue": true,
+    "master": [
+      71,
+      837,
+      419,
+      1164
+    ],
+    "pngFile": "res/Kiosk/house_01.png"
+  },
+  {
+    "id": "Kiosk/popcorn_01",
+    "zone": "小卖部",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      295,
+      1018,
+      401,
+      1154
+    ],
+    "pngFile": "res/Kiosk/popcorn_01.png"
+  },
+  {
+    "id": "Kiosk/chair_left_01",
+    "zone": "小卖部",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      118,
+      1165,
+      230,
+      1294
+    ],
+    "pngFile": "res/Kiosk/chair_left_01.png"
+  },
+  {
+    "id": "Kiosk/chair_right_01",
+    "zone": "小卖部",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      203,
+      1164,
+      317,
+      1295
+    ],
+    "pngFile": "res/Kiosk/chair_right_01.png"
+  },
+  {
+    "id": "Kiosk/sign_01",
+    "zone": "小卖部",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      302,
+      1128,
+      394,
+      1242
+    ],
+    "pngFile": "res/Kiosk/sign_01.png"
+  },
+  {
+    "id": "Kiosk/visitor_pair_01",
+    "zone": "小卖部",
+    "layer": "person",
+    "inQueue": true,
+    "master": [
+      205,
+      1093,
+      285,
+      1198
+    ],
+    "pngFile": "res/Kiosk/visitor_pair_01.png"
+  },
+  {
+    "id": "Kiosk/lamp_01",
+    "zone": "小卖部",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      316,
+      1280,
+      396,
+      1452
+    ],
+    "pngFile": "res/Kiosk/lamp_01.png"
+  },
+  {
+    "id": "Souvenir/house_01",
+    "zone": "纪念品",
+    "layer": "building",
+    "inQueue": true,
+    "master": [
+      1004,
+      826,
+      1386,
+      1203
+    ],
+    "pngFile": "res/Souvenir/house_01.png"
+  },
+  {
+    "id": "Souvenir/balloon_01",
+    "zone": "纪念品",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      1294,
+      967,
+      1426,
+      1177
+    ],
+    "pngFile": "res/Souvenir/balloon_01.png"
+  },
+  {
+    "id": "Souvenir/sign_01",
+    "zone": "纪念品",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      1229,
+      1114,
+      1367,
+      1267
+    ],
+    "pngFile": "res/Souvenir/sign_01.png"
+  },
+  {
+    "id": "Souvenir/visitor_pair_01",
+    "zone": "纪念品",
+    "layer": "person",
+    "inQueue": true,
+    "master": [
+      1190,
+      1197,
+      1308,
+      1337
+    ],
+    "pngFile": "res/Souvenir/visitor_pair_01.png"
+  },
+  {
+    "id": "MainRoad/bench_left_01",
+    "zone": "主路",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      441,
+      198,
+      563,
+      278
+    ],
+    "pngFile": "res/MainRoad/bench_left_01.png"
+  },
+  {
+    "id": "MainRoad/bench_right_01",
+    "zone": "主路",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      899,
+      198,
+      1021,
+      278
+    ],
+    "pngFile": "res/MainRoad/bench_right_01.png"
+  },
+  {
+    "id": "MainRoad/lamp_upper_01",
+    "zone": "主路",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      785,
+      247,
+      863,
+      411
+    ],
+    "pngFile": "res/MainRoad/lamp_upper_01.png"
+  },
+  {
+    "id": "MainRoad/lamp_lower_01",
+    "zone": "主路",
+    "layer": "prop",
+    "inQueue": true,
+    "master": [
+      779,
+      417,
+      857,
+      581
+    ],
+    "pngFile": "res/MainRoad/lamp_lower_01.png"
+  },
+  {
+    "id": "MainRoad/visitor_pair_01",
+    "zone": "主路",
+    "layer": "person",
+    "inQueue": true,
+    "master": [
+      670,
+      1734,
+      782,
+      1868
+    ],
+    "pngFile": "res/MainRoad/visitor_pair_01.png"
+  }
+]

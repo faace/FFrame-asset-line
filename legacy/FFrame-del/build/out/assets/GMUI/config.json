@@ -1,0 +1,73 @@
+{
+    "importBase": "import",
+    "nativeBase": "native",
+    "name": "GMUI",
+    "deps": [],
+    "uuids": [
+        "034c8e235",
+        "05952461e",
+        "74c34df9-f233-43c9-abec-7ca45db63ede",
+        "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca",
+        "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@6c48a",
+        "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941",
+        "a8e25c64-bf59-4d7e-91a6-5c2f409e1b75",
+        "b8d4f2c1-5a3b-4e9f-8d22-7c6b9f3e5a81",
+        "b9f36d75-c06a-4e8f-a2b7-6d3041af2c86",
+        "e91d4c20-7a35-4b6e-8f12-3c5a9e70d2b6",
+        "ee40121d-0b21-4bb3-b95c-fa7d2df322b4",
+        "f7d14b53-ae48-4c6d-8095-4b1e3f8d0a64"
+    ],
+    "paths": {
+        "a8e25c64-bf59-4d7e-91a6-5c2f409e1b75": [
+            "PfGMBar",
+            "cc.Prefab",
+            1
+        ],
+        "b8d4f2c1-5a3b-4e9f-8d22-7c6b9f3e5a81": [
+            "PfGMBtn",
+            "cc.Prefab",
+            1
+        ],
+        "f7d14b53-ae48-4c6d-8095-4b1e3f8d0a64": [
+            "PfGMSlider",
+            "cc.Prefab",
+            1
+        ],
+        "b9f36d75-c06a-4e8f-a2b7-6d3041af2c86": [
+            "PfGMStepper",
+            "cc.Prefab",
+            1
+        ],
+        "e91d4c20-7a35-4b6e-8f12-3c5a9e70d2b6": [
+            "PfGMTabs",
+            "cc.Prefab",
+            1
+        ],
+        "74c34df9-f233-43c9-abec-7ca45db63ede": [
+            "PfGMTitle",
+            "cc.Prefab",
+            1
+        ]
+    },
+    "scenes": {},
+    "packs": {
+        "034c8e235": [
+            "74c34df9-f233-43c9-abec-7ca45db63ede",
+            "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941",
+            "ee40121d-0b21-4bb3-b95c-fa7d2df322b4"
+        ],
+        "05952461e": [
+            "b8d4f2c1-5a3b-4e9f-8d22-7c6b9f3e5a81",
+            "b9f36d75-c06a-4e8f-a2b7-6d3041af2c86"
+        ]
+    },
+    "versions": {
+        "import": [],
+        "native": []
+    },
+    "redirect": [],
+    "debug": true,
+    "extensionMap": {},
+    "hasPreloadScript": true,
+    "dependencyRelationships": {}
+}

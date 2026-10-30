@@ -1,0 +1,8 @@
+[81016:81020:1028/195946.673:INFO:components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc:241] No machine level policy manager exists.
+[81016:81020:1028/195947.649:INFO:CONSOLE:50114] "Init Base: 10 ms", source: http://localhost:8769/cocos-js/_virtual_cc-Bp3RF3Ff.js (50114)
+[81016:81020:1028/195947.687:INFO:CONSOLE:50154] "Init Infrastructure: 0 ms", source: http://localhost:8769/cocos-js/_virtual_cc-Bp3RF3Ff.js (50154)
+[81016:81020:1028/195947.732:INFO:CONSOLE:3] "[bullet]:bullet wasm lib loaded.", source: http://localhost:8769/?t=10 (3)
+[81016:81020:1028/195947.823:INFO:CONSOLE:3] "[PHYSICS2D]: register box2d.", source: http://localhost:8769/?t=10 (3)
+[81016:81020:1028/195947.827:INFO:CONSOLE:3] "[PHYSICS]: register bullet.", source: http://localhost:8769/?t=10 (3)
+[81016:81020:1028/195947.829:INFO:CONSOLE:0] "[.WebGL-0x496400422000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels", source: http://localhost:8769/?t=10 (0)
+[81016:81020:1028/195947.842:INFO:CONSOLE:3] "[PHYSICS]: using bullet.", source: http://localhost:8769/?t=10 (3)

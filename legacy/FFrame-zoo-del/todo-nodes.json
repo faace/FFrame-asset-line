@@ -1,0 +1,102 @@
+[
+  {
+    "name": "PetVillage_basin_01__TODO",
+    "zone": "小动物村",
+    "layer": "prop",
+    "queue": 21,
+    "x": 169.15,
+    "y": 365.85,
+    "scale": 0.5,
+    "reason": "缺脚点/缩放，需在编辑器摆位"
+  },
+  {
+    "name": "Flamingo_habitat__TODO",
+    "zone": "火烈鸟",
+    "layer": "ground",
+    "queue": "-",
+    "x": 549.375,
+    "y": 360.625,
+    "scale": 0.468,
+    "reason": "区域地面，缺范围"
+  },
+  {
+    "name": "Flamingo_shore_rock_01__TODO",
+    "zone": "火烈鸟",
+    "layer": "building",
+    "queue": 29,
+    "x": 549.375,
+    "y": 360.625,
+    "scale": 0.468,
+    "reason": "缺脚点/缩放，需在编辑器摆位"
+  },
+  {
+    "name": "Flamingo_flamingo_sign_01__TODO",
+    "zone": "火烈鸟",
+    "layer": "prop",
+    "queue": 34,
+    "x": 549.375,
+    "y": 360.625,
+    "scale": 0.468,
+    "reason": "缺脚点/缩放，需在编辑器摆位"
+  },
+  {
+    "name": "Flamingo_umbrella_01__TODO",
+    "zone": "火烈鸟",
+    "layer": "prop",
+    "queue": 35,
+    "x": 549.375,
+    "y": 360.625,
+    "scale": 0.468,
+    "reason": "缺脚点/缩放，需在编辑器摆位"
+  },
+  {
+    "name": "Flamingo_table_01__TODO",
+    "zone": "火烈鸟",
+    "layer": "prop",
+    "queue": 36,
+    "x": 549.375,
+    "y": 360.625,
+    "scale": 0.468,
+    "reason": "缺脚点/缩放，需在编辑器摆位"
+  },
+  {
+    "name": "Flamingo_chair_left_01__TODO",
+    "zone": "火烈鸟",
+    "layer": "prop",
+    "queue": 37,
+    "x": 549.375,
+    "y": 360.625,
+    "scale": 0.468,
+    "reason": "缺脚点/缩放，需在编辑器摆位"
+  },
+  {
+    "name": "Flamingo_chair_right_01__TODO",
+    "zone": "火烈鸟",
+    "layer": "prop",
+    "queue": 38,
+    "x": 549.375,
+    "y": 360.625,
+    "scale": 0.468,
+    "reason": "缺脚点/缩放，需在编辑器摆位"
+  },
+  {
+    "name": "Flamingo_bench_01__TODO",
+    "zone": "火烈鸟",
+    "layer": "prop",
+    "queue": 39,
+    "x": 549.375,
+    "y": 360.625,
+    "scale": 0.468,
+    "reason": "缺脚点/缩放，需在编辑器摆位"
+  },
+  {
+    "name": "Flamingo_lamp_01__TODO",
+    "zone": "火烈鸟",
+    "layer": "prop",
+    "queue": 40,
+    "x": 549.375,
+    "y": 360.625,
+    "scale": 0.468,
+    "reason": "缺脚点/缩放，需在编辑器摆位"
+  }
+]

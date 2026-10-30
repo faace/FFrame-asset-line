@@ -1,0 +1,106 @@
+{
+    "importBase": "import",
+    "nativeBase": "native",
+    "name": "DemoHome",
+    "deps": [
+        "GMUI",
+        "GameUI",
+        "Skin"
+    ],
+    "uuids": [
+        "05c42b36-4316-43c2-952c-b59b9d57b614@f9941",
+        "075aa98d-9fff-42ff-8f75-29838e2f1f3b@f9941",
+        "0863219f-42a7-445d-f615-b39fde7e45f8",
+        "48fdb5f8-5e45-4263-937f-76e77e54051a@f9941",
+        "4986a4a6-c9d4-43ea-a228-fc8f2268af08@f9941",
+        "4b9d2e3f-5c6a-48b0-9d2e-f1023456789a",
+        "52e1493a-81de-4f8f-898e-085c83bf35e4@f9941",
+        "580da328-23d9-4a00-b335-8cba8ebd4a72@f9941",
+        "5d3b001a-4057-449b-a2d8-4360ad000087@f9941",
+        "6c8529cd-0b0b-4786-b24e-686ccb340bf2@f9941",
+        "6c8659ed-ba4c-4bae-856e-4488093b8f09@f9941",
+        "74c34df9-f233-43c9-abec-7ca45db63ede",
+        "9795a873-f410-422d-8bf6-2067ee1b5457@f9941",
+        "a8e25c64-bf59-4d7e-91a6-5c2f409e1b75",
+        "ac6ca380-fe84-43d0-96da-ff64249cbd40@f9941",
+        "b1f7b927-6f8b-4c4b-96f8-9534f2117ebc@f9941",
+        "b6ea7a5e-4b84-49e8-bb30-f52da60edd66@f9941",
+        "b8d4f2c1-5a3b-4e9f-8d22-7c6b9f3e5a81",
+        "b9f36d75-c06a-4e8f-a2b7-6d3041af2c86",
+        "c27b0465-d1a7-47b7-97d5-55c004c6f3c0@f9941",
+        "e6410f7d-2085-423b-d4f3-917ebc5c23d6",
+        "ee40121d-0b21-4bb3-b95c-fa7d2df322b4",
+        "f7d14b53-ae48-4c6d-8095-4b1e3f8d0a64"
+    ],
+    "paths": {
+        "0863219f-42a7-445d-f615-b39fde7e45f8": [
+            "LySetting",
+            "cc.Prefab",
+            1
+        ],
+        "4b9d2e3f-5c6a-48b0-9d2e-f1023456789a": [
+            "PfDemoItem",
+            "cc.Prefab",
+            1
+        ],
+        "e6410f7d-2085-423b-d4f3-917ebc5c23d6": [
+            "ScDemoHome",
+            "cc.SceneAsset",
+            1
+        ]
+    },
+    "scenes": {
+        "db://assets/game/bundles/Demo/DemoHome/ScDemoHome.scene": "e6410f7d-2085-423b-d4f3-917ebc5c23d6"
+    },
+    "packs": {},
+    "versions": {
+        "import": [],
+        "native": []
+    },
+    "redirect": [
+        "05c42b36-4316-43c2-952c-b59b9d57b614@f9941",
+        "2",
+        "075aa98d-9fff-42ff-8f75-29838e2f1f3b@f9941",
+        "2",
+        "48fdb5f8-5e45-4263-937f-76e77e54051a@f9941",
+        "2",
+        "4986a4a6-c9d4-43ea-a228-fc8f2268af08@f9941",
+        "2",
+        "52e1493a-81de-4f8f-898e-085c83bf35e4@f9941",
+        "2",
+        "580da328-23d9-4a00-b335-8cba8ebd4a72@f9941",
+        "2",
+        "5d3b001a-4057-449b-a2d8-4360ad000087@f9941",
+        "2",
+        "6c8529cd-0b0b-4786-b24e-686ccb340bf2@f9941",
+        "2",
+        "6c8659ed-ba4c-4bae-856e-4488093b8f09@f9941",
+        "2",
+        "74c34df9-f233-43c9-abec-7ca45db63ede",
+        "0",
+        "9795a873-f410-422d-8bf6-2067ee1b5457@f9941",
+        "2",
+        "a8e25c64-bf59-4d7e-91a6-5c2f409e1b75",
+        "0",
+        "ac6ca380-fe84-43d0-96da-ff64249cbd40@f9941",
+        "2",
+        "b1f7b927-6f8b-4c4b-96f8-9534f2117ebc@f9941",
+        "2",
+        "b6ea7a5e-4b84-49e8-bb30-f52da60edd66@f9941",
+        "2",
+        "b8d4f2c1-5a3b-4e9f-8d22-7c6b9f3e5a81",
+        "0",
+        "b9f36d75-c06a-4e8f-a2b7-6d3041af2c86",
+        "0",
+        "c27b0465-d1a7-47b7-97d5-55c004c6f3c0@f9941",
+        "1",
+        "ee40121d-0b21-4bb3-b95c-fa7d2df322b4",
+        "0",
+        "f7d14b53-ae48-4c6d-8095-4b1e3f8d0a64",
+        "0"
+    ],
+    "debug": true,
+    "extensionMap": {},
+    "hasPreloadScript": true,
+    "dependencyRelationships": {}
+}

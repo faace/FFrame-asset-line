@@ -1,0 +1,1062 @@
+{
+  "json": {
+    "opening": {
+      "left": 0,
+      "bottom": 0,
+      "right": 720,
+      "top": 1280
+    },
+    "SouthGate/gate_01": {
+      "left": 269.2,
+      "bottom": 107.581011,
+      "right": 454.8,
+      "top": 239.357011
+    },
+    "SouthGate/ticket_booth_01": {
+      "left": 175.744,
+      "bottom": 113.573216,
+      "right": 272.256,
+      "top": 211.941216
+    },
+    "SouthGate/info_booth_01": {
+      "left": 459.744,
+      "bottom": 114.581058,
+      "right": 556.256,
+      "top": 218.053058
+    },
+    "SouthGate/balloon_left_01": {
+      "left": 257.052,
+      "bottom": 102.571592,
+      "right": 309.948,
+      "top": 193.051592
+    },
+    "SouthGate/balloon_right_01": {
+      "left": 408.552,
+      "bottom": 107.071592,
+      "right": 461.448,
+      "top": 197.551592
+    },
+    "SouthGate/visitor_ticket_blue_01": {
+      "left": 134.744,
+      "bottom": 52.575211,
+      "right": 173.256,
+      "top": 118.927211
+    },
+    "SouthGate/visitor_ticket_red_01": {
+      "left": 205.012,
+      "bottom": 52.575072,
+      "right": 243.988,
+      "top": 117.535072
+    },
+    "SouthGate/visitor_arch_pair_01": {
+      "left": 314.464,
+      "bottom": 60.578134,
+      "right": 371.536,
+      "top": 134.354134
+    },
+    "SouthGate/guard_arch_01": {
+      "left": 376.352,
+      "bottom": 60.574794,
+      "right": 417.648,
+      "top": 129.710794
+    },
+    "SouthGate/visitor_info_family_01": {
+      "left": 476.48,
+      "bottom": 60.57897,
+      "right": 527.52,
+      "top": 128.78697
+    },
+    "Panda/habitat": {
+      "left": 240,
+      "bottom": 520,
+      "right": 552,
+      "top": 744
+    },
+    "Panda/house_01": {
+      "left": 239.87425,
+      "bottom": 666.363026,
+      "right": 490.12575,
+      "top": 903.642526
+    },
+    "Panda/panda_left_01": {
+      "left": 284.6475,
+      "bottom": 628.15658,
+      "right": 345.3525,
+      "top": 706.81658
+    },
+    "Panda/panda_right_01": {
+      "left": 395.73875,
+      "bottom": 625.564954,
+      "right": 454.26125,
+      "top": 704.461954
+    },
+    "Panda/panda_small_01": {
+      "left": 338.497,
+      "bottom": 618.949732,
+      "right": 386.503,
+      "top": 676.027732
+    },
+    "Panda/sign_panda_01": {
+      "left": 300.436,
+      "bottom": 551.932976,
+      "right": 379.564,
+      "top": 628.036976
+    },
+    "Panda/sign_small_01": {
+      "left": 370.436,
+      "bottom": 549.432976,
+      "right": 449.564,
+      "top": 625.536976
+    },
+    "Panda/bench_01": {
+      "left": 321.5,
+      "bottom": 494.4976,
+      "right": 408.5,
+      "top": 550.4976
+    },
+    "Panda/fountain_01": {
+      "left": 291.6635,
+      "bottom": 513.552484,
+      "right": 328.3365,
+      "top": 551.434484
+    },
+    "Panda/lamp_01": {
+      "left": 494.5625,
+      "bottom": 553.997,
+      "right": 535.4375,
+      "top": 640.997
+    },
+    "Panda/person_sit_01": {
+      "left": 340.65925,
+      "bottom": 508.171459,
+      "right": 379.34075,
+      "top": 556.861459
+    },
+    "Panda/visitor_front_01": {
+      "left": 343.31,
+      "bottom": 434.559116,
+      "right": 396.69,
+      "top": 495.419116
+    },
+    "Panda/visitor_cap_01": {
+      "left": 412.902,
+      "bottom": 874.688,
+      "right": 447.098,
+      "top": 927.808
+    },
+    "Savannah/habitat": {
+      "left": 32,
+      "bottom": 896,
+      "right": 352,
+      "top": 1152
+    },
+    "Savannah/giraffe_01": {
+      "left": 62.832,
+      "bottom": 1019.373949,
+      "right": 157.168,
+      "top": 1155.597949
+    },
+    "Savannah/elephant_01": {
+      "left": 183.2975,
+      "bottom": 1006.860776,
+      "right": 282.7025,
+      "top": 1103.093276
+    },
+    "Savannah/feeder_01": {
+      "left": 137.5155,
+      "bottom": 1038.975548,
+      "right": 192.4845,
+      "top": 1121.052548
+    },
+    "Savannah/hay_01": {
+      "left": 105.484,
+      "bottom": 972.162132,
+      "right": 169.516,
+      "top": 1022.854132
+    },
+    "Savannah/basin_01": {
+      "left": 59.397,
+      "bottom": 995.167305,
+      "right": 105.603,
+      "top": 1032.313305
+    },
+    "Savannah/sign_giraffe_01": {
+      "left": 82.28475,
+      "bottom": 902.190197,
+      "right": 160.71525,
+      "top": 981.822697
+    },
+    "Savannah/sign_elephant_01": {
+      "left": 165.6345,
+      "bottom": 902.190197,
+      "right": 244.3655,
+      "top": 981.822697
+    },
+    "Savannah/bench_01": {
+      "left": 115.9375,
+      "bottom": 865.639073,
+      "right": 184.0625,
+      "top": 904.334074
+    },
+    "Savannah/lamp_upper_01": {
+      "left": 300.925,
+      "bottom": 1074.3972,
+      "right": 339.075,
+      "top": 1155.5972
+    },
+    "Savannah/lamp_lower_01": {
+      "left": 295.925,
+      "bottom": 994.3972,
+      "right": 334.075,
+      "top": 1075.5972
+    },
+    "Savannah/visitor_back_01": {
+      "left": 333.62,
+      "bottom": 1063.758635,
+      "right": 366.38,
+      "top": 1118.748635
+    },
+    "Savannah/visitor_blue_01": {
+      "left": 340.165,
+      "bottom": 1004.480414,
+      "right": 369.835,
+      "top": 1055.540414
+    },
+    "Savannah/visitor_pair_01": {
+      "left": 322.875,
+      "bottom": 913.9979,
+      "right": 367.125,
+      "top": 970.9979
+    },
+    "Savannah/visitor_bald_01": {
+      "left": 258.743,
+      "bottom": 854.13644,
+      "right": 301.257,
+      "top": 908.37844
+    },
+    "IceBay/habitat": {
+      "left": 400,
+      "bottom": 904,
+      "right": 696,
+      "top": 1152
+    },
+    "IceBay/penguin_left_01": {
+      "left": 441.1345,
+      "bottom": 997.256415,
+      "right": 480.8655,
+      "top": 1046.771915
+    },
+    "IceBay/penguin_right_01": {
+      "left": 472.2655,
+      "bottom": 1007.473415,
+      "right": 512.7345,
+      "top": 1056.998415
+    },
+    "IceBay/penguin_low_01": {
+      "left": 539.8885,
+      "bottom": 958.035275,
+      "right": 578.1115,
+      "top": 1007.976275
+    },
+    "IceBay/monkey_left_01": {
+      "left": 556.70575,
+      "bottom": 1071.129766,
+      "right": 603.29425,
+      "top": 1126.853266
+    },
+    "IceBay/monkey_right_01": {
+      "left": 606.85875,
+      "bottom": 1071.15758,
+      "right": 653.14125,
+      "top": 1126.81758
+    },
+    "IceBay/sign_01": {
+      "left": 501.537,
+      "bottom": 886.342756,
+      "right": 614.463,
+      "top": 957.639256
+    },
+    "IceBay/duck_01": {
+      "left": 470.9935,
+      "bottom": 944.1638,
+      "right": 497.0065,
+      "top": 969.8433
+    },
+    "IceBay/bench_01": {
+      "left": 545.63475,
+      "bottom": 851.249366,
+      "right": 624.36525,
+      "top": 894.748866
+    },
+    "PetVillage/habitat": {
+      "left": 57.831,
+      "bottom": 319.207131,
+      "right": 312.169,
+      "top": 535.731131
+    },
+    "PetVillage/rabbit_01": {
+      "left": 80.9215,
+      "bottom": 407.382761,
+      "right": 125.0785,
+      "top": 473.618261
+    },
+    "PetVillage/duck_01": {
+      "left": 135.205,
+      "bottom": 435.260051,
+      "right": 189.795,
+      "top": 503.755051
+    },
+    "PetVillage/sheep_01": {
+      "left": 183.37,
+      "bottom": 384.128,
+      "right": 259.63,
+      "top": 462.848
+    },
+    "PetVillage/hay_01": {
+      "left": 66.5,
+      "bottom": 344.4992,
+      "right": 140.5,
+      "top": 417.4992
+    },
+    "PetVillage/bush_01": {
+      "left": 131.0595,
+      "bottom": 379.406572,
+      "right": 186.9405,
+      "top": 440.609572
+    },
+    "PetVillage/sign_01": {
+      "left": 101.5695,
+      "bottom": 311.784822,
+      "right": 248.4305,
+      "top": 385.728822
+    },
+    "PetVillage/bench_01": {
+      "left": 133.9275,
+      "bottom": 267.587509,
+      "right": 206.0725,
+      "top": 312.409509
+    },
+    "PetVillage/lamp_01": {
+      "left": 231.5625,
+      "bottom": 461.997,
+      "right": 272.4375,
+      "top": 548.997
+    },
+    "PetVillage/person_sit_01": {
+      "left": 141.7895,
+      "bottom": 273.221628,
+      "right": 178.2105,
+      "top": 322.771128
+    },
+    "PetVillage/basin_01": {
+      "left": 179.98,
+      "bottom": 448.7319,
+      "right": 256.48,
+      "top": 493.2319
+    },
+    "Flamingo/habitat": {
+      "left": 435.002,
+      "bottom": 257.183878,
+      "right": 672.152,
+      "top": 562.409878
+    },
+    "Flamingo/shore_rock_01": {
+      "left": 525.187,
+      "bottom": 356.27225,
+      "right": 594.587,
+      "top": 414.37225
+    },
+    "Flamingo/flamingo_top_01": {
+      "left": 520.61975,
+      "bottom": 422.455688,
+      "right": 572.88225,
+      "top": 498.768188
+    },
+    "Flamingo/flamingo_right_01": {
+      "left": 588.3445,
+      "bottom": 404.032378,
+      "right": 638.5995,
+      "top": 470.019378
+    },
+    "Flamingo/flamingo_left_01": {
+      "left": 473.59,
+      "bottom": 343.512796,
+      "right": 527.41,
+      "top": 416.988796
+    },
+    "Flamingo/flamingo_low_01": {
+      "left": 504.6435,
+      "bottom": 295.035475,
+      "right": 561.7085,
+      "top": 361.190475
+    },
+    "Flamingo/flamingo_sign_01": {
+      "left": 441.947,
+      "bottom": 269.649312,
+      "right": 512.283,
+      "top": 337.297312
+    },
+    "Flamingo/umbrella_01": {
+      "left": 556.872,
+      "bottom": 238.590694,
+      "right": 643.332,
+      "top": 336.050694
+    },
+    "Flamingo/table_01": {
+      "left": 565.447,
+      "bottom": 226.239781,
+      "right": 617.359,
+      "top": 281.511781
+    },
+    "Flamingo/chair_left_01": {
+      "left": 551.635,
+      "bottom": 235.170891,
+      "right": 583.891,
+      "top": 289.938891
+    },
+    "Flamingo/chair_right_01": {
+      "left": 604.175,
+      "bottom": 234.645891,
+      "right": 636.431,
+      "top": 289.413891
+    },
+    "Flamingo/bench_01": {
+      "left": 404.741,
+      "bottom": 250.06022,
+      "right": 454.141,
+      "top": 289.32022
+    },
+    "Flamingo/lamp_01": {
+      "left": 628.613,
+      "bottom": 535.130056,
+      "right": 668.725,
+      "top": 620.506056
+    },
+    "Kiosk/house_01": {
+      "left": 35.6825,
+      "bottom": 698.215953,
+      "right": 209.3175,
+      "top": 861.686953
+    },
+    "Kiosk/popcorn_01": {
+      "left": 147.66,
+      "bottom": 702.977756,
+      "right": 200.34,
+      "top": 771.022756
+    },
+    "Kiosk/chair_left_01": {
+      "left": 58.7975,
+      "bottom": 632.776545,
+      "right": 115.2025,
+      "top": 697.739545
+    },
+    "Kiosk/chair_right_01": {
+      "left": 101.384,
+      "bottom": 632.727059,
+      "right": 158.616,
+      "top": 697.799059
+    },
+    "Kiosk/sign_01": {
+      "left": 150.768,
+      "bottom": 659.189967,
+      "right": 197.232,
+      "top": 715.817967
+    },
+    "Kiosk/visitor_pair_01": {
+      "left": 102.65625,
+      "bottom": 681.002,
+      "right": 142.34375,
+      "top": 733.502
+    },
+    "Kiosk/lamp_01": {
+      "left": 157.835,
+      "bottom": 554.07704,
+      "right": 198.165,
+      "top": 639.91704
+    },
+    "Souvenir/house_01": {
+      "left": 502.203,
+      "bottom": 678.544746,
+      "right": 692.797,
+      "top": 866.808746
+    },
+    "Souvenir/balloon_01": {
+      "left": 646.914,
+      "bottom": 691.545165,
+      "right": 713.086,
+      "top": 796.395165
+    },
+    "Souvenir/sign_01": {
+      "left": 614.516,
+      "bottom": 646.541018,
+      "right": 683.484,
+      "top": 722.965018
+    },
+    "Souvenir/visitor_pair_01": {
+      "left": 595.142,
+      "bottom": 611.54167,
+      "right": 653.858,
+      "top": 681.44167
+    },
+    "MainRoad/bench_left_01": {
+      "left": 220.69025,
+      "bottom": 1140.827716,
+      "right": 281.30975,
+      "top": 1180.886216
+    },
+    "MainRoad/bench_right_01": {
+      "left": 449.513,
+      "bottom": 1140.827716,
+      "right": 510.487,
+      "top": 1180.886216
+    },
+    "MainRoad/lamp_upper_01": {
+      "left": 392.67975,
+      "bottom": 1074.325164,
+      "right": 431.32025,
+      "top": 1156.569164
+    },
+    "MainRoad/lamp_lower_01": {
+      "left": 389.67975,
+      "bottom": 989.325164,
+      "right": 428.32025,
+      "top": 1071.569164
+    },
+    "MainRoad/visitor_pair_01": {
+      "left": 334.9945,
+      "bottom": 345.828709,
+      "right": 391.0055,
+      "top": 413.183709
+    }
+  },
+  "prefab": {
+    "opening": {
+      "left": 0,
+      "bottom": 0,
+      "right": 720,
+      "top": 1280
+    },
+    "Panda_habitat": {
+      "left": 240,
+      "bottom": 520,
+      "right": 552,
+      "top": 744
+    },
+    "Savannah_habitat": {
+      "left": 32,
+      "bottom": 896,
+      "right": 352,
+      "top": 1152
+    },
+    "IceBay_habitat": {
+      "left": 400,
+      "bottom": 904,
+      "right": 696,
+      "top": 1152
+    },
+    "PetVillage_habitat": {
+      "left": 57.831,
+      "bottom": 319.207131,
+      "right": 312.169,
+      "top": 535.731131
+    },
+    "Flamingo_habitat": {
+      "left": 435.002,
+      "bottom": 257.183878,
+      "right": 672.152,
+      "top": 562.409878
+    },
+    "SouthGate_gate_01": {
+      "left": 269.2,
+      "bottom": 107.581011,
+      "right": 454.8,
+      "top": 239.357011
+    },
+    "SouthGate_ticket_booth_01": {
+      "left": 175.744,
+      "bottom": 113.573216,
+      "right": 272.256,
+      "top": 211.941216
+    },
+    "SouthGate_info_booth_01": {
+      "left": 459.744,
+      "bottom": 114.581058,
+      "right": 556.256,
+      "top": 218.053058
+    },
+    "Panda_house_01": {
+      "left": 239.87425,
+      "bottom": 666.363026,
+      "right": 490.12575,
+      "top": 903.642526
+    },
+    "Flamingo_shore_rock_01": {
+      "left": 525.187,
+      "bottom": 356.27225,
+      "right": 594.587,
+      "top": 414.37225
+    },
+    "Kiosk_house_01": {
+      "left": 35.6825,
+      "bottom": 698.215953,
+      "right": 209.3175,
+      "top": 861.686953
+    },
+    "Souvenir_house_01": {
+      "left": 502.203,
+      "bottom": 678.544746,
+      "right": 692.797,
+      "top": 866.808746
+    },
+    "Panda_panda_left_01": {
+      "left": 284.6475,
+      "bottom": 628.15658,
+      "right": 345.3525,
+      "top": 706.81658
+    },
+    "Panda_panda_right_01": {
+      "left": 395.73875,
+      "bottom": 625.564954,
+      "right": 454.26125,
+      "top": 704.461954
+    },
+    "Panda_panda_small_01": {
+      "left": 338.497,
+      "bottom": 618.949732,
+      "right": 386.503,
+      "top": 676.027732
+    },
+    "Savannah_giraffe_01": {
+      "left": 62.832,
+      "bottom": 1019.373949,
+      "right": 157.168,
+      "top": 1155.597949
+    },
+    "Savannah_elephant_01": {
+      "left": 183.2975,
+      "bottom": 1006.860776,
+      "right": 282.7025,
+      "top": 1103.093276
+    },
+    "IceBay_penguin_left_01": {
+      "left": 441.1345,
+      "bottom": 997.256415,
+      "right": 480.8655,
+      "top": 1046.771915
+    },
+    "IceBay_penguin_right_01": {
+      "left": 472.2655,
+      "bottom": 1007.473415,
+      "right": 512.7345,
+      "top": 1056.998415
+    },
+    "IceBay_penguin_low_01": {
+      "left": 539.8885,
+      "bottom": 958.035275,
+      "right": 578.1115,
+      "top": 1007.976275
+    },
+    "IceBay_monkey_left_01": {
+      "left": 556.70575,
+      "bottom": 1071.129766,
+      "right": 603.29425,
+      "top": 1126.853266
+    },
+    "IceBay_monkey_right_01": {
+      "left": 606.85875,
+      "bottom": 1071.15758,
+      "right": 653.14125,
+      "top": 1126.81758
+    },
+    "PetVillage_rabbit_01": {
+      "left": 80.9215,
+      "bottom": 407.382761,
+      "right": 125.0785,
+      "top": 473.618261
+    },
+    "PetVillage_duck_01": {
+      "left": 135.205,
+      "bottom": 435.260051,
+      "right": 189.795,
+      "top": 503.755051
+    },
+    "PetVillage_sheep_01": {
+      "left": 183.37,
+      "bottom": 384.128,
+      "right": 259.63,
+      "top": 462.848
+    },
+    "Flamingo_flamingo_top_01": {
+      "left": 520.61975,
+      "bottom": 422.455688,
+      "right": 572.88225,
+      "top": 498.768188
+    },
+    "Flamingo_flamingo_right_01": {
+      "left": 588.3445,
+      "bottom": 404.032378,
+      "right": 638.5995,
+      "top": 470.019378
+    },
+    "Flamingo_flamingo_left_01": {
+      "left": 473.59,
+      "bottom": 343.512796,
+      "right": 527.41,
+      "top": 416.988796
+    },
+    "Flamingo_flamingo_low_01": {
+      "left": 504.6435,
+      "bottom": 295.035475,
+      "right": 561.7085,
+      "top": 361.190475
+    },
+    "SouthGate_balloon_left_01": {
+      "left": 257.052,
+      "bottom": 102.571592,
+      "right": 309.948,
+      "top": 193.051592
+    },
+    "SouthGate_balloon_right_01": {
+      "left": 408.552,
+      "bottom": 107.071592,
+      "right": 461.448,
+      "top": 197.551592
+    },
+    "Panda_sign_panda_01": {
+      "left": 300.436,
+      "bottom": 551.932976,
+      "right": 379.564,
+      "top": 628.036976
+    },
+    "Panda_sign_small_01": {
+      "left": 370.436,
+      "bottom": 549.432976,
+      "right": 449.564,
+      "top": 625.536976
+    },
+    "Panda_bench_01": {
+      "left": 321.5,
+      "bottom": 494.4976,
+      "right": 408.5,
+      "top": 550.4976
+    },
+    "Panda_fountain_01": {
+      "left": 291.6635,
+      "bottom": 513.552484,
+      "right": 328.3365,
+      "top": 551.434484
+    },
+    "Panda_lamp_01": {
+      "left": 494.5625,
+      "bottom": 553.997,
+      "right": 535.4375,
+      "top": 640.997
+    },
+    "Savannah_feeder_01": {
+      "left": 137.5155,
+      "bottom": 1038.975548,
+      "right": 192.4845,
+      "top": 1121.052548
+    },
+    "Savannah_hay_01": {
+      "left": 105.484,
+      "bottom": 972.162132,
+      "right": 169.516,
+      "top": 1022.854132
+    },
+    "Savannah_basin_01": {
+      "left": 59.397,
+      "bottom": 995.167305,
+      "right": 105.603,
+      "top": 1032.313305
+    },
+    "Savannah_sign_giraffe_01": {
+      "left": 82.28475,
+      "bottom": 902.190197,
+      "right": 160.71525,
+      "top": 981.822697
+    },
+    "Savannah_sign_elephant_01": {
+      "left": 165.6345,
+      "bottom": 902.190197,
+      "right": 244.3655,
+      "top": 981.822697
+    },
+    "Savannah_bench_01": {
+      "left": 115.9375,
+      "bottom": 865.639073,
+      "right": 184.0625,
+      "top": 904.334074
+    },
+    "Savannah_lamp_upper_01": {
+      "left": 300.925,
+      "bottom": 1074.3972,
+      "right": 339.075,
+      "top": 1155.5972
+    },
+    "Savannah_lamp_lower_01": {
+      "left": 295.925,
+      "bottom": 994.3972,
+      "right": 334.075,
+      "top": 1075.5972
+    },
+    "IceBay_sign_01": {
+      "left": 501.537,
+      "bottom": 886.342756,
+      "right": 614.463,
+      "top": 957.639256
+    },
+    "IceBay_duck_01": {
+      "left": 470.9935,
+      "bottom": 944.1638,
+      "right": 497.0065,
+      "top": 969.8433
+    },
+    "IceBay_bench_01": {
+      "left": 545.63475,
+      "bottom": 851.249366,
+      "right": 624.36525,
+      "top": 894.748866
+    },
+    "PetVillage_hay_01": {
+      "left": 66.5,
+      "bottom": 344.4992,
+      "right": 140.5,
+      "top": 417.4992
+    },
+    "PetVillage_bush_01": {
+      "left": 131.0595,
+      "bottom": 379.406572,
+      "right": 186.9405,
+      "top": 440.609572
+    },
+    "PetVillage_sign_01": {
+      "left": 101.5695,
+      "bottom": 311.784822,
+      "right": 248.4305,
+      "top": 385.728822
+    },
+    "PetVillage_bench_01": {
+      "left": 133.9275,
+      "bottom": 267.587509,
+      "right": 206.0725,
+      "top": 312.409509
+    },
+    "PetVillage_lamp_01": {
+      "left": 231.5625,
+      "bottom": 461.997,
+      "right": 272.4375,
+      "top": 548.997
+    },
+    "PetVillage_basin_01": {
+      "left": 179.98,
+      "bottom": 448.7319,
+      "right": 256.48,
+      "top": 493.2319
+    },
+    "Flamingo_flamingo_sign_01": {
+      "left": 441.947,
+      "bottom": 269.649312,
+      "right": 512.283,
+      "top": 337.297312
+    },
+    "Flamingo_umbrella_01": {
+      "left": 556.872,
+      "bottom": 238.590694,
+      "right": 643.332,
+      "top": 336.050694
+    },
+    "Flamingo_table_01": {
+      "left": 565.447,
+      "bottom": 226.239781,
+      "right": 617.359,
+      "top": 281.511781
+    },
+    "Flamingo_chair_left_01": {
+      "left": 551.635,
+      "bottom": 235.170891,
+      "right": 583.891,
+      "top": 289.938891
+    },
+    "Flamingo_chair_right_01": {
+      "left": 604.175,
+      "bottom": 234.645891,
+      "right": 636.431,
+      "top": 289.413891
+    },
+    "Flamingo_bench_01": {
+      "left": 404.741,
+      "bottom": 250.06022,
+      "right": 454.141,
+      "top": 289.32022
+    },
+    "Flamingo_lamp_01": {
+      "left": 628.613,
+      "bottom": 535.130056,
+      "right": 668.725,
+      "top": 620.506056
+    },
+    "Kiosk_popcorn_01": {
+      "left": 147.66,
+      "bottom": 702.977756,
+      "right": 200.34,
+      "top": 771.022756
+    },
+    "Kiosk_chair_left_01": {
+      "left": 58.7975,
+      "bottom": 632.776545,
+      "right": 115.2025,
+      "top": 697.739545
+    },
+    "Kiosk_chair_right_01": {
+      "left": 101.384,
+      "bottom": 632.727059,
+      "right": 158.616,
+      "top": 697.799059
+    },
+    "Kiosk_sign_01": {
+      "left": 150.768,
+      "bottom": 659.189967,
+      "right": 197.232,
+      "top": 715.817967
+    },
+    "Kiosk_lamp_01": {
+      "left": 157.835,
+      "bottom": 554.07704,
+      "right": 198.165,
+      "top": 639.91704
+    },
+    "Souvenir_balloon_01": {
+      "left": 646.914,
+      "bottom": 691.545165,
+      "right": 713.086,
+      "top": 796.395165
+    },
+    "Souvenir_sign_01": {
+      "left": 614.516,
+      "bottom": 646.541018,
+      "right": 683.484,
+      "top": 722.965018
+    },
+    "MainRoad_bench_left_01": {
+      "left": 220.69025,
+      "bottom": 1140.827716,
+      "right": 281.30975,
+      "top": 1180.886216
+    },
+    "MainRoad_bench_right_01": {
+      "left": 449.513,
+      "bottom": 1140.827716,
+      "right": 510.487,
+      "top": 1180.886216
+    },
+    "MainRoad_lamp_upper_01": {
+      "left": 392.67975,
+      "bottom": 1074.325164,
+      "right": 431.32025,
+      "top": 1156.569164
+    },
+    "MainRoad_lamp_lower_01": {
+      "left": 389.67975,
+      "bottom": 989.325164,
+      "right": 428.32025,
+      "top": 1071.569164
+    },
+    "SouthGate_visitor_ticket_blue_01": {
+      "left": 134.744,
+      "bottom": 52.575211,
+      "right": 173.256,
+      "top": 118.927211
+    },
+    "SouthGate_visitor_ticket_red_01": {
+      "left": 205.012,
+      "bottom": 52.575072,
+      "right": 243.988,
+      "top": 117.535072
+    },
+    "SouthGate_visitor_arch_pair_01": {
+      "left": 314.464,
+      "bottom": 60.578134,
+      "right": 371.536,
+      "top": 134.354134
+    },
+    "SouthGate_guard_arch_01": {
+      "left": 376.352,
+      "bottom": 60.574794,
+      "right": 417.648,
+      "top": 129.710794
+    },
+    "SouthGate_visitor_info_family_01": {
+      "left": 476.48,
+      "bottom": 60.57897,
+      "right": 527.52,
+      "top": 128.78697
+    },
+    "Panda_person_sit_01": {
+      "left": 340.65925,
+      "bottom": 508.171459,
+      "right": 379.34075,
+      "top": 556.861459
+    },
+    "Panda_visitor_front_01": {
+      "left": 343.31,
+      "bottom": 434.559116,
+      "right": 396.69,
+      "top": 495.419116
+    },
+    "Panda_visitor_cap_01": {
+      "left": 412.902,
+      "bottom": 874.688,
+      "right": 447.098,
+      "top": 927.808
+    },
+    "Savannah_visitor_back_01": {
+      "left": 333.62,
+      "bottom": 1063.758635,
+      "right": 366.38,
+      "top": 1118.748635
+    },
+    "Savannah_visitor_blue_01": {
+      "left": 340.165,
+      "bottom": 1004.480414,
+      "right": 369.835,
+      "top": 1055.540414
+    },
+    "Savannah_visitor_pair_01": {
+      "left": 322.875,
+      "bottom": 913.9979,
+      "right": 367.125,
+      "top": 970.9979
+    },
+    "Savannah_visitor_bald_01": {
+      "left": 258.743,
+      "bottom": 854.13644,
+      "right": 301.257,
+      "top": 908.37844
+    },
+    "PetVillage_person_sit_01": {
+      "left": 141.7895,
+      "bottom": 273.221628,
+      "right": 178.2105,
+      "top": 322.771128
+    },
+    "Kiosk_visitor_pair_01": {
+      "left": 102.65625,
+      "bottom": 681.002,
+      "right": 142.34375,
+      "top": 733.502
+    },
+    "Souvenir_visitor_pair_01": {
+      "left": 595.142,
+      "bottom": 611.54167,
+      "right": 653.858,
+      "top": 681.44167
+    },
+    "MainRoad_visitor_pair_01": {
+      "left": 334.9945,
+      "bottom": 345.828709,
+      "right": 391.0055,
+      "top": 413.183709
+    }
+  }
+}

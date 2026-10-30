@@ -1,0 +1,19 @@
+feat: 首页 HUD 补完 + 10 个弹窗骨架
+
+首页
+- 新增 HomeHud.ts：顶部体力、建设进度、隐藏 UI 按钮，底部剩余素材
+- 隐藏 UI 后留半透明恢复按钮在原位，短按恢复
+- 数值先给占位（100/100、0/86、素材 0），待数据层接上替换
+- ScZooHome 在字体预载完成后才挂按钮，避免 Label 退回系统字体
+
+弹窗
+- 新增 ZooLayer 基类：统一建标题条、关闭钮、内容根 body，子类只填内容
+- 生成 10 个弹窗骨架：LyTaskDetail / LyEnergy / LyCooldown / LyBubble /
+  LyShop / LyBag / LyReward / LySignIn / LyAdReward / LySetting
+- 面板统一 620x800，挂 Skin/panel.png 底图
+- 签到、广告累计、设置三个按钮接到对应弹窗
+
+其他
+- 新增 ZooFont.ts：全工程共用一份字体加载，载不到退回系统字体
+- 新增 tools/create-ly-prefab.mjs，从 FFrame 复制并改成走 db://gmajor
+- 策划案补 16-弹窗骨架.md，记录统一约定与新建流程

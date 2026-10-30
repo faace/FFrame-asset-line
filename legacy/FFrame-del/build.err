@@ -1,0 +1,20 @@
+[109732:1028/205551.039:ERROR:cache_util_win.cc(20)] Unable to move the cache: 拒绝访问。 (0x5)
+[109732:1028/205551.072:ERROR:disk_cache.cc(208)] Unable to create cache
+[109732:1028/205551.072:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[109732:1028/205551.045:ERROR:cache_util_win.cc(20)] Unable to move the cache: 拒绝访问。 (0x5)
+[109732:1028/205551.048:ERROR:cache_util_win.cc(20)] Unable to move the cache: 拒绝访问。 (0x5)
+[109732:1028/205551.082:ERROR:disk_cache.cc(208)] Unable to create cache
+[109732:1028/205551.082:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[109732:1028/205551.083:ERROR:disk_cache.cc(208)] Unable to create cache
+[109732:1028/205551.083:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+构建参数 mainBundleCompressionType (merge_dep) 校验失败,  compression type(undefined) is invalid for this platform!, 将会使用默认值 "merge_dep"
+构建参数 debug ("true") 校验失败, typeof debug should be boolean but get true, 将会使用默认值 true
+[109732:1028/205616.298:ERROR:cache_util_win.cc(20)] Unable to move the cache: 拒绝访问。 (0x5)
+[109732:1028/205616.301:ERROR:cache_util_win.cc(20)] Unable to move the cache: 拒绝访问。 (0x5)
+[109732:1028/205616.304:ERROR:cache_util_win.cc(20)] Unable to move the cache: 拒绝访问。 (0x5)
+[109732:1028/205616.312:ERROR:disk_cache.cc(208)] Unable to create cache
+[109732:1028/205616.326:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[109732:1028/205616.327:ERROR:disk_cache.cc(208)] Unable to create cache
+[109732:1028/205616.327:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[109732:1028/205616.328:ERROR:disk_cache.cc(208)] Unable to create cache
+[109732:1028/205616.329:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
