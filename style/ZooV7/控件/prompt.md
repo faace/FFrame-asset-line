@@ -1,6 +1,6 @@
 # ZooV7 控件图
 
-当前采用 `history/v8`。成品是同目录的 `ctrl.png` 和 `ctrl.json`。
+当前采用 `history/v8`。成品是同目录的 `ctrl.png` 和 `ctrl.json`。每个槽做什么见 `说明.md`。
 
 ## 引用
 

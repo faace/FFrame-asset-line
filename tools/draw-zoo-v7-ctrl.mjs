@@ -31,6 +31,10 @@ const SAND_DK = [176, 126, 68];
 const BLUE = [72, 176, 222];
 const BLUE_HI = [142, 214, 242];
 const BLUE_DK = [36, 124, 176];
+const RED = [214, 70, 66];
+const RED_HI = [240, 122, 106];
+const RED_DK = [162, 42, 46];
+const STROKE = 3;
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const outDir = path.join(root, 'style', 'ZooV7', '控件');
@@ -140,7 +144,7 @@ function scaleNearest(art, aw, ah) {
 }
 
 function button(face, hi, shade) {
-    return plate(380, 120, 16, 3, OLIVE, face, hi, shade, false);
+    return plate(380, 120, 16, STROKE, OLIVE, face, hi, shade, false);
 }
 
 function buttonSecondary() {
@@ -150,7 +154,7 @@ function buttonSecondary() {
             const sd = sdRoundRect(x + 0.5, y + 0.5, 0, 0, 380, 120, 16);
             if (sd >= 0) continue;
             const depth = -sd;
-            if (depth >= 3 && depth < 8) put(data, 380, x, y, depth < 4 ? OAK_DK : OAK);
+            if (depth >= STROKE && depth < 8) put(data, 380, x, y, depth < STROKE + 1 ? OAK_DK : OAK);
         }
     }
     return data;
@@ -159,7 +163,7 @@ function buttonSecondary() {
 function titleBar() {
     const w = 320;
     const h = 85;
-    const data = plate(w, h, 16, 3, OLIVE, OAK, OAK_HI, OAK_DK, false);
+    const data = plate(w, h, 16, STROKE, OLIVE, OAK, OAK_HI, OAK_DK, false);
     disc(data, w, h, 24, 42, 6, OLIVE_DK);
     disc(data, w, h, 24, 41, 3, OAK_HI);
     disc(data, w, h, w - 24, 42, 6, OLIVE_DK);
@@ -168,15 +172,15 @@ function titleBar() {
 }
 
 function panelPlate() {
-    return frame(176, 168, 16, [[3, OLIVE], [9, OAK], [2, CREAM_DK], [99, CREAM]]);
+    return frame(176, 168, 16, [[STROKE, OLIVE], [9, OAK], [2, CREAM_DK], [99, CREAM]]);
 }
 
 function slotPlate() {
-    return frame(88, 88, 12, [[3, OLIVE], [7, OAK], [2, CREAM_DK], [99, CREAM]]);
+    return frame(88, 88, 12, [[STROKE, OLIVE], [7, OAK], [2, CREAM_DK], [99, CREAM]]);
 }
 
 function tabPlate(face, shade) {
-    return plate(154, 72, 10, 2, OLIVE, face, null, shade, true);
+    return plate(154, 72, 10, STROKE, OLIVE, face, null, shade, true);
 }
 
 function selectFrame() {
@@ -186,8 +190,8 @@ function selectFrame() {
     for (let y = 0; y < h; y++) {
         for (let x = 0; x < w; x++) {
             const depth = -sdRoundRect(x + 0.5, y + 0.5, 0, 0, w, h, 12);
-            if (depth <= 0 || depth >= 6) continue;
-            put(data, w, x, y, depth < 3 ? GREEN_HI : GREEN_DK);
+            if (depth <= 0 || depth >= STROKE) continue;
+            put(data, w, x, y, depth < STROKE - 1 ? GREEN : GREEN_DK);
         }
     }
     return data;
@@ -210,91 +214,132 @@ function capsule(w, h, stroke, face, hi, topInset) {
     return data;
 }
 
-function sliderTrack() {
-    return plate(112, 28, 8, 2, OLIVE, OAK_DK, null, null, false);
+function thinBar(w, h, face, hi) {
+    return plate(w, h, h / 2, STROKE, OLIVE, face, hi, null, false);
 }
 
 function sliderThumb() {
     const data = blank(44, 44);
-    disc(data, 44, 44, 22, 22, 20, OLIVE);
+    disc(data, 44, 44, 22, 22, 19, OLIVE);
     disc(data, 44, 44, 22, 22, 16, CREAM);
     disc(data, 44, 44, 22, 16, 7, CREAM_HI);
     return data;
 }
 
 function stepperPlate() {
-    return frame(140, 72, 12, [[3, OLIVE], [7, OAK], [2, CREAM_DK], [99, CREAM]]);
+    return frame(140, 72, 12, [[STROKE, OLIVE], [7, OAK], [2, CREAM_DK], [99, CREAM]]);
 }
 
-function blitRows(data, w, rows, scale, rgb, ox, oy) {
-    rows.forEach((row, y) => {
-        [...row].forEach((ch, x) => {
-            if (ch !== '#') return;
-            for (let dy = 0; dy < scale; dy++) {
-                for (let dx = 0; dx < scale; dx++) put(data, w, ox + x * scale + dx, oy + y * scale + dy, rgb);
+function barTrack() {
+    const w = 320;
+    const h = 52;
+    return frame(w, h, h / 2, [[STROKE, OLIVE], [6, OAK], [2, CREAM_DK], [99, CREAM]]);
+}
+
+function progressBar() {
+    return thinBar(176, 18, GREEN, GREEN_HI);
+}
+
+function sdSegment(px, py, ax, ay, bx, by) {
+    const abx = bx - ax;
+    const aby = by - ay;
+    const apx = px - ax;
+    const apy = py - ay;
+    const ab2 = abx * abx + aby * aby || 1;
+    let t = (apx * abx + apy * aby) / ab2;
+    if (t < 0) t = 0;
+    else if (t > 1) t = 1;
+    return Math.hypot(apx - abx * t, apy - aby * t);
+}
+
+function sdCapsule(px, py, ax, ay, bx, by, r) {
+    return sdSegment(px, py, ax, ay, bx, by) - r;
+}
+
+function sdPoly(px, py, pts, r) {
+    let d = Infinity;
+    for (let i = 0; i < pts.length - 1; i++) {
+        const s = sdSegment(px, py, pts[i][0], pts[i][1], pts[i + 1][0], pts[i + 1][1]);
+        if (s < d) d = s;
+    }
+    return d - r;
+}
+
+/** 圆角笔画。外圈是描边，内侧一像素压暗，朝上的边加高光、朝下的边加暗面。 */
+function paintIcon(dist, stroke, face, hi, shade) {
+    const w = 88;
+    const h = 88;
+    const strokeW = STROKE;
+    const data = blank(w, h);
+    for (let y = 0; y < h; y++) {
+        for (let x = 0; x < w; x++) {
+            const px = x + 0.5;
+            const py = y + 0.5;
+            const d = dist(px, py);
+            if (d >= 0) continue;
+            const depth = -d;
+            let rgb = stroke;
+            if (depth >= strokeW) {
+                rgb = face;
+                const e = 0.8;
+                const gy = dist(px, py + e) - dist(px, py - e);
+                const gx = dist(px + e, py) - dist(px - e, py);
+                const len = Math.hypot(gx, gy) || 1;
+                const ny = gy / len;
+                if (hi && ny < -0.3 && depth < strokeW + 2.4) rgb = hi;
+                else if (shade && ny > 0.4 && depth < strokeW + 3.2) rgb = shade;
+                if (depth < strokeW + 1) rgb = dark(rgb);
             }
-        });
-    });
-}
-
-function iconFrom(rows, rgb) {
-    const data = blank(88, 88);
-    const scale = 8;
-    const gw = rows[0].length * scale;
-    const gh = rows.length * scale;
-    blitRows(data, 88, rows, scale, rgb, Math.floor((88 - gw) / 2), Math.floor((88 - gh) / 2));
+            put(data, w, x, y, rgb);
+        }
+    }
     return data;
 }
 
 function iconClose() {
-    return iconFrom([
-        '##    ##',
-        ' ##  ## ',
-        '  ####  ',
-        '   ##   ',
-        '  ####  ',
-        ' ##  ## ',
-        '##    ##',
-    ], GREEN_DK);
+    const r = 12;
+    const p = 18;
+    const q = 70;
+    return paintIcon((px, py) => Math.min(
+        sdCapsule(px, py, p, p, q, q, r),
+        sdCapsule(px, py, q, p, p, q, r),
+    ), OLIVE_DK, GREEN_DK, GREEN, OLIVE);
 }
 
 function iconHelp() {
-    return iconFrom([
-        '  ####  ',
-        ' ##  ## ',
-        ' #   ## ',
-        '    ##  ',
-        '   ##   ',
-        '   ##   ',
-        '        ',
-        '   ##   ',
-    ], OLIVE_DK);
+    const cx = 44;
+    const cy = 29;
+    const rad = 16;
+    const pts = [];
+    const a0 = 160 * Math.PI / 180;
+    const a1 = 390 * Math.PI / 180;
+    for (let i = 0; i <= 24; i++) {
+        const a = a0 + (a1 - a0) * (i / 24);
+        pts.push([cx + Math.cos(a) * rad, cy + Math.sin(a) * rad]);
+    }
+    pts.push([cx + 6, 44]);
+    pts.push([cx, 52]);
+    pts.push([cx, 56]);
+    const thick = 8;
+    return paintIcon((px, py) => Math.min(
+        sdPoly(px, py, pts, thick),
+        Math.hypot(px - cx, py - 76) - 7.5,
+    ), OLIVE, OAK, OAK_HI, OAK_DK);
 }
 
 function iconPlus() {
-    return iconFrom([
-        '   ##   ',
-        '   ##   ',
-        '   ##   ',
-        '########',
-        '########',
-        '   ##   ',
-        '   ##   ',
-        '   ##   ',
-    ], GREEN);
+    const r = 13;
+    const a = 18;
+    const b = 70;
+    const c = 44;
+    return paintIcon((px, py) => Math.min(
+        sdCapsule(px, py, a, c, b, c, r),
+        sdCapsule(px, py, c, a, c, b, r),
+    ), OLIVE, GREEN, GREEN_HI, GREEN_DK);
 }
 
 function iconMinus() {
-    return iconFrom([
-        '        ',
-        '        ',
-        '        ',
-        '########',
-        '########',
-        '        ',
-        '        ',
-        '        ',
-    ], OLIVE_DK);
+    return paintIcon((px, py) => sdCapsule(px, py, 20, 44, 68, 44, 14), OLIVE, RED, RED_HI, RED_DK);
 }
 
 function crc32(buf) {
@@ -376,11 +421,11 @@ function buildPieces() {
         piece('tab_normal', tabPlate(CREAM, CREAM_DK), 154, 72, [10, 10, 10, 2], true, 824, 602),
         piece('tab_selected', tabPlate(GREEN, GREEN_DK), 154, 72, [10, 10, 10, 2], true, 1164, 602),
         piece('stepper_plate', stepperPlate(), 140, 72, b, true, 824, 778),
-        piece('bar_bg', capsule(160, 64, 3, CREAM, CREAM_HI, 8), 160, 64, [32, 32, 8, 8], true, 1136, 778),
-        piece('bar_fill', capsule(100, 40, 2, GREEN, GREEN_HI, 4), 100, 40, [20, 20, 4, 4], true, 824, 954),
-        piece('progress_fill', capsule(120, 40, 2, GREEN, GREEN_HI, 4), 120, 40, [20, 20, 4, 4], true, 1056, 954),
-        piece('slider_track', sliderTrack(), 112, 28, [14, 14, 8, 8], true, 824, 1082),
-        piece('slider_thumb', sliderThumb(), 44, 44, [0, 0, 0, 0], false, 1080, 1066),
+        piece('bar_bg', barTrack(), 320, 52, [26, 26, 16, 16], true, 1136, 778),
+        piece('bar_fill', capsule(100, 40, STROKE, GREEN, GREEN_HI, 4), 100, 40, [20, 20, 4, 4], true, 824, 954),
+        piece('progress_fill', progressBar(), 176, 18, [10, 10, 6, 6], true, 1328, 1092),
+        piece('slider_track', thinBar(176, 18, OAK, OAK_HI), 176, 18, [10, 10, 6, 6], true, 824, 1092),
+        piece('slider_thumb', sliderThumb(), 44, 44, [0, 0, 0, 0], false, 1208, 1066),
         piece('icon_close', iconClose(), 88, 88, [0, 0, 0, 0], false, 824, 1186),
         piece('icon_help', iconHelp(), 88, 88, [0, 0, 0, 0], false, 1032, 1186),
         piece('icon_plus', iconPlus(), 88, 88, [0, 0, 0, 0], false, 1240, 1186),
@@ -485,6 +530,8 @@ function writeDocs(json) {
         '# v8',
         '',
         '采用。按已确认的 2 倍尺寸用脚本重画，硬边、空白 alpha 为 0。',
+        '描边统一为显示尺寸 3 像素。圆钮两侧是一对细条：浅橡木是背景，草地绿是前景。',
+        '叉、问号、加号、减号是圆角描边。问号用浅橡木，叉用按钮的深绿。',
         '风格句用 `style/ZooV7/style.md`。母版只作对照：`style/ZooV7/控件/history/v7/ui-sheet-v7.png`。',
         '没有调用绘图接口，也没有把 v7 的 1024 图放大。',
         '',
