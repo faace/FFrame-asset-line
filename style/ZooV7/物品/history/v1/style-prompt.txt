@@ -1,0 +1,9 @@
+Same pixel craft as a bright cozy zoo map: lawn green, sand-path cream, pond blue, sunflower yellow, and the pale oak of wooden animal signs and fences. Chubby rounded shapes, visible medium pixel grain, crisp edges, clean color blocks, thin dark-olive outlines. High-key and saturated, not washed out. Not glossy plastic, not thick chocolate frames, not 8-bit, not gray, not photoreal.
+
+Flat front view, zero perspective, orthographic, the object face-on. Not top-down, not isometric.
+
+Even soft light. One-pixel darker rim inside the object. No cast shadows, no glossy highlights.
+
+One single game icon. Object only. No plate, no frame, no text, no digits, no watermark, no ground, no shadow plate. Centered, with a wide empty margin. Fully transparent background, real alpha, every empty pixel alpha 0.
+
+The reference image is a style sample only. Do not copy its layout, buttons, or extra widgets. Draw only the one object named in the prompt.
