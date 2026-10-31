@@ -1,0 +1,17 @@
+{
+    "date": "2026-10-31",
+    "sheet": [2048, 2048],
+    "cell": 128,
+    "display": [64, 64],
+    "source": "history/v1/raw",
+    "standIn": {
+        "icon_check": "icon_star",
+        "icon_home": "icon_shop",
+        "icon_pause": "icon_play",
+        "icon_bag": "icon_gift",
+        "icon_map": "icon_mail",
+        "icon_wood": "icon_key",
+        "icon_leaf": "icon_heart",
+        "icon_meat": "icon_trophy"
+    }
+}
