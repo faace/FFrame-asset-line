@@ -1,0 +1,11 @@
+{
+    "method": "script",
+    "script": "tools/draw-zoo-v7-ctrl.mjs",
+    "scale": 2,
+    "sheet": [
+        2048,
+        2048
+    ],
+    "gap": 32,
+    "note": "显示尺寸上画硬边，最近邻放大 2 倍。不是把 v7 的 1024 图放大。"
+}
