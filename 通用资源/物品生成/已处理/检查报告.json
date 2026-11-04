@@ -1,0 +1,518 @@
+{
+  "count": 28,
+  "sourceSize": [
+    2048,
+    2048
+  ],
+  "runtimeSize": [
+    1024,
+    1024
+  ],
+  "metaPreserved": true,
+  "items": [
+    {
+      "name": "icon_gold",
+      "sourceBounds": {
+        "x": 47,
+        "y": 7,
+        "w": 179,
+        "h": 186
+      },
+      "sheet": "02",
+      "row": 4,
+      "col": 1,
+      "rect": [
+        32,
+        32,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_diamond",
+      "sourceBounds": {
+        "x": 32,
+        "y": 59,
+        "w": 206,
+        "h": 173
+      },
+      "sheet": "01",
+      "row": 1,
+      "col": 2,
+      "rect": [
+        192,
+        32,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_energy",
+      "sourceBounds": {
+        "x": 52,
+        "y": 49,
+        "w": 157,
+        "h": 192
+      },
+      "sheet": "01",
+      "row": 1,
+      "col": 3,
+      "rect": [
+        352,
+        32,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_ad",
+      "sourceBounds": {
+        "x": 58,
+        "y": 48,
+        "w": 162,
+        "h": 176
+      },
+      "sheet": "02",
+      "row": 1,
+      "col": 1,
+      "rect": [
+        512,
+        32,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_music",
+      "sourceBounds": {
+        "x": 42,
+        "y": 44,
+        "w": 182,
+        "h": 182
+      },
+      "sheet": "02",
+      "row": 1,
+      "col": 2,
+      "rect": [
+        672,
+        32,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_sfx",
+      "sourceBounds": {
+        "x": 27,
+        "y": 55,
+        "w": 222,
+        "h": 166
+      },
+      "sheet": "02",
+      "row": 1,
+      "col": 3,
+      "rect": [
+        832,
+        32,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_settings",
+      "sourceBounds": {
+        "x": 27,
+        "y": 37,
+        "w": 202,
+        "h": 198
+      },
+      "sheet": "02",
+      "row": 1,
+      "col": 4,
+      "rect": [
+        992,
+        32,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_play",
+      "sourceBounds": {
+        "x": 58,
+        "y": 30,
+        "w": 162,
+        "h": 182
+      },
+      "sheet": "02",
+      "row": 2,
+      "col": 1,
+      "rect": [
+        1152,
+        32,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_heart",
+      "sourceBounds": {
+        "x": 24,
+        "y": 66,
+        "w": 195,
+        "h": 168
+      },
+      "sheet": "01",
+      "row": 1,
+      "col": 4,
+      "rect": [
+        1312,
+        32,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_star",
+      "sourceBounds": {
+        "x": 40,
+        "y": 30,
+        "w": 203,
+        "h": 196
+      },
+      "sheet": "01",
+      "row": 2,
+      "col": 1,
+      "rect": [
+        1472,
+        32,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_chest",
+      "sourceBounds": {
+        "x": 36,
+        "y": 16,
+        "w": 200,
+        "h": 179
+      },
+      "sheet": "02",
+      "row": 4,
+      "col": 2,
+      "rect": [
+        1632,
+        32,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_gift",
+      "sourceBounds": {
+        "x": 31,
+        "y": 30,
+        "w": 191,
+        "h": 187
+      },
+      "sheet": "01",
+      "row": 2,
+      "col": 3,
+      "rect": [
+        1792,
+        32,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_key",
+      "sourceBounds": {
+        "x": 31,
+        "y": 30,
+        "w": 193,
+        "h": 202
+      },
+      "sheet": "01",
+      "row": 2,
+      "col": 4,
+      "rect": [
+        32,
+        192,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_ticket",
+      "sourceBounds": {
+        "x": 19,
+        "y": 7,
+        "w": 236,
+        "h": 186
+      },
+      "sheet": "02",
+      "row": 4,
+      "col": 3,
+      "rect": [
+        192,
+        192,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_clock",
+      "sourceBounds": {
+        "x": 39,
+        "y": 27,
+        "w": 196,
+        "h": 197
+      },
+      "sheet": "01",
+      "row": 3,
+      "col": 2,
+      "rect": [
+        352,
+        192,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_trophy",
+      "sourceBounds": {
+        "x": 23,
+        "y": 22,
+        "w": 211,
+        "h": 198
+      },
+      "sheet": "01",
+      "row": 3,
+      "col": 3,
+      "rect": [
+        512,
+        192,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_crown",
+      "sourceBounds": {
+        "x": 20,
+        "y": 27,
+        "w": 212,
+        "h": 174
+      },
+      "sheet": "01",
+      "row": 3,
+      "col": 4,
+      "rect": [
+        672,
+        192,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_lock",
+      "sourceBounds": {
+        "x": 52,
+        "y": 17,
+        "w": 164,
+        "h": 197
+      },
+      "sheet": "02",
+      "row": 2,
+      "col": 2,
+      "rect": [
+        832,
+        192,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_shop",
+      "sourceBounds": {
+        "x": 22,
+        "y": 27,
+        "w": 216,
+        "h": 184
+      },
+      "sheet": "02",
+      "row": 2,
+      "col": 3,
+      "rect": [
+        992,
+        192,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_mail",
+      "sourceBounds": {
+        "x": 27,
+        "y": 46,
+        "w": 202,
+        "h": 156
+      },
+      "sheet": "02",
+      "row": 2,
+      "col": 4,
+      "rect": [
+        1152,
+        192,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_check",
+      "sourceBounds": {
+        "x": 38,
+        "y": 23,
+        "w": 200,
+        "h": 167
+      },
+      "sheet": "02",
+      "row": 3,
+      "col": 1,
+      "rect": [
+        1312,
+        192,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_home",
+      "sourceBounds": {
+        "x": 25,
+        "y": 7,
+        "w": 216,
+        "h": 196
+      },
+      "sheet": "02",
+      "row": 3,
+      "col": 2,
+      "rect": [
+        1472,
+        192,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_pause",
+      "sourceBounds": {
+        "x": 49,
+        "y": 27,
+        "w": 165,
+        "h": 166
+      },
+      "sheet": "02",
+      "row": 3,
+      "col": 3,
+      "rect": [
+        1632,
+        192,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_bag",
+      "sourceBounds": {
+        "x": 40,
+        "y": 8,
+        "w": 207,
+        "h": 200
+      },
+      "sheet": "01",
+      "row": 4,
+      "col": 1,
+      "rect": [
+        1792,
+        192,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_map",
+      "sourceBounds": {
+        "x": 27,
+        "y": 19,
+        "w": 200,
+        "h": 178
+      },
+      "sheet": "02",
+      "row": 3,
+      "col": 4,
+      "rect": [
+        32,
+        352,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_wood",
+      "sourceBounds": {
+        "x": 32,
+        "y": 32,
+        "w": 205,
+        "h": 170
+      },
+      "sheet": "01",
+      "row": 4,
+      "col": 2,
+      "rect": [
+        192,
+        352,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_leaf",
+      "sourceBounds": {
+        "x": 39,
+        "y": 26,
+        "w": 180,
+        "h": 182
+      },
+      "sheet": "01",
+      "row": 4,
+      "col": 3,
+      "rect": [
+        352,
+        352,
+        128,
+        128
+      ]
+    },
+    {
+      "name": "icon_meat",
+      "sourceBounds": {
+        "x": 27,
+        "y": 13,
+        "w": 201,
+        "h": 180
+      },
+      "sheet": "02",
+      "row": 4,
+      "col": 4,
+      "rect": [
+        512,
+        352,
+        128,
+        128
+      ]
+    }
+  ]
+}

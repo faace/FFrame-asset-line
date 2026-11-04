@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>动物园拼图预览</title>
+<style>
+  :root {
+    --ink: #2a2118;
+    --paper: #f6f0e4;
+    --line: #e4d8c4;
+    --wood: #c9854a;
+    --wood-dark: #7a4a24;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    display: flex;
+    background: #243042;
+    color: var(--ink);
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  }
+  aside {
+    width: 320px;
+    flex: none;
+    background: var(--paper);
+    border-right: 1px solid #d9cbb6;
+    padding: 16px 16px 28px;
+    overflow: auto;
+  }
+  h1 { font-size: 18px; margin: 0 0 8px; }
+  .total {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 6px;
+  }
+  .total b { color: #9a3d16; }
+  p { margin: 0 0 10px; font-size: 13px; line-height: 1.55; }
+  .modes { display: flex; gap: 8px; margin: 12px 0; }
+  button {
+    flex: 1;
+    border: 1px solid var(--wood-dark);
+    background: #fff;
+    color: var(--ink);
+    border-radius: 8px;
+    padding: 8px 6px;
+    font: inherit;
+    cursor: pointer;
+  }
+  button.on { background: var(--wood); color: #fff; border-color: var(--wood); }
+  .now { font-size: 13px; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; margin-bottom: 12px; }
+  details { border-top: 1px solid var(--line); padding: 8px 0; }
+  summary { cursor: pointer; font-size: 14px; }
+  ul { margin: 6px 0 0; padding-left: 18px; font-size: 12px; line-height: 1.45; }
+  li.miss { color: #9a3d16; }
+  li.est { color: #6a5420; }
+  main { flex: 1; overflow: auto; padding: 16px; }
+  #sizer { position: relative; transform-origin: top left; }
+  #stage { position: relative; width: 1440px; height: 2560px; }
+  #stage img.bg { position: absolute; left: 0; top: 0; width: 1440px; height: 2560px; }
+  .piece, .board {
+    position: absolute;
+    transform-origin: center center;
+  }
+  .piece { image-rendering: auto; }
+  .piece.flip { transform: scaleX(-1); }
+  .board { width: 132px; height: 168px; z-index: 80000; pointer-events: none; }
+  .wood {
+    height: 132px;
+    background: linear-gradient(#f0d7a4, #e2b56a);
+    border: 6px solid #8a5324;
+    border-radius: 8px;
+    box-shadow: 0 6px 0 rgba(90, 50, 20, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6a3414;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 1px;
+  }
+  .cap {
+    margin-top: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0 1px 2px #000;
+  }
+  body.full .board { display: none; }
+  body.open .piece { display: none; }
+</style>
+</head>
+<body class="open">
+<aside>
+  <h1>动物园拼图预览</h1>
+  <p class="total">一共要完成 <b id="total"></b> 个元素</p>
+  <p>开场背景是 1440×2560。贴纸按效果图上的位置贴，宽和高用同一个倍数，不拉扁、不拉高。</p>
+  <div class="modes">
+    <button id="btn-open" class="on" type="button">开场 · 施工中</button>
+    <button id="btn-full" type="button">完整</button>
+  </div>
+  <div class="now" id="now"></div>
+  <p>八块施工地各放一张同样的施工牌。牌子还没画，这里是占位，八张一样大。主路不是施工地，开场不放牌子。</p>
+  <div id="zones"></div>
+</aside>
+<main>
+  <div id="sizer">
+    <div id="stage">
+      <img class="bg" alt="开场背景" src="./资源生成/开场背景/开场背景.v01.png">
+    </div>
+  </div>
+</main>
+<script>
+const DATA = {"items": [{"zone": "南门", "name": "问讯亭", "file": "info_booth_01.png", "src": "./资源生成/南门/v2-按尺子/assets_png/info_booth_01.png", "kind": "房子", "flip": false, "estimated": false, "placed": true, "x": 920.71, "y": 2126.34, "w": 190.58, "h": 204.32, "z": 3316, "scale": 0.9162}, {"zone": "南门", "name": "售票亭", "file": "ticket_booth_01.png", "src": "./资源生成/南门/v2-按尺子/assets_png/ticket_booth_01.png", "kind": "房子", "flip": false, "estimated": false, "placed": true, "x": 349.78, "y": 2132.89, "w": 196.44, "h": 200.22, "z": 3318, "scale": 0.9444}, {"zone": "南门", "name": "大门", "file": "gate_01.png", "src": "./资源生成/南门/v2-按尺子/assets_png/gate_01.png", "kind": "房子", "flip": false, "estimated": false, "placed": true, "x": 527.17, "y": 2066.25, "w": 393.65, "h": 279.49, "z": 3330, "scale": 0.9841}, {"zone": "南门", "name": "气球右", "file": "balloon_right_01.png", "src": "./资源生成/南门/v2-按尺子/assets_png/balloon_right_01.png", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 820.34, "y": 2175.06, "w": 99.31, "h": 169.88, "z": 3331, "scale": 0.8712}, {"zone": "南门", "name": "气球左", "file": "balloon_left_01.png", "src": "./资源生成/南门/v2-按尺子/assets_png/balloon_left_01.png", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 514.55, "y": 2175.28, "w": 104.91, "h": 179.45, "z": 3340, "scale": 0.9202}, {"zone": "南门", "name": "拱门前守卫", "file": "guard_arch_01.png", "src": "./资源生成/南门/v2-按尺子/assets_png/guard_arch_01.png", "kind": "人", "flip": true, "estimated": false, "placed": true, "x": 753.68, "y": 2303.5, "w": 80.63, "h": 134.99, "z": 3424, "scale": 0.906}, {"zone": "南门", "name": "拱门前母女", "file": "visitor_arch_pair_01.png", "src": "./资源生成/南门/v2-按尺子/assets_png/visitor_arch_pair_01.png", "kind": "人", "flip": false, "estimated": false, "placed": true, "x": 627.41, "y": 2287.76, "w": 117.19, "h": 151.49, "z": 3424, "scale": 0.9528}, {"zone": "南门", "name": "问讯前一家", "file": "visitor_info_family_01.png", "src": "./资源生成/南门/v2-按尺子/assets_png/visitor_info_family_01.png", "kind": "人", "flip": true, "estimated": false, "placed": true, "x": 951.39, "y": 2298.7, "w": 105.22, "h": 140.61, "z": 3424, "scale": 0.9565}, {"zone": "南门", "name": "售票前红衣", "file": "visitor_ticket_red_01.png", "src": "./资源生成/南门/v2-按尺子/assets_png/visitor_ticket_red_01.png", "kind": "人", "flip": false, "estimated": false, "placed": true, "x": 411.67, "y": 2329.78, "w": 74.67, "h": 124.44, "z": 3440, "scale": 0.8889}, {"zone": "南门", "name": "售票前蓝衣", "file": "visitor_ticket_blue_01.png", "src": "./资源生成/南门/v2-按尺子/assets_png/visitor_ticket_blue_01.png", "kind": "人", "flip": false, "estimated": false, "placed": true, "x": 269.49, "y": 2322.15, "w": 77.02, "h": 132.69, "z": 3440, "scale": 0.9279}, {"zone": "熊猫馆", "name": "两圈围栏", "file": "habitat.png", "src": "./资源生成/熊猫馆/v2-按尺子/assets_png/habitat.png", "kind": "场地", "flip": false, "estimated": false, "placed": true, "x": 480, "y": 1072, "w": 624, "h": 448, "z": 20, "scale": 1}, {"zone": "熊猫馆", "name": "馆北红帽", "file": "visitor_cap_01.png", "src": "./资源生成/熊猫馆/v2-按尺子/assets_png/visitor_cap_01.png", "kind": "人", "flip": false, "estimated": false, "placed": true, "x": 825.8, "y": 704.38, "w": 68.4, "h": 106.25, "z": 1800, "scale": 0.6641}, {"zone": "熊猫馆", "name": "熊猫馆", "file": "house_01.png", "src": "./资源生成/熊猫馆/v2-按尺子/assets_png/house_01.png", "kind": "房子", "flip": false, "estimated": false, "placed": true, "x": 479.73, "y": 752.7, "w": 500.54, "h": 474.59, "z": 2210, "scale": 1.0811}, {"zone": "熊猫馆", "name": "左大熊猫", "file": "panda_left_01.png", "src": "./资源生成/熊猫馆/v2-按尺子/assets_png/panda_left_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 569.28, "y": 1146.32, "w": 121.45, "h": 157.37, "z": 2290, "scale": 0.8553}, {"zone": "熊猫馆", "name": "右大熊猫", "file": "panda_right_01.png", "src": "./资源生成/熊猫馆/v2-按尺子/assets_png/panda_right_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 791.5, "y": 1151.13, "w": 117.0, "h": 157.73, "z": 2295, "scale": 0.8667}, {"zone": "熊猫馆", "name": "小熊猫", "file": "panda_small_01.png", "src": "./资源生成/熊猫馆/v2-按尺子/assets_png/panda_small_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 676.97, "y": 1207.9, "w": 96.05, "h": 114.2, "z": 2310, "scale": 0.7563}, {"zone": "熊猫馆", "name": "右路灯", "file": "lamp_01.png", "src": "./资源生成/熊猫馆/v2-按尺子/assets_png/lamp_01.png?v=2", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 989.12, "y": 1278.0, "w": 81.75, "h": 174.0, "z": 2440, "scale": 0.75}, {"zone": "熊猫馆", "name": "大熊猫牌", "file": "sign_panda_01.png", "src": "./资源生成/熊猫馆/v2-按尺子/assets_png/sign_panda_01.png", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 600.84, "y": 1303.87, "w": 158.32, "h": 152.27, "z": 2440, "scale": 1.0084}, {"zone": "熊猫馆", "name": "小熊猫牌", "file": "sign_small_01.png", "src": "./资源生成/熊猫馆/v2-按尺子/assets_png/sign_small_01.png", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 740.84, "y": 1308.87, "w": 158.32, "h": 152.27, "z": 2445, "scale": 1.0084}, {"zone": "熊猫馆", "name": "小喷泉", "file": "fountain_01.png", "src": "./资源生成/熊猫馆/v2-按尺子/assets_png/fountain_01.png", "kind": "桌子", "flip": false, "estimated": false, "placed": true, "x": 583.31, "y": 1457.1, "w": 73.39, "h": 75.81, "z": 2520, "scale": 0.8065}, {"zone": "熊猫馆", "name": "坐着的人", "file": "person_sit_01.png", "src": "./资源生成/熊猫馆/v2-按尺子/assets_png/person_sit_01.png", "kind": "人", "flip": false, "estimated": false, "placed": true, "x": 681.35, "y": 1446.35, "w": 77.3, "h": 97.3, "z": 2535, "scale": 0.5405}, {"zone": "熊猫馆", "name": "长椅", "file": "bench_01.png", "src": "./资源生成/熊猫馆/v2-按尺子/assets_png/bench_01.png", "kind": "桌子", "flip": false, "estimated": false, "placed": true, "x": 643.0, "y": 1459.0, "w": 174.0, "h": 112.0, "z": 2555, "scale": 1.0}, {"zone": "熊猫馆", "name": "馆前母女", "file": "visitor_front_01.png", "src": "./资源生成/熊猫馆/v2-按尺子/assets_png/visitor_front_01.png", "kind": "人", "flip": false, "estimated": false, "placed": true, "x": 686.6, "y": 1569.12, "w": 106.8, "h": 121.77, "z": 2680, "scale": 0.6803}, {"zone": "非洲草原", "name": "木栏", "file": "habitat.png", "src": "./资源生成/非洲草原/v2-按尺子/assets_png/habitat.png", "kind": "场地", "flip": false, "estimated": false, "placed": true, "x": 64, "y": 256, "w": 640, "h": 512, "z": 20, "scale": 1}, {"zone": "非洲草原", "name": "上路灯", "file": "lamp_upper_01.png", "src": "./资源生成/非洲草原/v2-按尺子/assets_png/lamp_upper_01.png?v=2", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 601.85, "y": 248.8, "w": 76.29, "h": 162.39, "z": 1400, "scale": 0.6999}, {"zone": "非洲草原", "name": "上蓝衣", "file": "visitor_back_01.png", "src": "./资源生成/非洲草原/v2-按尺子/assets_png/visitor_back_01.png", "kind": "人", "flip": false, "estimated": false, "placed": true, "x": 667.25, "y": 322.52, "w": 65.5, "h": 109.95, "z": 1420, "scale": 0.7798}, {"zone": "非洲草原", "name": "喂食架", "file": "feeder_01.png", "src": "./资源生成/非洲草原/v2-按尺子/assets_png/feeder_01.png", "kind": "桌子", "flip": false, "estimated": false, "placed": true, "x": 275.05, "y": 317.96, "w": 109.89, "h": 164.09, "z": 1470, "scale": 0.7527}, {"zone": "非洲草原", "name": "长颈鹿", "file": "giraffe_01.png", "src": "./资源生成/非洲草原/v2-按尺子/assets_png/giraffe_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 125.63, "y": 248.73, "w": 188.73, "h": 272.54, "z": 1510, "scale": 0.7042}, {"zone": "非洲草原", "name": "大象", "file": "elephant_01.png", "src": "./资源生成/非洲草原/v2-按尺子/assets_png/elephant_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 366.54, "y": 353.71, "w": 198.92, "h": 192.57, "z": 1535, "scale": 0.7054}, {"zone": "非洲草原", "name": "中蓝衣", "file": "visitor_blue_01.png", "src": "./资源生成/非洲草原/v2-按尺子/assets_png/visitor_blue_01.png", "kind": "人", "flip": false, "estimated": false, "placed": true, "x": 680.34, "y": 448.97, "w": 59.31, "h": 102.07, "z": 1540, "scale": 0.6897}, {"zone": "非洲草原", "name": "下路灯", "file": "lamp_lower_01.png", "src": "./资源生成/非洲草原/v2-按尺子/assets_png/lamp_lower_01.png?v=2", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 591.85, "y": 408.8, "w": 76.29, "h": 162.39, "z": 1560, "scale": 0.6999}, {"zone": "非洲草原", "name": "小水盆", "file": "basin_01.png", "src": "./资源生成/非洲草原/v2-按尺子/assets_png/basin_01.png", "kind": "桌子", "flip": false, "estimated": false, "placed": true, "x": 118.76, "y": 495.33, "w": 92.47, "h": 74.34, "z": 1560, "scale": 0.6044}, {"zone": "非洲草原", "name": "草垛", "file": "hay_01.png", "src": "./资源生成/非洲草原/v2-按尺子/assets_png/hay_01.png", "kind": "桌子", "flip": false, "estimated": false, "placed": true, "x": 211.0, "y": 514.33, "w": 128.0, "h": 101.33, "z": 1605, "scale": 0.6667}, {"zone": "非洲草原", "name": "路上一大一小", "file": "visitor_pair_01.png", "src": "./资源生成/非洲草原/v2-按尺子/assets_png/visitor_pair_01.png", "kind": "人", "flip": false, "estimated": false, "placed": true, "x": 645.75, "y": 618.0, "w": 88.5, "h": 114.0, "z": 1720, "scale": 0.75}, {"zone": "非洲草原", "name": "大象牌", "file": "sign_elephant_01.png", "src": "./资源生成/非洲草原/v2-按尺子/assets_png/sign_elephant_01.png", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 331.29, "y": 596.39, "w": 157.42, "h": 159.23, "z": 1746, "scale": 0.6009}, {"zone": "非洲草原", "name": "长颈鹿牌", "file": "sign_giraffe_01.png", "src": "./资源生成/非洲草原/v2-按尺子/assets_png/sign_giraffe_01.png", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 164.59, "y": 596.39, "w": 156.82, "h": 159.23, "z": 1746, "scale": 0.6009}, {"zone": "非洲草原", "name": "长椅", "file": "bench_01.png", "src": "./资源生成/非洲草原/v2-按尺子/assets_png/bench_01.png", "kind": "桌子", "flip": false, "estimated": false, "placed": true, "x": 231.82, "y": 751.27, "w": 136.36, "h": 77.45, "z": 1820, "scale": 0.5455}, {"zone": "非洲草原", "name": "牌下一大一小", "file": "visitor_bald_01.png", "src": "./资源生成/非洲草原/v2-按尺子/assets_png/visitor_bald_01.png", "kind": "人", "flip": false, "estimated": false, "placed": true, "x": 517.5, "y": 743.28, "w": 85.0, "h": 108.45, "z": 1840, "scale": 0.7328}, {"zone": "浮冰湾", "name": "浮冰湾", "file": "habitat.png", "src": "./资源生成/浮冰湾/v2-按尺子/assets_png/habitat.png", "kind": "场地", "flip": false, "estimated": false, "placed": true, "x": 800, "y": 256, "w": 592, "h": 496, "z": 20, "scale": 1}, {"zone": "浮冰湾", "name": "右猴", "file": "monkey_right_01.png", "src": "./资源生成/浮冰湾/v2-按尺子/assets_png/monkey_right_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 1213.7, "y": 306.32, "w": 92.61, "h": 111.37, "z": 1408, "scale": 0.6053}, {"zone": "浮冰湾", "name": "左猴", "file": "monkey_left_01.png", "src": "./资源生成/浮冰湾/v2-按尺子/assets_png/monkey_left_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 1113.39, "y": 306.25, "w": 93.22, "h": 111.5, "z": 1408, "scale": 0.6093}, {"zone": "浮冰湾", "name": "右企鹅", "file": "penguin_right_01.png", "src": "./资源生成/浮冰湾/v2-按尺子/assets_png/penguin_right_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 944.5, "y": 445.94, "w": 81.0, "h": 99.13, "z": 1536, "scale": 0.5664}, {"zone": "浮冰湾", "name": "左企鹅", "file": "penguin_left_01.png", "src": "./资源生成/浮冰湾/v2-按尺子/assets_png/penguin_left_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 882.3, "y": 466.52, "w": 79.41, "h": 98.96, "z": 1556, "scale": 0.5926}, {"zone": "浮冰湾", "name": "下企鹅", "file": "penguin_low_01.png", "src": "./资源生成/浮冰湾/v2-按尺子/assets_png/penguin_low_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 1079.79, "y": 544.07, "w": 76.42, "h": 99.85, "z": 1635, "scale": 0.5578}, {"zone": "浮冰湾", "name": "黄鸭", "file": "duck_01.png", "src": "./资源生成/浮冰湾/v2-按尺子/assets_png/duck_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 942.0, "y": 620.33, "w": 52.0, "h": 51.33, "z": 1661, "scale": 0.6667}, {"zone": "浮冰湾", "name": "动物牌", "file": "sign_01.png", "src": "./资源生成/浮冰湾/v2-按尺子/assets_png/sign_01.png", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 1003.04, "y": 644.68, "w": 225.91, "h": 142.63, "z": 1772, "scale": 0.9573}, {"zone": "浮冰湾", "name": "牌子下长椅", "file": "bench_01.png", "src": "./资源生成/浮冰湾/v2-按尺子/assets_png/bench_01.png", "kind": "桌子", "flip": false, "estimated": false, "placed": true, "x": 1091.26, "y": 770.49, "w": 157.48, "h": 87.01, "z": 1846, "scale": 0.7191}, {"zone": "小动物村", "name": "小水盆", "file": "小水盆.png", "src": "./资源生成/小动物村/v2-按尺子/assets_png/小水盆.png", "kind": "桌子", "flip": false, "estimated": false, "placed": false, "note": "有图。效果图上这件没有单独量过脚点，预览里先不贴。"}, {"zone": "小动物村", "name": "小动物村", "file": "habitat.png", "src": "./资源生成/小动物村/v2-按尺子/assets_png/habitat.png", "kind": "场地", "flip": false, "estimated": false, "placed": true, "x": 75, "y": 1489, "w": 491, "h": 418, "z": 20, "scale": 1}, {"zone": "小动物村", "name": "路灯", "file": "lamp_01.png", "src": "./资源生成/小动物村/v2-按尺子/assets_png/lamp_01.png?v=2", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 463.12, "y": 1462.0, "w": 81.75, "h": 173.99, "z": 2624, "scale": 0.75}, {"zone": "小动物村", "name": "鸭子", "file": "duck_01.png", "src": "./资源生成/小动物村/v2-按尺子/assets_png/duck_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 270.43, "y": 1552.52, "w": 109.15, "h": 136.95, "z": 2673, "scale": 1.0297}, {"zone": "小动物村", "name": "兔子", "file": "rabbit_01.png", "src": "./资源生成/小动物村/v2-按尺子/assets_png/rabbit_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 161.85, "y": 1612.77, "w": 88.31, "h": 132.46, "z": 2728, "scale": 1.0769}, {"zone": "小动物村", "name": "羊", "file": "sheep_01.png", "src": "./资源生成/小动物村/v2-按尺子/assets_png/sheep_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 366.71, "y": 1634.25, "w": 152.58, "h": 157.5, "z": 2776, "scale": 0.9844}, {"zone": "小动物村", "name": "草丛", "file": "bush_01.png", "src": "./资源生成/小动物村/v2-按尺子/assets_png/bush_01.png", "kind": "桌子", "flip": false, "estimated": false, "placed": true, "x": 262.13, "y": 1678.81, "w": 111.74, "h": 122.38, "z": 2787, "scale": 0.8868}, {"zone": "小动物村", "name": "草垛", "file": "hay_01.png", "src": "./资源生成/小动物村/v2-按尺子/assets_png/hay_01.png", "kind": "桌子", "flip": false, "estimated": false, "placed": true, "x": 133.0, "y": 1725.0, "w": 148.0, "h": 146.0, "z": 2855, "scale": 1.0}, {"zone": "小动物村", "name": "动物牌", "file": "sign_01.png", "src": "./资源生成/小动物村/v2-按尺子/assets_png/sign_01.png", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 203.17, "y": 1788.57, "w": 293.66, "h": 147.86, "z": 2920, "scale": 1.0268}, {"zone": "小动物村", "name": "坐着的人", "file": "person_sit_01.png", "src": "./资源生成/小动物村/v2-按尺子/assets_png/person_sit_01.png", "kind": "人", "flip": false, "estimated": false, "placed": true, "x": 283.58, "y": 1914.45, "w": 72.85, "h": 99.11, "z": 3000, "scale": 0.8471}, {"zone": "小动物村", "name": "长椅", "file": "bench_01.png", "src": "./资源生成/小动物村/v2-按尺子/assets_png/bench_01.png", "kind": "桌子", "flip": false, "estimated": false, "placed": true, "x": 267.85, "y": 1935.18, "w": 144.3, "h": 89.65, "z": 3015, "scale": 0.614}, {"zone": "火烈鸟", "name": "空池子", "file": "habitat.png", "src": "./资源生成/火烈鸟/v2-按尺子/assets_png/habitat.png", "kind": "场地", "flip": false, "estimated": true, "placed": true, "x": 896.5, "y": 1517.5, "w": 425, "h": 547, "z": 20, "scale": 1}, {"zone": "火烈鸟", "name": "路灯", "file": "lamp_01.png", "src": "./资源生成/火烈鸟/v2-按尺子/assets_png/lamp_01.png?v=2", "kind": "路灯牌子", "flip": false, "estimated": true, "placed": true, "x": 1228.85, "y": 1442.8, "w": 76.28, "h": 162.36, "z": 2594, "scale": 0.6998}, {"zone": "火烈鸟", "name": "火烈鸟上", "file": "flamingo_top_01.png", "src": "./资源生成/火烈鸟/v2-按尺子/assets_png/flamingo_top_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 1072.75, "y": 1604.2, "w": 104.5, "h": 152.59, "z": 2742, "scale": 0.9248}, {"zone": "火烈鸟", "name": "火烈鸟右", "file": "flamingo_right_01.png", "src": "./资源生成/火烈鸟/v2-按尺子/assets_png/flamingo_right_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 1168.75, "y": 1682.02, "w": 100.5, "h": 131.97, "z": 2800, "scale": 0.8739}, {"zone": "火烈鸟", "name": "火烈鸟左", "file": "flamingo_left_01.png", "src": "./资源生成/火烈鸟/v2-按尺子/assets_png/flamingo_left_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 947.18, "y": 1726.02, "w": 107.64, "h": 146.95, "z": 2858, "scale": 0.936}, {"zone": "火烈鸟", "name": "岸石", "file": "shore_rock_01.png", "src": "./资源生成/火烈鸟/v2-按尺子/assets_png/shore_rock_01.png", "kind": "房子", "flip": false, "estimated": true, "placed": true, "x": 1089.15, "y": 1771.5, "w": 151.69, "h": 126.99, "z": 2895, "scale": 0.2186}, {"zone": "火烈鸟", "name": "火烈鸟下", "file": "flamingo_low_01.png", "src": "./资源生成/火烈鸟/v2-按尺子/assets_png/flamingo_low_01.png", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 992.93, "y": 1838.84, "w": 114.14, "h": 132.32, "z": 2955, "scale": 1.0101}, {"zone": "火烈鸟", "name": "长椅", "file": "bench_01.png", "src": "./资源生成/火烈鸟/v2-按尺子/assets_png/bench_01.png", "kind": "桌子", "flip": false, "estimated": true, "placed": true, "x": 840.74, "y": 1985.85, "w": 98.52, "h": 78.3, "z": 3060, "scale": 0.2593}, {"zone": "火烈鸟", "name": "遮阳伞", "file": "umbrella_01.png", "src": "./资源生成/火烈鸟/v2-按尺子/assets_png/umbrella_01.png", "kind": "桌子", "flip": false, "estimated": true, "placed": true, "x": 1104.6, "y": 1861.82, "w": 200.8, "h": 226.35, "z": 3080, "scale": 0.5109}, {"zone": "火烈鸟", "name": "圆桌", "file": "table_01.png", "src": "./资源生成/火烈鸟/v2-按尺子/assets_png/table_01.png", "kind": "桌子", "flip": false, "estimated": true, "placed": true, "x": 1152.98, "y": 2019.61, "w": 104.04, "h": 110.77, "z": 3125, "scale": 0.3367}, {"zone": "火烈鸟", "name": "右椅", "file": "chair_right_01.png", "src": "./资源生成/火烈鸟/v2-按尺子/assets_png/chair_right_01.png", "kind": "桌子", "flip": false, "estimated": true, "placed": true, "x": 1237.35, "y": 2022.56, "w": 65.31, "h": 110.88, "z": 3128, "scale": 0.3401}, {"zone": "火烈鸟", "name": "左椅", "file": "chair_left_01.png", "src": "./资源生成/火烈鸟/v2-按尺子/assets_png/chair_left_01.png", "kind": "桌子", "flip": false, "estimated": true, "placed": true, "x": 1107.35, "y": 2022.56, "w": 65.31, "h": 110.88, "z": 3128, "scale": 0.3401}, {"zone": "火烈鸟", "name": "火烈鸟牌", "file": "flamingo_sign_01.png", "src": "./资源生成/火烈鸟/v2-按尺子/assets_png/flamingo_sign_01.png?v=4", "kind": "动物", "flip": false, "estimated": false, "placed": true, "x": 925.84, "y": 1998.87, "w": 158.32, "h": 152.27, "z": 3135, "scale": 1.0084}, {"zone": "小卖部", "name": "爆米花", "file": "popcorn_01.png", "src": "./资源生成/小卖部/v2-按尺子/assets_png/popcorn_01.png", "kind": "桌子", "flip": false, "estimated": false, "placed": true, "x": 295.32, "y": 1017.95, "w": 105.37, "h": 136.1, "z": 2140, "scale": 0.878}, {"zone": "小卖部", "name": "店面", "file": "house_01.png", "src": "./资源生成/小卖部/v2-按尺子/assets_png/house_01.png", "kind": "房子", "flip": false, "estimated": false, "placed": true, "x": 71.27, "y": 836.44, "w": 347.46, "h": 327.12, "z": 2150, "scale": 0.8475}, {"zone": "小卖部", "name": "店前一大一小", "file": "visitor_pair_01.png", "src": "./资源生成/小卖部/v2-按尺子/assets_png/visitor_pair_01.png", "kind": "人", "flip": false, "estimated": false, "placed": true, "x": 205.31, "y": 1093.0, "w": 79.38, "h": 105.0, "z": 2188, "scale": 0.625}, {"zone": "小卖部", "name": "棉花糖牌", "file": "sign_01.png", "src": "./资源生成/小卖部/v2-按尺子/assets_png/sign_01.png", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 301.55, "y": 1128.39, "w": 92.9, "h": 113.23, "z": 2230, "scale": 0.7258}, {"zone": "小卖部", "name": "右条纹椅", "file": "chair_right_01.png", "src": "./资源生成/小卖部/v2-按尺子/assets_png/chair_right_01.png", "kind": "桌子", "flip": false, "estimated": false, "placed": true, "x": 202.8, "y": 1164.46, "w": 114.4, "h": 130.07, "z": 2282, "scale": 0.7836}, {"zone": "小卖部", "name": "左条纹椅", "file": "chair_left_01.png", "src": "./资源生成/小卖部/v2-按尺子/assets_png/chair_left_01.png", "kind": "桌子", "flip": false, "estimated": false, "placed": true, "x": 117.61, "y": 1164.56, "w": 112.78, "h": 129.89, "z": 2282, "scale": 0.7778}, {"zone": "小卖部", "name": "店旁路灯", "file": "lamp_01.png", "src": "./资源生成/小卖部/v2-按尺子/assets_png/lamp_01.png?v=2", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 315.67, "y": 1280.16, "w": 80.66, "h": 171.69, "z": 2440, "scale": 0.74}, {"zone": "纪念品", "name": "店边气球", "file": "balloon_01.png", "src": "./资源生成/纪念品/v2-按尺子/assets_png/balloon_01.png", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 1290.1, "y": 956.25, "w": 139.79, "h": 221.5, "z": 2162, "scale": 0.9845}, {"zone": "纪念品", "name": "店面", "file": "house_01.png", "src": "./资源生成/纪念品/v2-按尺子/assets_png/house_01.png", "kind": "房子", "flip": false, "estimated": false, "placed": true, "x": 1013.59, "y": 843.81, "w": 362.82, "h": 358.39, "z": 2188, "scale": 0.8871}, {"zone": "纪念品", "name": "熊猫脸牌", "file": "sign_01.png", "src": "./资源生成/纪念品/v2-按尺子/assets_png/sign_01.png", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 1234.09, "y": 1124.18, "w": 127.82, "h": 141.64, "z": 2252, "scale": 0.8636}, {"zone": "纪念品", "name": "门口绿衣大人和小孩", "file": "visitor_pair_01.png", "src": "./资源生成/纪念品/v2-按尺子/assets_png/visitor_pair_01.png", "kind": "人", "flip": false, "estimated": false, "placed": true, "x": 1190.27, "y": 1197.08, "w": 117.46, "h": 139.83, "z": 2322, "scale": 0.9322}, {"zone": "主路", "name": "上右长椅", "file": "bench_right_01.png", "src": "./资源生成/主路/v2-按尺子/assets_png/bench_right_01.png", "kind": "桌子", "flip": false, "estimated": false, "placed": true, "x": 894.17, "y": 192.75, "w": 131.65, "h": 86.49, "z": 1267, "scale": 0.7654}, {"zone": "主路", "name": "上左长椅", "file": "bench_left_01.png", "src": "./资源生成/主路/v2-按尺子/assets_png/bench_left_01.png", "kind": "桌子", "flip": false, "estimated": false, "placed": true, "x": 436.56, "y": 192.75, "w": 130.89, "h": 86.49, "z": 1267, "scale": 0.7654}, {"zone": "主路", "name": "浮冰侧上路灯", "file": "lamp_upper_01.png", "src": "./资源生成/主路/v2-按尺子/assets_png/lamp_upper_01.png?v=2", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 785.85, "y": 248.8, "w": 76.3, "h": 162.4, "z": 1400, "scale": 0.7}, {"zone": "主路", "name": "浮冰侧下路灯", "file": "lamp_lower_01.png", "src": "./资源生成/主路/v2-按尺子/assets_png/lamp_lower_01.png?v=2", "kind": "路灯牌子", "flip": false, "estimated": false, "placed": true, "x": 779.85, "y": 418.8, "w": 76.3, "h": 162.4, "z": 1570, "scale": 0.7}, {"zone": "主路", "name": "棕榈间粉衣母子", "file": "visitor_pair_01.png", "src": "./资源生成/主路/v2-按尺子/assets_png/visitor_pair_01.png", "kind": "人", "flip": false, "estimated": false, "placed": true, "x": 670.0, "y": 1733.66, "w": 112.0, "h": 134.68, "z": 2857, "scale": 0.7089}], "sites": [{"name": "南门", "x": 725, "y": 2204}, {"name": "熊猫馆", "x": 792, "y": 1296}, {"name": "非洲草原", "x": 384, "y": 512}, {"name": "浮冰湾", "x": 1096, "y": 504}, {"name": "小动物村", "x": 310, "y": 1704}, {"name": "火烈鸟", "x": 1109, "y": 1791}, {"name": "小卖部", "x": 245, "y": 999}, {"name": "纪念品", "x": 1195, "y": 1023}], "total": 87};
+const stage = document.getElementById("stage");
+const sizer = document.getElementById("sizer");
+
+document.getElementById("total").textContent = DATA.total;
+
+DATA.sites.forEach((site) => {
+  const board = document.createElement("div");
+  board.className = "board";
+  board.style.left = (site.x - 66) + "px";
+  board.style.top = (site.y - 84) + "px";
+  board.innerHTML = '<div class="wood">施工中</div><div class="cap"></div>';
+  board.querySelector(".cap").textContent = site.name;
+  stage.appendChild(board);
+});
+
+const byZone = new Map();
+DATA.items.forEach((it) => {
+  if (!byZone.has(it.zone)) byZone.set(it.zone, []);
+  byZone.get(it.zone).push(it);
+  if (!it.placed) return;
+  const img = document.createElement("img");
+  img.className = "piece" + (it.flip ? " flip" : "");
+  img.src = it.src;
+  img.alt = it.zone + " " + it.name;
+  img.style.left = it.x + "px";
+  img.style.top = it.y + "px";
+  img.style.width = it.w + "px";
+  img.style.height = it.h + "px";
+  img.style.zIndex = String(it.z);
+  img.title = it.zone + " · " + it.name + (it.estimated ? "（位置是估的）" : "");
+  stage.appendChild(img);
+});
+
+const zones = document.getElementById("zones");
+byZone.forEach((list, zone) => {
+  const d = document.createElement("details");
+  d.open = false;
+  const placed = list.filter((it) => it.placed).length;
+  const sum = document.createElement("summary");
+  sum.textContent = zone + "　" + list.length + " 件";
+  d.appendChild(sum);
+  const ul = document.createElement("ul");
+  list.forEach((it) => {
+    const li = document.createElement("li");
+    let text = it.name;
+    if (!it.placed) {
+      li.className = "miss";
+      text += "　未贴上";
+      if (it.note) text += "：" + it.note;
+    } else if (it.estimated) {
+      li.className = "est";
+      text += "　位置是对着效果图估的";
+    }
+    li.textContent = text;
+    ul.appendChild(li);
+  });
+  d.appendChild(ul);
+  zones.appendChild(d);
+});
+
+function setMode(mode) {
+  document.body.classList.toggle("open", mode === "open");
+  document.body.classList.toggle("full", mode === "full");
+  document.getElementById("btn-open").classList.toggle("on", mode === "open");
+  document.getElementById("btn-full").classList.toggle("on", mode === "full");
+  const now = document.getElementById("now");
+  if (mode === "open") {
+    now.textContent = "这一页：开场背景，加上 8 张施工牌。园景元素先不放。";
+  } else {
+    const placed = DATA.items.filter((it) => it.placed).length;
+    const miss = DATA.total - placed;
+    now.textContent = "这一页：背景上贴了 " + placed + " 件。" + (miss ? "还有 " + miss + " 件没贴上。" : "清单里的件都贴上了。");
+  }
+}
+
+document.getElementById("btn-open").onclick = () => setMode("open");
+document.getElementById("btn-full").onclick = () => setMode("full");
+
+function fit() {
+  const gap = 32;
+  const availW = Math.max(200, window.innerWidth - 320 - gap);
+  const availH = Math.max(200, window.innerHeight - gap);
+  const s = Math.min(availW / 1440, availH / 2560);
+  sizer.style.transform = "scale(" + s + ")";
+  sizer.style.width = (1440 * s) + "px";
+  sizer.style.height = (2560 * s) + "px";
+}
+window.addEventListener("resize", fit);
+setMode("open");
+fit();
+</script>
+</body>
+</html>

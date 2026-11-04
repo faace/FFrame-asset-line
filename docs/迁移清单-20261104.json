@@ -1,0 +1,1932 @@
+{
+  "date": "2026-11-04",
+  "source": "D:/creator/FFrameGameDesign",
+  "files": [
+    {
+      "from": ".cursor/rules/zoo-asset-generation.mdc",
+      "to": "D:/creator/FFrame-asset-line/.cursor/rules/zoo-asset-generation.mdc",
+      "originalSha256": "6ba1ad7273f2b794dff2ed9ac0d958b8c5d63778dda2b905bac3b315d5fa221d",
+      "migratedSha256": "664ac07612aa52a6e685bb181f8f1bf26d61b7a2623250d531c117f28577aa13"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/agents/openai.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/agents/openai.yaml",
+      "originalSha256": "cde8dd200e60591b08022faef3ab0317b80bca27e5aa3920ed6792c8d7410148",
+      "migratedSha256": "cde8dd200e60591b08022faef3ab0317b80bca27e5aa3920ed6792c8d7410148"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/evals/behavior_evals.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/evals/behavior_evals.json",
+      "originalSha256": "e51ac04408f4947c475e89497e7094838fb344e1a1dadd678b41382df16ba496",
+      "migratedSha256": "e51ac04408f4947c475e89497e7094838fb344e1a1dadd678b41382df16ba496"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/evals/evals.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/evals/evals.json",
+      "originalSha256": "6f390d3057e026ee5fb468bdd6a069562d0d4a3b0741b8f6baab3dd1b9b6729f",
+      "migratedSha256": "6f390d3057e026ee5fb468bdd6a069562d0d4a3b0741b8f6baab3dd1b9b6729f"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/evals/negative_cases.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/evals/negative_cases.md",
+      "originalSha256": "7f0e9f5366214e09ce27264b288fcdb0996cf5e6bbb51edaa0fe1aa5a99ec3e8",
+      "migratedSha256": "7f0e9f5366214e09ce27264b288fcdb0996cf5e6bbb51edaa0fe1aa5a99ec3e8"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/evals/rubric.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/evals/rubric.yaml",
+      "originalSha256": "d826cac6b99ac724cb08e61cf7e7c015152305308b7aff7cf27834b5020392b4",
+      "migratedSha256": "d826cac6b99ac724cb08e61cf7e7c015152305308b7aff7cf27834b5020392b4"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/evals/synthetic_outputs.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/evals/synthetic_outputs.json",
+      "originalSha256": "f9a89d826c13a683fb17f495a960cf2b1030429fc490d7b91b1a6fd6a8bede18",
+      "migratedSha256": "f9a89d826c13a683fb17f495a960cf2b1030429fc490d7b91b1a6fd6a8bede18"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/examples/clockwork-garden-defense-illustrated.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/examples/clockwork-garden-defense-illustrated.md",
+      "originalSha256": "9621d64509151221655d98d3349ec7d91cec84ecf96e14af77be15fed6d1352f",
+      "migratedSha256": "9621d64509151221655d98d3349ec7d91cec84ecf96e14af77be15fed6d1352f"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/examples/clockwork-garden-defense.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/examples/clockwork-garden-defense.md",
+      "originalSha256": "d8f21c14b4ba87109cff42f18369222ae23441bef8ec240e3dd1acdcce416df1",
+      "migratedSha256": "d8f21c14b4ba87109cff42f18369222ae23441bef8ec240e3dd1acdcce416df1"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/examples/dream-postman-card-adventure.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/examples/dream-postman-card-adventure.md",
+      "originalSha256": "7bcc1869cebad5d4faef89d20e55be065c485427c76d6a897942eac3f19c57f2",
+      "migratedSha256": "7bcc1869cebad5d4faef89d20e55be065c485427c76d6a897942eac3f19c57f2"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/examples/README.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/examples/README.md",
+      "originalSha256": "baa11439ac339e288d5efdfb355e5815fb4b7447604a4806363a6229fa702cb8",
+      "migratedSha256": "218fcf467a4503a1ef51c86a66c865dfc900b147fab39e8d206de32e5a3d79d6"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/examples/tiny-crew-space-salvage.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/examples/tiny-crew-space-salvage.md",
+      "originalSha256": "d15226b3670efd70c30aad260b981812641d294f672c9b81a6a94532340cd77f",
+      "migratedSha256": "d15226b3670efd70c30aad260b981812641d294f672c9b81a6a94532340cd77f"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/README.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/README.md",
+      "originalSha256": "94f79c596e7670b9c6a665756bee8bde44b5b5ed00f9182076595e6523189c67",
+      "migratedSha256": "94f79c596e7670b9c6a665756bee8bde44b5b5ed00f9182076595e6523189c67"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/references/concept-seed-extraction.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/references/concept-seed-extraction.zh-CN.md",
+      "originalSha256": "2850e95b73e866cb448d859b7e367d3a5033819406f14047dc1c10e5d1f86934",
+      "migratedSha256": "2850e95b73e866cb448d859b7e367d3a5033819406f14047dc1c10e5d1f86934"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/references/core-loop-expansion.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/references/core-loop-expansion.zh-CN.md",
+      "originalSha256": "454a0baebc53667103af4571272d715ecb84448ea127290f0bb4a3f377994e6c",
+      "migratedSha256": "454a0baebc53667103af4571272d715ecb84448ea127290f0bb4a3f377994e6c"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/references/design-nucleus-options.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/references/design-nucleus-options.zh-CN.md",
+      "originalSha256": "7d4d74e528551eb6fb636b008917f5c1d7823d27d17153d4124a83a24c62b192",
+      "migratedSha256": "7d4d74e528551eb6fb636b008917f5c1d7823d27d17153d4124a83a24c62b192"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/references/external-feasibility-scan.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/references/external-feasibility-scan.zh-CN.md",
+      "originalSha256": "3741b6028b49716997fd95157c1ea657176173201a8c17d7fc90625488a296f3",
+      "migratedSha256": "3741b6028b49716997fd95157c1ea657176173201a8c17d7fc90625488a296f3"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/references/game-dissection-lens.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/references/game-dissection-lens.zh-CN.md",
+      "originalSha256": "5aedb67e347b3460b65ff3c1625d964f88984b7821c098dd6f95058f4fe066aa",
+      "migratedSha256": "5aedb67e347b3460b65ff3c1625d964f88984b7821c098dd6f95058f4fe066aa"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/references/genre-fit-matrix.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/references/genre-fit-matrix.zh-CN.md",
+      "originalSha256": "5461c2dfddf78137bccff80997085958a2c2b81289e75d6c35a3be87f5f8cc09",
+      "migratedSha256": "5461c2dfddf78137bccff80997085958a2c2b81289e75d6c35a3be87f5f8cc09"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/references/platform-business-fit.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/references/platform-business-fit.zh-CN.md",
+      "originalSha256": "62ea07e42077ad29c648fbea860b84febf5ca03ecfa55374242f14cd1280ef58",
+      "migratedSha256": "62ea07e42077ad29c648fbea860b84febf5ca03ecfa55374242f14cd1280ef58"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/references/player-promise-framework.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/references/player-promise-framework.zh-CN.md",
+      "originalSha256": "09acd1660bd974cf7d107ec5ae633699e3906c11c5c31312a9feec5ff72aeeea",
+      "migratedSha256": "09acd1660bd974cf7d107ec5ae633699e3906c11c5c31312a9feec5ff72aeeea"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/references/production-feasibility.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/references/production-feasibility.zh-CN.md",
+      "originalSha256": "b976aa7ae05a9097e426dd86c7a0d26b52eee5ab6971262cbc2fcb06efd97196",
+      "migratedSha256": "b976aa7ae05a9097e426dd86c7a0d26b52eee5ab6971262cbc2fcb06efd97196"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/references/production-profile-gate.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/references/production-profile-gate.zh-CN.md",
+      "originalSha256": "2985f360e353175c8ea0135ccfae256a9f37327f0b4549f75879f31a59ede021",
+      "migratedSha256": "2985f360e353175c8ea0135ccfae256a9f37327f0b4549f75879f31a59ede021"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/references/prototype-validation-gate.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/references/prototype-validation-gate.zh-CN.md",
+      "originalSha256": "e5132af1c144e597bfacb7aaacc1eeb913e5b57355c37a810824666c01270ce6",
+      "migratedSha256": "e5132af1c144e597bfacb7aaacc1eeb913e5b57355c37a810824666c01270ce6"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/references/reference-game-boundary.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/references/reference-game-boundary.zh-CN.md",
+      "originalSha256": "4b872656e9d95f9048fb564047e4982c47163785a3e719f8af0cccd44ca0d5dc",
+      "migratedSha256": "4b872656e9d95f9048fb564047e4982c47163785a3e719f8af0cccd44ca0d5dc"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/references/scope-gate.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/references/scope-gate.zh-CN.md",
+      "originalSha256": "0aa0e3218380f8a2494f0521af7235201238d5ecf6a4ab236a56a454d1525f8c",
+      "migratedSha256": "0aa0e3218380f8a2494f0521af7235201238d5ecf6a4ab236a56a454d1525f8c"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/references/voi-feasibility-gate.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/references/voi-feasibility-gate.zh-CN.md",
+      "originalSha256": "4920ee5847bc8b0dd0072c3a24fc951ebf80dc63f71cff51a27a8cfc4db321d4",
+      "migratedSha256": "4920ee5847bc8b0dd0072c3a24fc951ebf80dc63f71cff51a27a8cfc4db321d4"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/SKILL.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/SKILL.md",
+      "originalSha256": "c6e286e065cbdcc74ddf10524fd764cd2a35b6eacbfc16045cc3a5b4db3cad6f",
+      "migratedSha256": "c6e286e065cbdcc74ddf10524fd764cd2a35b6eacbfc16045cc3a5b4db3cad6f"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/action-goal-alignment.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/action-goal-alignment.md",
+      "originalSha256": "9526d26df5a482ae3a143dae1449d1819d06787279138a2382a04ec5ecce11c7",
+      "migratedSha256": "9526d26df5a482ae3a143dae1449d1819d06787279138a2382a04ec5ecce11c7"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/assumption-ledger.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/assumption-ledger.md",
+      "originalSha256": "be98dc808dd983a015144bc3f074c7260f0cbe0613417f508b049bb8b64556f6",
+      "migratedSha256": "be98dc808dd983a015144bc3f074c7260f0cbe0613417f508b049bb8b64556f6"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/audience-desire-map.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/audience-desire-map.md",
+      "originalSha256": "af9355b47e2eeb73b4aad008da2b6be119e1905c244f204e03264f7cca175023",
+      "migratedSha256": "af9355b47e2eeb73b4aad008da2b6be119e1905c244f204e03264f7cca175023"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/concept-brief.schema.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/concept-brief.schema.json",
+      "originalSha256": "6f9251a0a408ffa43a9a34ca4047609382ba88ba0768ad54a433189ac618fcea",
+      "migratedSha256": "6f9251a0a408ffa43a9a34ca4047609382ba88ba0768ad54a433189ac618fcea"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/content-flow-plan.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/content-flow-plan.md",
+      "originalSha256": "55bb44d5500e2a00a8986aad37de48bd0f3e5001fca2a29303ee005b040f1bc4",
+      "migratedSha256": "55bb44d5500e2a00a8986aad37de48bd0f3e5001fca2a29303ee005b040f1bc4"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/design-nucleus-options.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/design-nucleus-options.md",
+      "originalSha256": "37590b78e07e8387f1564070edaaf36dd078a8d16676deb86e5ad3b33d7593d7",
+      "migratedSha256": "37590b78e07e8387f1564070edaaf36dd078a8d16676deb86e5ad3b33d7593d7"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/feasibility-scan.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/feasibility-scan.md",
+      "originalSha256": "5ea18cd1a351f57718c02f3a34e4407fed80f80482367e4d7a13990e9fc584a6",
+      "migratedSha256": "5ea18cd1a351f57718c02f3a34e4407fed80f80482367e4d7a13990e9fc584a6"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/feature-priority-matrix.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/feature-priority-matrix.md",
+      "originalSha256": "f2e6b6d7084e5991c315b8a78e83a32c99c148f481bcbb18e4cf5efac1a3a1d0",
+      "migratedSha256": "f2e6b6d7084e5991c315b8a78e83a32c99c148f481bcbb18e4cf5efac1a3a1d0"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/full-design-brief.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/full-design-brief.md",
+      "originalSha256": "09787dfa2dad54c3c0152c6f62c89f1d78f455ba0ee9769886a9840ee0bf3c1d",
+      "migratedSha256": "09787dfa2dad54c3c0152c6f62c89f1d78f455ba0ee9769886a9840ee0bf3c1d"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/idea-triage.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/idea-triage.md",
+      "originalSha256": "793ff3eff8131f3514082c569a1f73848b1be7ea4172ee14e27e66af56d9357c",
+      "migratedSha256": "793ff3eff8131f3514082c569a1f73848b1be7ea4172ee14e27e66af56d9357c"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/one-page-pitch.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/one-page-pitch.md",
+      "originalSha256": "89f8482546aa43b0e916f8e261fd05665cdc2b5a115691e40a77b80a11710619",
+      "migratedSha256": "89f8482546aa43b0e916f8e261fd05665cdc2b5a115691e40a77b80a11710619"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/playable-theme-map.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/playable-theme-map.md",
+      "originalSha256": "929257e0bee72599be9576814afc4a8efcdceb9258e84fe32701219745a6fcef",
+      "migratedSha256": "929257e0bee72599be9576814afc4a8efcdceb9258e84fe32701219745a6fcef"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/player-promise-contract.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/player-promise-contract.md",
+      "originalSha256": "3980499d14044806d7f8f949d033e60c54a6dd0d0240142b003a8499ce9cc31d",
+      "migratedSha256": "3980499d14044806d7f8f949d033e60c54a6dd0d0240142b003a8499ce9cc31d"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/player-promise-contract.schema.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/player-promise-contract.schema.json",
+      "originalSha256": "e8502fa87305cb531dd809575a51e766cdba513ea642b97ff9226c543d9b6713",
+      "migratedSha256": "e8502fa87305cb531dd809575a51e766cdba513ea642b97ff9226c543d9b6713"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/player-verb-inventory.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/player-verb-inventory.md",
+      "originalSha256": "a329f7421955ac5339042127fd3d9485ab1104c8c76a511058a5bd5095baee14",
+      "migratedSha256": "a329f7421955ac5339042127fd3d9485ab1104c8c76a511058a5bd5095baee14"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/production-budget-snapshot.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/production-budget-snapshot.md",
+      "originalSha256": "5a9b1bc50eee5df2aee41dad45938a342921084bf2311297a97f6920df27dbdc",
+      "migratedSha256": "5a9b1bc50eee5df2aee41dad45938a342921084bf2311297a97f6920df27dbdc"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/production-profile.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/production-profile.md",
+      "originalSha256": "44fae8207d9e9c1ee212a3f8cd631b90c89ba47cefd929d4e7ccb7cfff474eb4",
+      "migratedSha256": "44fae8207d9e9c1ee212a3f8cd631b90c89ba47cefd929d4e7ccb7cfff474eb4"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/reference-game-boundary.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/reference-game-boundary.md",
+      "originalSha256": "340643ccb97fd17b723c7d372a2150a98d3ce751d03581ea5a5f40a545c5888d",
+      "migratedSha256": "340643ccb97fd17b723c7d372a2150a98d3ce751d03581ea5a5f40a545c5888d"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/risk-register.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/risk-register.md",
+      "originalSha256": "f846f13e10422a92171d73630fcfe354e6983028cc9fa1ac3660d48e297eda84",
+      "migratedSha256": "f846f13e10422a92171d73630fcfe354e6983028cc9fa1ac3660d48e297eda84"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/system-dynamics-map.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/system-dynamics-map.md",
+      "originalSha256": "f265be9e4968ffda128021b0da969523d7f8a7fdd0eed1c24a2dfda2a7fe5395",
+      "migratedSha256": "f265be9e4968ffda128021b0da969523d7f8a7fdd0eed1c24a2dfda2a7fe5395"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/uncertainty-calibration.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/uncertainty-calibration.md",
+      "originalSha256": "8f8625c4c294184be5d941d8de2736d3585c2bc4a8f6083c31111c8560b22b7f",
+      "migratedSha256": "8f8625c4c294184be5d941d8de2736d3585c2bc4a8f6083c31111c8560b22b7f"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/validation-plan.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/validation-plan.md",
+      "originalSha256": "6985d3b61a18747b857998f7acd69923914cd0870e92d4ebea9b6f8cf99fbc57",
+      "migratedSha256": "6985d3b61a18747b857998f7acd69923914cd0870e92d4ebea9b6f8cf99fbc57"
+    },
+    {
+      "from": ".cursor/skills/game-concept-architect/templates/vertical-slice-plan.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-concept-architect/templates/vertical-slice-plan.md",
+      "originalSha256": "9c792e649106efabc348f0d1d7e6c51e1e0055bce2ec3417cbbdfc063583cee2",
+      "migratedSha256": "9c792e649106efabc348f0d1d7e6c51e1e0055bce2ec3417cbbdfc063583cee2"
+    },
+    {
+      "from": ".cursor/skills/game-design-book-translator/agents/openai.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-book-translator/agents/openai.yaml",
+      "originalSha256": "968d06d55ac7e66b39d614be446bcca55949057803790415cc6793095fe2f075",
+      "migratedSha256": "968d06d55ac7e66b39d614be446bcca55949057803790415cc6793095fe2f075"
+    },
+    {
+      "from": ".cursor/skills/game-design-book-translator/evals/behavior_evals.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-book-translator/evals/behavior_evals.json",
+      "originalSha256": "d92bd6bddd0c48c3ab5b7d5e3cd4ba49bcc8473af7e8de46c6e7a6b89f1ba0dd",
+      "migratedSha256": "d92bd6bddd0c48c3ab5b7d5e3cd4ba49bcc8473af7e8de46c6e7a6b89f1ba0dd"
+    },
+    {
+      "from": ".cursor/skills/game-design-book-translator/evals/evals.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-book-translator/evals/evals.json",
+      "originalSha256": "5eda1454ab70349f512bd8159b5b0bd9964a87e7b9d19be431d6a903d6491def",
+      "migratedSha256": "5eda1454ab70349f512bd8159b5b0bd9964a87e7b9d19be431d6a903d6491def"
+    },
+    {
+      "from": ".cursor/skills/game-design-book-translator/evals/synthetic_outputs.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-book-translator/evals/synthetic_outputs.json",
+      "originalSha256": "23839c3e8f70f5aabf522399e3c44a20efca6b2b85873b0259bcf2a503b138fc",
+      "migratedSha256": "23839c3e8f70f5aabf522399e3c44a20efca6b2b85873b0259bcf2a503b138fc"
+    },
+    {
+      "from": ".cursor/skills/game-design-book-translator/README.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-book-translator/README.en.md",
+      "originalSha256": "74d36f37167b81e566596991c3c219912b92dd76ad09bb147bed9263fab81a41",
+      "migratedSha256": "80381e7e44d3919e25ff455df4dad0e6b0a153150c740fb67957f72bce705f4a"
+    },
+    {
+      "from": ".cursor/skills/game-design-book-translator/README.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-book-translator/README.md",
+      "originalSha256": "b11f4c7f2eb25833b412a476994db15237f4a345ae1e875642de1f72770afbec",
+      "migratedSha256": "cb290615455f1ecc01a91940d7a8bd0c2af5bb391acc449e910410a3a27185a7"
+    },
+    {
+      "from": ".cursor/skills/game-design-book-translator/README.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-book-translator/README.zh-CN.md",
+      "originalSha256": "b181f51606499a8acbc08f9f084ebf934731c8ebddf93b6a711d20b88d19fde5",
+      "migratedSha256": "18368fd16ae62131afc70552b88a98d16b52e59807b96b9934e6c5cce395ed91"
+    },
+    {
+      "from": ".cursor/skills/game-design-book-translator/references/translation-method.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-book-translator/references/translation-method.md",
+      "originalSha256": "43ac341f82c4ab4cbccf25882a12c1701e7611ab17b63176852a24d97e26d655",
+      "migratedSha256": "43ac341f82c4ab4cbccf25882a12c1701e7611ab17b63176852a24d97e26d655"
+    },
+    {
+      "from": ".cursor/skills/game-design-book-translator/references/whole-book-quality-workflow.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-book-translator/references/whole-book-quality-workflow.md",
+      "originalSha256": "8b7cb8d2247e0a894224056cad14db0df33b42c7b415896aee92df27d5c79df9",
+      "migratedSha256": "8b7cb8d2247e0a894224056cad14db0df33b42c7b415896aee92df27d5c79df9"
+    },
+    {
+      "from": ".cursor/skills/game-design-book-translator/SKILL.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-book-translator/SKILL.md",
+      "originalSha256": "53bafd76f8d5c0ad0bfbf64a418caf6e71edca9fd52d540c9c766b71d3af1801",
+      "migratedSha256": "53bafd76f8d5c0ad0bfbf64a418caf6e71edca9fd52d540c9c766b71d3af1801"
+    },
+    {
+      "from": ".cursor/skills/game-design-book-translator/templates/book-translation-package.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-book-translator/templates/book-translation-package.md",
+      "originalSha256": "26769e60c6220f0576bc2a67fa06513811fcf092d42ff15859be72378bb52310",
+      "migratedSha256": "26769e60c6220f0576bc2a67fa06513811fcf092d42ff15859be72378bb52310"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/agents/openai.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/agents/openai.yaml",
+      "originalSha256": "b6d80abe8f2f2f280c1a51c4a71bd3c191240a4a5b1e0a2f46d45ab9fdb91278",
+      "migratedSha256": "b6d80abe8f2f2f280c1a51c4a71bd3c191240a4a5b1e0a2f46d45ab9fdb91278"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/evals/behavior_evals.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/evals/behavior_evals.json",
+      "originalSha256": "14bb1db0ed6aaccee059f09c930a2153a33b3d7bf687c877466db824f86f1c64",
+      "migratedSha256": "14bb1db0ed6aaccee059f09c930a2153a33b3d7bf687c877466db824f86f1c64"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/evals/evals.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/evals/evals.json",
+      "originalSha256": "a77bf24be4e562ac840cb80672eeb2d0cda1bb4ffba94b6532860a8ad125461f",
+      "migratedSha256": "a77bf24be4e562ac840cb80672eeb2d0cda1bb4ffba94b6532860a8ad125461f"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/evals/negative_cases.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/evals/negative_cases.md",
+      "originalSha256": "fc31a8c26c03ec4bede42cb0cae6fb3c19a490cf71fb2dfaf1b8f7e594b875a6",
+      "migratedSha256": "fc31a8c26c03ec4bede42cb0cae6fb3c19a490cf71fb2dfaf1b8f7e594b875a6"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/evals/rubric.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/evals/rubric.yaml",
+      "originalSha256": "49e6c03da2317100baa69b8d443c97e7d57da2579373858fc5965c0532ef5817",
+      "migratedSha256": "49e6c03da2317100baa69b8d443c97e7d57da2579373858fc5965c0532ef5817"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/evals/synthetic_outputs.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/evals/synthetic_outputs.json",
+      "originalSha256": "991792f625c709d8c56c98711363d421f1872c62e1883548ea3d48b93e87906e",
+      "migratedSha256": "991792f625c709d8c56c98711363d421f1872c62e1883548ea3d48b93e87906e"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/examples/synthetic-clockwork-garden-commercial-proposal.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/examples/synthetic-clockwork-garden-commercial-proposal.md",
+      "originalSha256": "18d20e414b4960cae318eb623acfdbcbcce190b18695cfe2ad3fdf051a5933b1",
+      "migratedSha256": "18d20e414b4960cae318eb623acfdbcbcce190b18695cfe2ad3fdf051a5933b1"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/examples/synthetic-dream-postman-indie-dossier.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/examples/synthetic-dream-postman-indie-dossier.md",
+      "originalSha256": "a86482401f746b3f455ef92442e6bd2a1e66fc9071ef10faee6b77f7313dc4c4",
+      "migratedSha256": "a86482401f746b3f455ef92442e6bd2a1e66fc9071ef10faee6b77f7313dc4c4"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/README.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/README.md",
+      "originalSha256": "0e7b9e77fb9bc6d66a84b21e06822f9321a36ac2e5c5f06ec9b96d51dd55a363",
+      "migratedSha256": "0e7b9e77fb9bc6d66a84b21e06822f9321a36ac2e5c5f06ec9b96d51dd55a363"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/references/audience-business-scope-gate.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/references/audience-business-scope-gate.zh-CN.md",
+      "originalSha256": "586c903ebe27d5e3a441af236d4677e31fbd2ac256ef28637ade8ec468b3f92e",
+      "migratedSha256": "586c903ebe27d5e3a441af236d4677e31fbd2ac256ef28637ade8ec468b3f92e"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/references/commercial-game-proposal-framework.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/references/commercial-game-proposal-framework.zh-CN.md",
+      "originalSha256": "e0e577b096f6402c5cee6fb04d159e4efdfe09ca71f049f6757e35d9d913de7d",
+      "migratedSha256": "e0e577b096f6402c5cee6fb04d159e4efdfe09ca71f049f6757e35d9d913de7d"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/references/evidence-assumption-boundary.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/references/evidence-assumption-boundary.zh-CN.md",
+      "originalSha256": "29ce62729255c92b375ddd689be444282349f044d37d91c161cb34415949c1ff",
+      "migratedSha256": "29ce62729255c92b375ddd689be444282349f044d37d91c161cb34415949c1ff"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/references/indie-design-dossier-framework.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/references/indie-design-dossier-framework.zh-CN.md",
+      "originalSha256": "dc61ee975646378492cf3d438e2aa03e950d380367be47d5113939478acbf985",
+      "migratedSha256": "dc61ee975646378492cf3d438e2aa03e950d380367be47d5113939478acbf985"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/references/mindmap-and-existing-proposal-input.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/references/mindmap-and-existing-proposal-input.zh-CN.md",
+      "originalSha256": "abbaabd4063a5c0c9bf0a3ed9a13297fc904f409ba52f4e12be15ddd1d4d1d3c",
+      "migratedSha256": "abbaabd4063a5c0c9bf0a3ed9a13297fc904f409ba52f4e12be15ddd1d4d1d3c"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/references/pitch-document-quality-gate.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/references/pitch-document-quality-gate.zh-CN.md",
+      "originalSha256": "4c9fd91db526a2c9f508d1324d8f5e116d1f425937230711bc6bb397479d809c",
+      "migratedSha256": "4c9fd91db526a2c9f508d1324d8f5e116d1f425937230711bc6bb397479d809c"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/references/proposal-intake-router.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/references/proposal-intake-router.zh-CN.md",
+      "originalSha256": "c07a0ede971e5a9624b8e42a0de88d10cbb73b7e81cba358e75250a3e2838906",
+      "migratedSha256": "c07a0ede971e5a9624b8e42a0de88d10cbb73b7e81cba358e75250a3e2838906"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/references/publisher-platform-proof-gate.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/references/publisher-platform-proof-gate.zh-CN.md",
+      "originalSha256": "d81a55cbc7c3788e0174fccebd7eadab6926cfa92ce55db9b136c36ad253424c",
+      "migratedSha256": "d81a55cbc7c3788e0174fccebd7eadab6926cfa92ce55db9b136c36ad253424c"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/references/scope-and-milestone-gates.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/references/scope-and-milestone-gates.zh-CN.md",
+      "originalSha256": "8d05cd73028be6fdd3255c870205276d2548d35b00d1aa4933e608d346fdd5c6",
+      "migratedSha256": "8d05cd73028be6fdd3255c870205276d2548d35b00d1aa4933e608d346fdd5c6"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/SKILL.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/SKILL.md",
+      "originalSha256": "9ac38dbce3b3ad42ea085c75f795d2f0cb09d9aab75d9a63c4fffb1daeb67d09",
+      "migratedSha256": "9ac38dbce3b3ad42ea085c75f795d2f0cb09d9aab75d9a63c4fffb1daeb67d09"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/templates/commercial-game-proposal.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/templates/commercial-game-proposal.md",
+      "originalSha256": "b5ea7efeb152e219048c75452ada3eb40ee1c4691089131bbedb95771441e74b",
+      "migratedSha256": "b5ea7efeb152e219048c75452ada3eb40ee1c4691089131bbedb95771441e74b"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/templates/existing-proposal-review.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/templates/existing-proposal-review.md",
+      "originalSha256": "871daaa6d3980aba64de03f32ff1078b203b5cbd7660ea251574008ed75ede8f",
+      "migratedSha256": "871daaa6d3980aba64de03f32ff1078b203b5cbd7660ea251574008ed75ede8f"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/templates/game-design-proposal.schema.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/templates/game-design-proposal.schema.json",
+      "originalSha256": "4fa1e3b53a0a742d03317de6d190dc1e905d768f4f2ef21112020cc75cb36f02",
+      "migratedSha256": "4fa1e3b53a0a742d03317de6d190dc1e905d768f4f2ef21112020cc75cb36f02"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/templates/indie-design-dossier.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/templates/indie-design-dossier.md",
+      "originalSha256": "56d97db6adfc719b8e2eb7422f6d2d87a41f3a285b531499b7aa4b92dbdc28fd",
+      "migratedSha256": "56d97db6adfc719b8e2eb7422f6d2d87a41f3a285b531499b7aa4b92dbdc28fd"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/templates/milestone-gate-plan.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/templates/milestone-gate-plan.md",
+      "originalSha256": "ac311e0926ad163de7b839b68b0e06e1aef5227160cb51e37a5dffd819e949fc",
+      "migratedSha256": "ac311e0926ad163de7b839b68b0e06e1aef5227160cb51e37a5dffd819e949fc"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/templates/one-page-decision-memo.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/templates/one-page-decision-memo.md",
+      "originalSha256": "9375b383cb5c5b77eac8964d7b1ad7ec4244011f01d5168fa5d2cd6bdcc2a6c2",
+      "migratedSha256": "9375b383cb5c5b77eac8964d7b1ad7ec4244011f01d5168fa5d2cd6bdcc2a6c2"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/templates/proposal-evidence-ledger.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/templates/proposal-evidence-ledger.md",
+      "originalSha256": "5e40ad378cb329ec0455e4d2ea61da014f9ba7a367e1aa87a22bde27ac677d9d",
+      "migratedSha256": "5e40ad378cb329ec0455e4d2ea61da014f9ba7a367e1aa87a22bde27ac677d9d"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/templates/proposal-intake.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/templates/proposal-intake.md",
+      "originalSha256": "1886974dd3abe868f00fe14b7e828ff919eb1865bf1fd414122044e87448657c",
+      "migratedSha256": "1886974dd3abe868f00fe14b7e828ff919eb1865bf1fd414122044e87448657c"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/templates/publisher-pitch-outline.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/templates/publisher-pitch-outline.md",
+      "originalSha256": "f71e15cbadf4cdfecc1fe404c9b151c2f2ec1bff918ba217a3b5ebd1b0dcf332",
+      "migratedSha256": "f71e15cbadf4cdfecc1fe404c9b151c2f2ec1bff918ba217a3b5ebd1b0dcf332"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/templates/risk-register.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/templates/risk-register.md",
+      "originalSha256": "eb8e6414278f80c3e201753470c8d4b4fdbc2ea9a21dbdeb1e7440b47a91d6f5",
+      "migratedSha256": "eb8e6414278f80c3e201753470c8d4b4fdbc2ea9a21dbdeb1e7440b47a91d6f5"
+    },
+    {
+      "from": ".cursor/skills/game-design-proposal-writer/templates/vertical-slice-design-doc.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-proposal-writer/templates/vertical-slice-design-doc.md",
+      "originalSha256": "d470cb19bea752650e2f49b52c442e2b81642380193ceb09d3415256797db035",
+      "migratedSha256": "d470cb19bea752650e2f49b52c442e2b81642380193ceb09d3415256797db035"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/agents/openai.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/agents/openai.yaml",
+      "originalSha256": "b89ba4c75c87bd89413c4649e2ad7ec183ebd827a5b89dc7fa5a6f9df8647684",
+      "migratedSha256": "b89ba4c75c87bd89413c4649e2ad7ec183ebd827a5b89dc7fa5a6f9df8647684"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/AGENTS.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/AGENTS.md",
+      "originalSha256": "f35a5ed5ef7c65de8b13b60d1ce08f46457f594470decc0ddc3c3c327c596515",
+      "migratedSha256": "f35a5ed5ef7c65de8b13b60d1ce08f46457f594470decc0ddc3c3c327c596515"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/evals/behavior_evals.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/evals/behavior_evals.json",
+      "originalSha256": "06d0e1e3c37195658bd1dbc773bcbd3f33693ea5b4d350fdcfbef5443cbeb3d6",
+      "migratedSha256": "06d0e1e3c37195658bd1dbc773bcbd3f33693ea5b4d350fdcfbef5443cbeb3d6"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/evals/evals.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/evals/evals.json",
+      "originalSha256": "d187ef45d7335fc27ea37a85380b687b4ad1327babc518d7a0e7375ff1020585",
+      "migratedSha256": "d187ef45d7335fc27ea37a85380b687b4ad1327babc518d7a0e7375ff1020585"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/evals/negative_cases.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/evals/negative_cases.md",
+      "originalSha256": "ee8bb900ca61dfb2ba7cbb9e748ee277638f5ed08ad11116c168125de8de3b75",
+      "migratedSha256": "ee8bb900ca61dfb2ba7cbb9e748ee277638f5ed08ad11116c168125de8de3b75"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/evals/rubric.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/evals/rubric.yaml",
+      "originalSha256": "55579ebd9fc01efe9ba8faa6e3257136c844d5a85948c7282b78e2f0e479ec20",
+      "migratedSha256": "55579ebd9fc01efe9ba8faa6e3257136c844d5a85948c7282b78e2f0e479ec20"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/evals/synthetic_outputs.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/evals/synthetic_outputs.json",
+      "originalSha256": "74073144c2ff712e66cb07bac6471788a4768cf08a208c6a4e88f5a01578e592",
+      "migratedSha256": "74073144c2ff712e66cb07bac6471788a4768cf08a208c6a4e88f5a01578e592"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/README.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/README.en.md",
+      "originalSha256": "f6864f788b1acd771a905d5a6e4393f3df139670af8e3a8f35426adbaad44337",
+      "migratedSha256": "f6864f788b1acd771a905d5a6e4393f3df139670af8e3a8f35426adbaad44337"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/README.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/README.md",
+      "originalSha256": "27d625670cb342675b0c159244d0c329d425d596dfe0e5fdb508210d80da5b46",
+      "migratedSha256": "342367fcea2804c11a3dc6f0adb53e2af96c2ce33c91dffec33eb30703ee9426"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/README.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/README.zh-CN.md",
+      "originalSha256": "76be69b941ee6a75c41c43c8200bbe02cb8e018552202c2207c0dab768e30ef9",
+      "migratedSha256": "76be69b941ee6a75c41c43c8200bbe02cb8e018552202c2207c0dab768e30ef9"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/references/curation-workflow.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/references/curation-workflow.zh-CN.md",
+      "originalSha256": "207898e370855ec9aeaa9299fd5160565ea046b35fc4c18f949b5dde4a8aff6f",
+      "migratedSha256": "207898e370855ec9aeaa9299fd5160565ea046b35fc4c18f949b5dde4a8aff6f"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/references/scoring-and-evidence-gates.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/references/scoring-and-evidence-gates.zh-CN.md",
+      "originalSha256": "f71b664376e81afb8774f82cadb8d54459ba26686bdfb21877b5587e8b8cbfcb",
+      "migratedSha256": "f71b664376e81afb8774f82cadb8d54459ba26686bdfb21877b5587e8b8cbfcb"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/SKILL.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/SKILL.md",
+      "originalSha256": "3fc2a26d9278459dffb0f8624beeeacd5d53ace520f5b9aabe1f4ca497dd9cd5",
+      "migratedSha256": "3fc2a26d9278459dffb0f8624beeeacd5d53ace520f5b9aabe1f4ca497dd9cd5"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/templates/catalog.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/templates/catalog.md",
+      "originalSha256": "4b0582959220ba656119277aa12a785ebe50eec0e89b68b686bad66a4285d106",
+      "migratedSha256": "4b0582959220ba656119277aa12a785ebe50eec0e89b68b686bad66a4285d106"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/templates/item-card.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/templates/item-card.md",
+      "originalSha256": "0f257e91c98aa78b792e1b048515660138591e7d18f520e646c5b95c3b9895f4",
+      "migratedSha256": "0f257e91c98aa78b792e1b048515660138591e7d18f520e646c5b95c3b9895f4"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/templates/registry-entry.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/templates/registry-entry.json",
+      "originalSha256": "f676644d045e1d6780d9107ea10047a361a4fa1a6a3e33c66731e2402a088e53",
+      "migratedSha256": "f676644d045e1d6780d9107ea10047a361a4fa1a6a3e33c66731e2402a088e53"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/templates/source-profile.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/templates/source-profile.md",
+      "originalSha256": "b63f0e015f8d00e11c6b00ee1af498164688e7cdc7ca133721ada16991269d46",
+      "migratedSha256": "b63f0e015f8d00e11c6b00ee1af498164688e7cdc7ca133721ada16991269d46"
+    },
+    {
+      "from": ".cursor/skills/game-design-source-curator/templates/update-history-entry.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-design-source-curator/templates/update-history-entry.md",
+      "originalSha256": "f047273816abefa6d1943ad8fc8792c3f268a78309e5f669cbc282cf78b578b7",
+      "migratedSha256": "f047273816abefa6d1943ad8fc8792c3f268a78309e5f669cbc282cf78b578b7"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/agents/openai.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/agents/openai.yaml",
+      "originalSha256": "d55591f4d89b2ccc50e6d024bb4864fe5581cf865d69f97fb908e6248e1990fb",
+      "migratedSha256": "d55591f4d89b2ccc50e6d024bb4864fe5581cf865d69f97fb908e6248e1990fb"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/evals/behavior_evals.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/evals/behavior_evals.json",
+      "originalSha256": "8b9b6cfa245faba7a9f6a7cb50e46fc0d892163127c0e9bc881f673889cec7f7",
+      "migratedSha256": "8b9b6cfa245faba7a9f6a7cb50e46fc0d892163127c0e9bc881f673889cec7f7"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/evals/evals.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/evals/evals.json",
+      "originalSha256": "da63ea09457d08d1d84f4a7c7b0b0ed9e8a58ae7c02d5b1ff2616c48910386ce",
+      "migratedSha256": "da63ea09457d08d1d84f4a7c7b0b0ed9e8a58ae7c02d5b1ff2616c48910386ce"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/evals/negative_cases.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/evals/negative_cases.md",
+      "originalSha256": "266d91127b07412ee2dbff125b17c82dddf24d34d57a5172968ce7d912793659",
+      "migratedSha256": "266d91127b07412ee2dbff125b17c82dddf24d34d57a5172968ce7d912793659"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/evals/rubric.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/evals/rubric.yaml",
+      "originalSha256": "9b2fb562eea4b9d6e4eaed856aba0ae0bc075968923a47f7a3c83438744e8da3",
+      "migratedSha256": "9b2fb562eea4b9d6e4eaed856aba0ae0bc075968923a47f7a3c83438744e8da3"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/evals/synthetic_outputs.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/evals/synthetic_outputs.json",
+      "originalSha256": "f883efdd856278513904d63cfb9ffc1f5712f8897affea3d01b96d396a6988be",
+      "migratedSha256": "f883efdd856278513904d63cfb9ffc1f5712f8897affea3d01b96d396a6988be"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/examples/README.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/examples/README.md",
+      "originalSha256": "b545371d6192693dbfcb0384dfd03afc2b2bffcac6c1d4e05e4a7fbde87bf2af",
+      "migratedSha256": "711dfdd8fe27f8bf87ad6c333998e3652a7b53274d48d7be16bf363bf4656605"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/examples/survival-33-days-gameplay-experience-report.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/examples/survival-33-days-gameplay-experience-report.md",
+      "originalSha256": "bf544e04df118ba5773f1a9e0872886a4704d5ce2f09be4cd9fdc61a268553be",
+      "migratedSha256": "bf544e04df118ba5773f1a9e0872886a4704d5ce2f09be4cd9fdc61a268553be"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/README.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/README.en.md",
+      "originalSha256": "375b083133c6b452589638611ef7238b3e2f66c3fc68fd8a2c88eded8ced3ccf",
+      "migratedSha256": "05b53bc287c847159b9ea5c7335e0b567bd5d0036aee7b37d3d9e77b81148f52"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/README.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/README.md",
+      "originalSha256": "3002253921fec2e30ca1e12a78bf883a54f08374e4d6b08f74cf7c6ea1b8bf60",
+      "migratedSha256": "e683542bc8c2c03619db15528a267a805fd3330f2852b72eb3c866071108a0e1"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/references/analysis-mode-router.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/references/analysis-mode-router.yaml",
+      "originalSha256": "2fe206022d6b407c37e00ab725c3fcfaa02f15fa7fc64f6e375f67d356262271",
+      "migratedSha256": "2fe206022d6b407c37e00ab725c3fcfaa02f15fa7fc64f6e375f67d356262271"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/references/diagnosis-pack-router.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/references/diagnosis-pack-router.yaml",
+      "originalSha256": "6bc091e3a7000cd1fa4f091f3518f21ffb1de7c2401c46fafaf26a54f388bb45",
+      "migratedSha256": "6bc091e3a7000cd1fa4f091f3518f21ffb1de7c2401c46fafaf26a54f388bb45"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/references/evidence-taxonomy.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/references/evidence-taxonomy.zh-CN.md",
+      "originalSha256": "b77aa21f279212a829d1853f128974425001f092d4ebe622b3c39300fb5c79af",
+      "migratedSha256": "b77aa21f279212a829d1853f128974425001f092d4ebe622b3c39300fb5c79af"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/references/foresight-opportunity-lens.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/references/foresight-opportunity-lens.zh-CN.md",
+      "originalSha256": "0e8d17ae750384f76c0bfa1778e7c1cc4fc9745a517e97c69a9a8771b75d2670",
+      "migratedSha256": "0e8d17ae750384f76c0bfa1778e7c1cc4fc9745a517e97c69a9a8771b75d2670"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/references/four-step-experience-method.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/references/four-step-experience-method.zh-CN.md",
+      "originalSha256": "2205c1b12ebd4d724e8eeef3d4b4c4a64a3a9e8ba3acdbd99b35fc44edeee397",
+      "migratedSha256": "2205c1b12ebd4d724e8eeef3d4b4c4a64a3a9e8ba3acdbd99b35fc44edeee397"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/references/game-dissection-diagnosis.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/references/game-dissection-diagnosis.zh-CN.md",
+      "originalSha256": "4d6be941cc22b643e825ecaa082775d430c4903001b45772218d5bfe49f241f7",
+      "migratedSha256": "4d6be941cc22b643e825ecaa082775d430c4903001b45772218d5bfe49f241f7"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/references/genre-strategy-router.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/references/genre-strategy-router.yaml",
+      "originalSha256": "9ff68ed5d2999e3481ecc5a571054cb4937ef466ed65cf9e6e1db0f4d2fa8167",
+      "migratedSha256": "9ff68ed5d2999e3481ecc5a571054cb4937ef466ed65cf9e6e1db0f4d2fa8167"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/references/sample-scope-gate.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/references/sample-scope-gate.zh-CN.md",
+      "originalSha256": "1a5810a63d26c796c38d8eedb91a6930c02137b9bf532889daa46bf568237a45",
+      "migratedSha256": "1a5810a63d26c796c38d8eedb91a6930c02137b9bf532889daa46bf568237a45"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/references/single-player-analysis.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/references/single-player-analysis.zh-CN.md",
+      "originalSha256": "f10b0c82f7d1fa959f011e5bba78e7c7b6b5252808517f9615e7ab0ae0ba2667",
+      "migratedSha256": "f10b0c82f7d1fa959f011e5bba78e7c7b6b5252808517f9615e7ab0ae0ba2667"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/references/system-design-review-lens.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/references/system-design-review-lens.zh-CN.md",
+      "originalSha256": "31e664a172925a4f2ef6a5aeba73d79b01569afbcca97f9de484c37b52c08db6",
+      "migratedSha256": "31e664a172925a4f2ef6a5aeba73d79b01569afbcca97f9de484c37b52c08db6"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/references/tooling-setup.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/references/tooling-setup.zh-CN.md",
+      "originalSha256": "0f8c1dda88396bbc8981026ff23b567c83087b6db065f3f012476017db048e25",
+      "migratedSha256": "0f8c1dda88396bbc8981026ff23b567c83087b6db065f3f012476017db048e25"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/references/trailer-heat-prediction.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/references/trailer-heat-prediction.zh-CN.md",
+      "originalSha256": "ab3ef7a92a66b1866e2d4c220f864ee8f0400a786d2abc2f2b5b7f2cc4f2ac99",
+      "migratedSha256": "ab3ef7a92a66b1866e2d4c220f864ee8f0400a786d2abc2f2b5b7f2cc4f2ac99"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/references/video-analysis-workflow.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/references/video-analysis-workflow.zh-CN.md",
+      "originalSha256": "db0ee7c5663b045585d7ba46eec572b5ec60ab106188f63dfa660f5a8c473fb7",
+      "migratedSha256": "db0ee7c5663b045585d7ba46eec572b5ec60ab106188f63dfa660f5a8c473fb7"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/SKILL.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/SKILL.md",
+      "originalSha256": "759f802ad5a87d99f442b99113d1a450e12a5759f4e8d5bf33e3c987f03fe8b8",
+      "migratedSha256": "759f802ad5a87d99f442b99113d1a450e12a5759f4e8d5bf33e3c987f03fe8b8"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/templates/analysis-input.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/templates/analysis-input.json",
+      "originalSha256": "1043b8096f6a991dbc79e5040dee1ed903d0567888e4b77e9a6266d7b105c3a4",
+      "migratedSha256": "1043b8096f6a991dbc79e5040dee1ed903d0567888e4b77e9a6266d7b105c3a4"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/templates/consulting-diagnosis-report.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/templates/consulting-diagnosis-report.md",
+      "originalSha256": "d3d8a0d30143615debd3a176e7a71cd268c16e50fe9f1d5410cc28ccfc47d7f1",
+      "migratedSha256": "d3d8a0d30143615debd3a176e7a71cd268c16e50fe9f1d5410cc28ccfc47d7f1"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/templates/ed-handoff.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/templates/ed-handoff.md",
+      "originalSha256": "8e7cb5fa99b1a200446dc47916e5ecca3e52a0c757f9cc56d47e7155443e1f29",
+      "migratedSha256": "8e7cb5fa99b1a200446dc47916e5ecca3e52a0c757f9cc56d47e7155443e1f29"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/templates/evidence-index.schema.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/templates/evidence-index.schema.json",
+      "originalSha256": "74b905e4681ce08d18201284645c34df77aa2a4e3f5a846d607efc23b687b655",
+      "migratedSha256": "74b905e4681ce08d18201284645c34df77aa2a4e3f5a846d607efc23b687b655"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/templates/experience-report.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/templates/experience-report.md",
+      "originalSha256": "dd41c4012069be9635a29d36112266af0c795fae783583d20688607700946be1",
+      "migratedSha256": "dd41c4012069be9635a29d36112266af0c795fae783583d20688607700946be1"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/templates/game-dissection-report.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/templates/game-dissection-report.md",
+      "originalSha256": "e4ec8e85e0ad3d5a9790f5a5620210199be50bc929e1f1ab5819febbfb35b3d8",
+      "migratedSha256": "e4ec8e85e0ad3d5a9790f5a5620210199be50bc929e1f1ab5819febbfb35b3d8"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/templates/issue-card.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/templates/issue-card.md",
+      "originalSha256": "6f1e7d3338eb7491006b64a71fbd62128b2c9eacaeb431c3922c81b1a9d9c1f3",
+      "migratedSha256": "6f1e7d3338eb7491006b64a71fbd62128b2c9eacaeb431c3922c81b1a9d9c1f3"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/templates/mode-output-map.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/templates/mode-output-map.yaml",
+      "originalSha256": "9ce7060cde55a47c0d1479175ed46f64df34a9b18bded51c7fb2a3e84789d0d5",
+      "migratedSha256": "9ce7060cde55a47c0d1479175ed46f64df34a9b18bded51c7fb2a3e84789d0d5"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/templates/quick-triage-report.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/templates/quick-triage-report.md",
+      "originalSha256": "f2b97e37f83cda9f23ebd97d504188f14f2e9a0bc1c02f39818d0f908a2e0c29",
+      "migratedSha256": "f2b97e37f83cda9f23ebd97d504188f14f2e9a0bc1c02f39818d0f908a2e0c29"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/templates/structured-output.example.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/templates/structured-output.example.json",
+      "originalSha256": "87969ce088bf11b4be453af5dcb678d091c73d414e787455fc568c41f29c336a",
+      "migratedSha256": "87969ce088bf11b4be453af5dcb678d091c73d414e787455fc568c41f29c336a"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/templates/structured-output.schema.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/templates/structured-output.schema.json",
+      "originalSha256": "0ce1477b582278ad0a282de68b53f6f806e017527cacc9f2d1ede5625316354e",
+      "migratedSha256": "0ce1477b582278ad0a282de68b53f6f806e017527cacc9f2d1ede5625316354e"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/templates/trailer-heat-report.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/templates/trailer-heat-report.md",
+      "originalSha256": "61ca5fb55405550e6da3fce4c09faaa6c40f9099fb0a2166fddafb33c30c481e",
+      "migratedSha256": "61ca5fb55405550e6da3fce4c09faaa6c40f9099fb0a2166fddafb33c30c481e"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/templates/validation-plan.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/templates/validation-plan.md",
+      "originalSha256": "bc17d355610be678503e74584b0f2756c5a7542bf42620087072f5b21c0a4abc",
+      "migratedSha256": "bc17d355610be678503e74584b0f2756c5a7542bf42620087072f5b21c0a4abc"
+    },
+    {
+      "from": ".cursor/skills/game-experience-analyzer/templates/visual-evidence-card.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-analyzer/templates/visual-evidence-card.md",
+      "originalSha256": "466a7431c619e569da2732526cd5f9cbe16e5043525d186fc783b83b5e679c07",
+      "migratedSha256": "466a7431c619e569da2732526cd5f9cbe16e5043525d186fc783b83b5e679c07"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/agents/openai.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/agents/openai.yaml",
+      "originalSha256": "db3689bd5b50e2c016b9a6d7c58a1868637b326c71c22ac549472029f7580f0f",
+      "migratedSha256": "db3689bd5b50e2c016b9a6d7c58a1868637b326c71c22ac549472029f7580f0f"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/evals/behavior_evals.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/evals/behavior_evals.json",
+      "originalSha256": "a823d3bf71e047cd7182de055816e857f6773d68c6554056b0645e3e2147298b",
+      "migratedSha256": "a823d3bf71e047cd7182de055816e857f6773d68c6554056b0645e3e2147298b"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/evals/evals.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/evals/evals.json",
+      "originalSha256": "9309fb5d7dfc97cb74781d88887fc11333f8ccbeab247b0804fa4a22ff633f7c",
+      "migratedSha256": "9309fb5d7dfc97cb74781d88887fc11333f8ccbeab247b0804fa4a22ff633f7c"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/evals/negative_cases.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/evals/negative_cases.md",
+      "originalSha256": "45fd15e1fbd1f11fd02a3e3dd8d54d7402df56ffd110808e579d60f8fd568d30",
+      "migratedSha256": "45fd15e1fbd1f11fd02a3e3dd8d54d7402df56ffd110808e579d60f8fd568d30"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/evals/rubric.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/evals/rubric.yaml",
+      "originalSha256": "43f74dde2672fa236e4693caa3278230bb449341a0353777973927f8597fc5ba",
+      "migratedSha256": "43f74dde2672fa236e4693caa3278230bb449341a0353777973927f8597fc5ba"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/evals/synthetic_outputs.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/evals/synthetic_outputs.json",
+      "originalSha256": "5aa072abc180c3be7328fe5cac26bb9b76031e8809fb32ab185d7073e7525479",
+      "migratedSha256": "5aa072abc180c3be7328fe5cac26bb9b76031e8809fb32ab185d7073e7525479"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/examples/synthetic-hybrid-conflict-review.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/examples/synthetic-hybrid-conflict-review.md",
+      "originalSha256": "371c819f54dc7c25f16b636f94a0211eb557b6a6717e591d3480bca2f69bdd54",
+      "migratedSha256": "371c819f54dc7c25f16b636f94a0211eb557b6a6717e591d3480bca2f69bdd54"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/examples/synthetic-premium-demo-completion-ed-plan.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/examples/synthetic-premium-demo-completion-ed-plan.md",
+      "originalSha256": "b8944a897e422301a14694697e42517be15889e8185005402e0c927ce71392b3",
+      "migratedSha256": "b8944a897e422301a14694697e42517be15889e8185005402e0c927ce71392b3"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/examples/synthetic-survivors-first-session-ed-plan.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/examples/synthetic-survivors-first-session-ed-plan.md",
+      "originalSha256": "2ca21148579c6115b58798af6a27cfbf6302a20172de4c5014083a306ad80335",
+      "migratedSha256": "2ca21148579c6115b58798af6a27cfbf6302a20172de4c5014083a306ad80335"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/README.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/README.md",
+      "originalSha256": "ca373caef1a4bda0a3244925995c73e217bbda950d66b125dd7af11831d7e758",
+      "migratedSha256": "ca373caef1a4bda0a3244925995c73e217bbda950d66b125dd7af11831d7e758"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/references/density-diagnosis-workflow.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/references/density-diagnosis-workflow.zh-CN.md",
+      "originalSha256": "fd95b2fc2e49363d051f330311da27cd702099df0043c18abda2056064acca89",
+      "migratedSha256": "fd95b2fc2e49363d051f330311da27cd702099df0043c18abda2056064acca89"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/references/density-formula.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/references/density-formula.zh-CN.md",
+      "originalSha256": "4531a5c988e0e2141c6410e0f8c7c60307431f0f38b42291430918985335b49e",
+      "migratedSha256": "4531a5c988e0e2141c6410e0f8c7c60307431f0f38b42291430918985335b49e"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/references/ed-framework.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/references/ed-framework.zh-CN.md",
+      "originalSha256": "85bb29183a8916d83c520af4d87a3f752ede57f7c5ec5e83b8d40df8a4f90fbf",
+      "migratedSha256": "85bb29183a8916d83c520af4d87a3f752ede57f7c5ec5e83b8d40df8a4f90fbf"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/references/ed-handoff-contract.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/references/ed-handoff-contract.md",
+      "originalSha256": "e1af2dac5ca922c041c3df88a7df79f73fbab83ad75a9b92c53afbdd3106ab83",
+      "migratedSha256": "e1af2dac5ca922c041c3df88a7df79f73fbab83ad75a9b92c53afbdd3106ab83"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/references/evidence-gate.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/references/evidence-gate.zh-CN.md",
+      "originalSha256": "49743b26640604bb2a1a58769864310fc1835fe45d9bdac98d041f99517f7df7",
+      "migratedSha256": "49743b26640604bb2a1a58769864310fc1835fe45d9bdac98d041f99517f7df7"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/references/flow-sdt-experience-gates.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/references/flow-sdt-experience-gates.zh-CN.md",
+      "originalSha256": "0437c42c98ea6ecb961090e0ba58eb8b211f8fd015bbf1911f5d755eec010315",
+      "migratedSha256": "0437c42c98ea6ecb961090e0ba58eb8b211f8fd015bbf1911f5d755eec010315"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/references/free-energy-markov-blanket-lens.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/references/free-energy-markov-blanket-lens.zh-CN.md",
+      "originalSha256": "2afd286d70f262c0d7824a66a2fe239dadffc1ceccb88cdcd2b4b53f3b9afea0",
+      "migratedSha256": "2afd286d70f262c0d7824a66a2fe239dadffc1ceccb88cdcd2b4b53f3b9afea0"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/references/interaction-prediction-lens.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/references/interaction-prediction-lens.zh-CN.md",
+      "originalSha256": "23f359b06aaff0624224ce79e8e3eadd67a3dcaaa97726f93e14f38813d2253c",
+      "migratedSha256": "23f359b06aaff0624224ce79e8e3eadd67a3dcaaa97726f93e14f38813d2253c"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/references/lever-playbook.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/references/lever-playbook.zh-CN.md",
+      "originalSha256": "4612af95b7c4c2e636d753898650e8dc5ee26d34e4f0bce723bc010255b5932e",
+      "migratedSha256": "4612af95b7c4c2e636d753898650e8dc5ee26d34e4f0bce723bc010255b5932e"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/references/metric-horizon-by-game-model.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/references/metric-horizon-by-game-model.zh-CN.md",
+      "originalSha256": "79ad24a2d6caa8b75ac0d1967b9858f8dcb0b3b5dbe14b1a8af503f8e5616735",
+      "migratedSha256": "79ad24a2d6caa8b75ac0d1967b9858f8dcb0b3b5dbe14b1a8af503f8e5616735"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/references/optimal-stimulation-window.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/references/optimal-stimulation-window.zh-CN.md",
+      "originalSha256": "6693bda78020cc1cc545017abe86f431eb73d88d723fd3cf107b4f0603815bdc",
+      "migratedSha256": "6693bda78020cc1cc545017abe86f431eb73d88d723fd3cf107b4f0603815bdc"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/references/retention-risk-gates.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/references/retention-risk-gates.zh-CN.md",
+      "originalSha256": "23b4b31828fcee2caaee5da3597116fb80d86f280eb30fccba86a95a559b8cb7",
+      "migratedSha256": "23b4b31828fcee2caaee5da3597116fb80d86f280eb30fccba86a95a559b8cb7"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/references/telemetry-metric-dictionary.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/references/telemetry-metric-dictionary.zh-CN.md",
+      "originalSha256": "ea0cca79e88af03a110ec3e258954f93ab4740e9a61e183376bff5ecddfaeae4",
+      "migratedSha256": "ea0cca79e88af03a110ec3e258954f93ab4740e9a61e183376bff5ecddfaeae4"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/references/theory-source-map.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/references/theory-source-map.zh-CN.md",
+      "originalSha256": "96c5f73a7f3b86f5df9d047301aecabdc01063ac0b9a2720e8b038a90b0c4210",
+      "migratedSha256": "96c5f73a7f3b86f5df9d047301aecabdc01063ac0b9a2720e8b038a90b0c4210"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/references/weekly-experiment-sop.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/references/weekly-experiment-sop.zh-CN.md",
+      "originalSha256": "53620e49dd6859aec341da5e911a4f420c07ad24f955cae1b1a83f20ec53ccb9",
+      "migratedSha256": "53620e49dd6859aec341da5e911a4f420c07ad24f955cae1b1a83f20ec53ccb9"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/SKILL.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/SKILL.md",
+      "originalSha256": "dc672f33e479840e9af6fe635906cd58c8910b35b7193c2f9e76ed564562d350",
+      "migratedSha256": "dc672f33e479840e9af6fe635906cd58c8910b35b7193c2f9e76ed564562d350"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/templates/dashboard-spec.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/templates/dashboard-spec.md",
+      "originalSha256": "8457c88b117fc2f2ad5ca97ae9639a53aad5485ab7bd8ad2fa20408834bf8b17",
+      "migratedSha256": "8457c88b117fc2f2ad5ca97ae9639a53aad5485ab7bd8ad2fa20408834bf8b17"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/templates/ed-scorecard.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/templates/ed-scorecard.md",
+      "originalSha256": "be0750de92181573ec81fdb9693ff14b1a57405b0d963ff416331441e087ea35",
+      "migratedSha256": "be0750de92181573ec81fdb9693ff14b1a57405b0d963ff416331441e087ea35"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/templates/experiment-intake.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/templates/experiment-intake.md",
+      "originalSha256": "5419fdd36fc5813d538a5f686b29d8f64517e7e74d0cadaa5f62464beebc91cc",
+      "migratedSha256": "5419fdd36fc5813d538a5f686b29d8f64517e7e74d0cadaa5f62464beebc91cc"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/templates/experiment-plan.schema.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/templates/experiment-plan.schema.json",
+      "originalSha256": "a10b373c68f58a461951a993bf78da33a10c603cc47d4e0bd1aff4c4fb4dee20",
+      "migratedSha256": "a10b373c68f58a461951a993bf78da33a10c603cc47d4e0bd1aff4c4fb4dee20"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/templates/instrumentation-dictionary.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/templates/instrumentation-dictionary.md",
+      "originalSha256": "88137a70d1f2c6fceafef16b41925aa28dd6e04060da39e020a6177dd29709fa",
+      "migratedSha256": "88137a70d1f2c6fceafef16b41925aa28dd6e04060da39e020a6177dd29709fa"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/templates/variant-matrix.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/templates/variant-matrix.md",
+      "originalSha256": "644c1e66743b3f29f0f73cc3b93b7e08505a57c9ac22960b820ffe09f695673e",
+      "migratedSha256": "644c1e66743b3f29f0f73cc3b93b7e08505a57c9ac22960b820ffe09f695673e"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/templates/weekly-ed-experiment-plan.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/templates/weekly-ed-experiment-plan.md",
+      "originalSha256": "1227f85fbf04a4fbc0d3cc6e5751dd242631bdf14b52dfd375c8d8c79d399b35",
+      "migratedSha256": "1227f85fbf04a4fbc0d3cc6e5751dd242631bdf14b52dfd375c8d8c79d399b35"
+    },
+    {
+      "from": ".cursor/skills/game-experience-density-optimizer/templates/weekly-review.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/game-experience-density-optimizer/templates/weekly-review.md",
+      "originalSha256": "dcf843a0159476550cca951b7773ab09cdc6a181adc9622726a32161a9bed76c",
+      "migratedSha256": "dcf843a0159476550cca951b7773ab09cdc6a181adc9622726a32161a9bed76c"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/agents/openai.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/agents/openai.yaml",
+      "originalSha256": "14dbc96ab3f8fc91d506e8afd1065e029760bd79ca274055410a970cf43dbd72",
+      "migratedSha256": "14dbc96ab3f8fc91d506e8afd1065e029760bd79ca274055410a970cf43dbd72"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/evals/behavior_evals.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/evals/behavior_evals.json",
+      "originalSha256": "d81a5216ac5017381771db5786357e33b40db30d31b2bab22bb4153fdfa3819c",
+      "migratedSha256": "d81a5216ac5017381771db5786357e33b40db30d31b2bab22bb4153fdfa3819c"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/evals/evals.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/evals/evals.json",
+      "originalSha256": "59b2a07522f36dfed2e8df51b2137ba2e916473908758f4d3787555eca01f0f6",
+      "migratedSha256": "59b2a07522f36dfed2e8df51b2137ba2e916473908758f4d3787555eca01f0f6"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/evals/negative_cases.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/evals/negative_cases.md",
+      "originalSha256": "160e57d9546c7517c078fa6e4fc4916cf4b4962bb8ce349866fe4d99ad85d0a5",
+      "migratedSha256": "160e57d9546c7517c078fa6e4fc4916cf4b4962bb8ce349866fe4d99ad85d0a5"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/evals/rubric.yaml",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/evals/rubric.yaml",
+      "originalSha256": "fa406f512237e8e5f26b3bd2f9eac4c8667b38c66617f7747fe0e293aafbd139",
+      "migratedSha256": "fa406f512237e8e5f26b3bd2f9eac4c8667b38c66617f7747fe0e293aafbd139"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/evals/synthetic_outputs.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/evals/synthetic_outputs.json",
+      "originalSha256": "e1ca6ee73a2c37fbaa87833eba87d3a71b97692163ac48518af780f1d74d91a9",
+      "migratedSha256": "e1ca6ee73a2c37fbaa87833eba87d3a71b97692163ac48518af780f1d74d91a9"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/evals/uncertainty-ladder-cases.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/evals/uncertainty-ladder-cases.en.md",
+      "originalSha256": "64cea1fc3d9807346a770eace99394efddac6e253a8704b0d601f3e6216ae157",
+      "migratedSha256": "64cea1fc3d9807346a770eace99394efddac6e253a8704b0d601f3e6216ae157"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/evals/uncertainty-ladder-cases.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/evals/uncertainty-ladder-cases.md",
+      "originalSha256": "23765a3730c9707b11231497d90d7f325b78fe81ce65dddc525b4fbd60c1259e",
+      "migratedSha256": "23765a3730c9707b11231497d90d7f325b78fe81ce65dddc525b4fbd60c1259e"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/evals/voi-decision-gate-cases.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/evals/voi-decision-gate-cases.en.md",
+      "originalSha256": "c2bf5ea678b338f134a607d784a4991cff09ff81a4f3d06c9ce3847994d505f2",
+      "migratedSha256": "c2bf5ea678b338f134a607d784a4991cff09ff81a4f3d06c9ce3847994d505f2"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/evals/voi-decision-gate-cases.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/evals/voi-decision-gate-cases.md",
+      "originalSha256": "bfd3b18abf51bb8189c7488a836da5abaf2f65c5ff62a4179f2d085692438530",
+      "migratedSha256": "bfd3b18abf51bb8189c7488a836da5abaf2f65c5ff62a4179f2d085692438530"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/examples/ul-state.example.json",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/examples/ul-state.example.json",
+      "originalSha256": "c3b391ec4233ec3b91325be9474b983653b356cf6d885ad98d0670b293988f79",
+      "migratedSha256": "c3b391ec4233ec3b91325be9474b983653b356cf6d885ad98d0670b293988f79"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/quick_validate.py",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/quick_validate.py",
+      "originalSha256": "5155b7baad31c52d82cd4e91789e4871b8598fa22a47802e729b19d555e85bee",
+      "migratedSha256": "5155b7baad31c52d82cd4e91789e4871b8598fa22a47802e729b19d555e85bee"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/README.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/README.en.md",
+      "originalSha256": "1ea3dea7f2939560f4b9a4ad1423a2fd457c2043279ee574d1880243a8473e4f",
+      "migratedSha256": "ab45cd3caf30706732e69bd610e20f1fb31fe28513c1bbbf3463a9f0d56cbde2"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/README.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/README.md",
+      "originalSha256": "bbe9aa665a199f04cd9470adcec6c5deb0c7dc8b3fada2a54ec327dfeebec4b1",
+      "migratedSha256": "ad78106a17f08b94855afed6161fa349e851b8acc5ae01f22194ddfacf883d29"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/README.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/README.zh-CN.md",
+      "originalSha256": "bbe9aa665a199f04cd9470adcec6c5deb0c7dc8b3fada2a54ec327dfeebec4b1",
+      "migratedSha256": "ad78106a17f08b94855afed6161fa349e851b8acc5ae01f22194ddfacf883d29"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/eval-versioning-playbook.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/eval-versioning-playbook.en.md",
+      "originalSha256": "ce5f8ba61cbec1e996a36d84cf17e491f1e36abc8173e2a8dce6b0e467ab679f",
+      "migratedSha256": "ce5f8ba61cbec1e996a36d84cf17e491f1e36abc8173e2a8dce6b0e467ab679f"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/eval-versioning-playbook.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/eval-versioning-playbook.md",
+      "originalSha256": "f36d38760feda5f0fa029ec212d671cec947b3b3c97a2672549e971b5604134e",
+      "migratedSha256": "ce2b944a29b43fe54413327fc4f9a9fe5fd009feb227f6f23c571b063702f3cb"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/eval-versioning-playbook.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/eval-versioning-playbook.zh-CN.md",
+      "originalSha256": "55697f171a7dd9bd0084785ceae2c11b4fc77750009fa4c417e64a3ea979ff61",
+      "migratedSha256": "55697f171a7dd9bd0084785ceae2c11b4fc77750009fa4c417e64a3ea979ff61"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/evolution-loop-playbook.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/evolution-loop-playbook.en.md",
+      "originalSha256": "ec11779ec92e3922fbb9a9936b6de53a0718ed926ec2b3ee99512878cc5fb8d1",
+      "migratedSha256": "ec11779ec92e3922fbb9a9936b6de53a0718ed926ec2b3ee99512878cc5fb8d1"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/evolution-loop-playbook.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/evolution-loop-playbook.md",
+      "originalSha256": "5a1177fd749fa425088ecff12d4d75d417281e4d3060d5a45091ca640ecea95f",
+      "migratedSha256": "0fadc92195489e7dffcf6d94bb10d30b18b7d6b2ab48cc54825a1f09f7658294"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/evolution-loop-playbook.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/evolution-loop-playbook.zh-CN.md",
+      "originalSha256": "ea1fbe90e0793cce517304accf5cf2a737ab4279af4fbb27519df161c4312cc4",
+      "migratedSha256": "ea1fbe90e0793cce517304accf5cf2a737ab4279af4fbb27519df161c4312cc4"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/intent-engineering-work-order.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/intent-engineering-work-order.en.md",
+      "originalSha256": "5e039f65c40b58e27f3a671266fc69a2cfdd6a7c7e71e3de86fa7945e2998126",
+      "migratedSha256": "5e039f65c40b58e27f3a671266fc69a2cfdd6a7c7e71e3de86fa7945e2998126"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/intent-engineering-work-order.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/intent-engineering-work-order.md",
+      "originalSha256": "a8b4a20c3b2e435905ee656adee78cb3c46d1b063c861a6a3028662bc5dd3839",
+      "migratedSha256": "526dc806838986f93a2893733c95dce3441fb34bce3d51ee8eb1961b92ceebe0"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/intent-engineering-work-order.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/intent-engineering-work-order.zh-CN.md",
+      "originalSha256": "8dd8aa5f27dca349f866c1855312b4f7e65f15408695b2c2f164e447cdf4f500",
+      "migratedSha256": "8dd8aa5f27dca349f866c1855312b4f7e65f15408695b2c2f164e447cdf4f500"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/model-compression-playbook.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/model-compression-playbook.en.md",
+      "originalSha256": "55d2d2283ef763104d0767c8b7240a45d2cdac1f20632c968bb77f3cc2751b07",
+      "migratedSha256": "55d2d2283ef763104d0767c8b7240a45d2cdac1f20632c968bb77f3cc2751b07"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/model-compression-playbook.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/model-compression-playbook.md",
+      "originalSha256": "a18ab00a0a48ea8914c33c8118c80e3a07b1639eb4fb25457bde4dd7dcdb29ad",
+      "migratedSha256": "a18ab00a0a48ea8914c33c8118c80e3a07b1639eb4fb25457bde4dd7dcdb29ad"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/model-compression-playbook.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/model-compression-playbook.zh-CN.md",
+      "originalSha256": "076b99f7f38460f8cf0b69d9cb37974bd51fd8d435335a1152e8cbbe138305b8",
+      "migratedSha256": "076b99f7f38460f8cf0b69d9cb37974bd51fd8d435335a1152e8cbbe138305b8"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/project-workflow-governance.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/project-workflow-governance.en.md",
+      "originalSha256": "a205c791f8990f30590e37e0a1d85d10737fbd5f376d06467ba6e18a8123182b",
+      "migratedSha256": "a205c791f8990f30590e37e0a1d85d10737fbd5f376d06467ba6e18a8123182b"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/project-workflow-governance.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/project-workflow-governance.md",
+      "originalSha256": "75b05acc23c34ccf31145b313f904060288bd55e4f03e35552bf4351ce4e6190",
+      "migratedSha256": "75b05acc23c34ccf31145b313f904060288bd55e4f03e35552bf4351ce4e6190"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/project-workflow-governance.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/project-workflow-governance.zh-CN.md",
+      "originalSha256": "574928b20f216c5c8d5b4d1c6df2999a99aa646e53cfdb25b8df053356bed0c5",
+      "migratedSha256": "574928b20f216c5c8d5b4d1c6df2999a99aa646e53cfdb25b8df053356bed0c5"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/uncertainty-ladder-protocol.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/uncertainty-ladder-protocol.en.md",
+      "originalSha256": "64a24fcdfaf6bcf9f3801fbf9883618c786844e9d718a303cbff4e5f25887a42",
+      "migratedSha256": "64a24fcdfaf6bcf9f3801fbf9883618c786844e9d718a303cbff4e5f25887a42"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/uncertainty-ladder-protocol.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/uncertainty-ladder-protocol.md",
+      "originalSha256": "064465c18db4108843260e9e7db7d62baf18a94a747865ee11a795ba18b1d72c",
+      "migratedSha256": "064465c18db4108843260e9e7db7d62baf18a94a747865ee11a795ba18b1d72c"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/uncertainty-ladder-protocol.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/uncertainty-ladder-protocol.zh-CN.md",
+      "originalSha256": "33bfa38a500165491b9929f566282dbf77307cd0b6b1cb9b47bddaea6c15f881",
+      "migratedSha256": "33bfa38a500165491b9929f566282dbf77307cd0b6b1cb9b47bddaea6c15f881"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/value-of-information-playbook.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/value-of-information-playbook.en.md",
+      "originalSha256": "185ddcb102c9ad487167af825dd9a55f83a8f7043e2a622bf75cbd5550a92354",
+      "migratedSha256": "185ddcb102c9ad487167af825dd9a55f83a8f7043e2a622bf75cbd5550a92354"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/value-of-information-playbook.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/value-of-information-playbook.md",
+      "originalSha256": "b5d1f3ab56e1c42342545021beecefe58a282f8f35697dcb32d3ceae11dbdabd",
+      "migratedSha256": "a1ebbbccfbf07b776a6202b3e333c4b3bb3cc2e070d0d5c18c9978318b3b2398"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/value-of-information-playbook.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/value-of-information-playbook.zh-CN.md",
+      "originalSha256": "df8900118e8d0dbdc7d1088834eddb7e6d50bdbaa2cd36213f37f7a4351d6e97",
+      "migratedSha256": "df8900118e8d0dbdc7d1088834eddb7e6d50bdbaa2cd36213f37f7a4351d6e97"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/woop-harness-protocol.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/woop-harness-protocol.en.md",
+      "originalSha256": "5e08e3a46d7b0c329ba2de5cd0aa5f549bf16b1cd9f914b6dbbbbb459e102ba9",
+      "migratedSha256": "5e08e3a46d7b0c329ba2de5cd0aa5f549bf16b1cd9f914b6dbbbbb459e102ba9"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/woop-harness-protocol.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/woop-harness-protocol.md",
+      "originalSha256": "f0eaf02dbf8b70b2de3408805729fe732a17b821724b4b2c05b8b1b5e0865c07",
+      "migratedSha256": "f0eaf02dbf8b70b2de3408805729fe732a17b821724b4b2c05b8b1b5e0865c07"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/references/woop-harness-protocol.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/references/woop-harness-protocol.zh-CN.md",
+      "originalSha256": "40bcbeb383353f52129c110c3eea4275a0125326a6a6c2f2c2d19a179bf91d97",
+      "migratedSha256": "40bcbeb383353f52129c110c3eea4275a0125326a6a6c2f2c2d19a179bf91d97"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/SKILL.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/SKILL.md",
+      "originalSha256": "6d8f9bc33fe3214bfce7a555828aaef07e2a832a7cb2b1570cfed86117310a25",
+      "migratedSha256": "6d8f9bc33fe3214bfce7a555828aaef07e2a832a7cb2b1570cfed86117310a25"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/evolution_proposal.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/evolution_proposal.en.md",
+      "originalSha256": "9e4244dc0dcda1a2d9a317e976824d80d05bdb0b88fc0cd1f836839deec93d4c",
+      "migratedSha256": "9e4244dc0dcda1a2d9a317e976824d80d05bdb0b88fc0cd1f836839deec93d4c"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/evolution_proposal.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/evolution_proposal.md",
+      "originalSha256": "0c4e261787fc8277eceb253b134d9f8f07cf6f878099471f89b66ebbb94b8d11",
+      "migratedSha256": "0c4e261787fc8277eceb253b134d9f8f07cf6f878099471f89b66ebbb94b8d11"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/evolution_proposal.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/evolution_proposal.zh-CN.md",
+      "originalSha256": "0c4e261787fc8277eceb253b134d9f8f07cf6f878099471f89b66ebbb94b8d11",
+      "migratedSha256": "0c4e261787fc8277eceb253b134d9f8f07cf6f878099471f89b66ebbb94b8d11"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/intent_work_order.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/intent_work_order.en.md",
+      "originalSha256": "5a08389f3378166c3c46d934f79cb9bf4bef0f5c3754233fb946e3045da3ca02",
+      "migratedSha256": "5a08389f3378166c3c46d934f79cb9bf4bef0f5c3754233fb946e3045da3ca02"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/intent_work_order.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/intent_work_order.md",
+      "originalSha256": "9184bb120f7beea14cfdc803a37eced195cd9e78c649573266607851f7edae0c",
+      "migratedSha256": "9184bb120f7beea14cfdc803a37eced195cd9e78c649573266607851f7edae0c"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/intent_work_order.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/intent_work_order.zh-CN.md",
+      "originalSha256": "12c0c0922978f386bd67fee96c830d3aaa4cb785892089b9b5b0bc7e5f71d7f9",
+      "migratedSha256": "12c0c0922978f386bd67fee96c830d3aaa4cb785892089b9b5b0bc7e5f71d7f9"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/ooda_voi_state.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/ooda_voi_state.en.md",
+      "originalSha256": "37a987d32a3ce9099435c2cc5eb7febd58dfaff7cf1a18ca911f1fbb0051cd3e",
+      "migratedSha256": "37a987d32a3ce9099435c2cc5eb7febd58dfaff7cf1a18ca911f1fbb0051cd3e"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/ooda_voi_state.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/ooda_voi_state.md",
+      "originalSha256": "dd125f40157c7d722acaed9e7563c7802c97e7d73426c640f971dd6888bea1f8",
+      "migratedSha256": "dd125f40157c7d722acaed9e7563c7802c97e7d73426c640f971dd6888bea1f8"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/ooda_voi_state.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/ooda_voi_state.zh-CN.md",
+      "originalSha256": "dd125f40157c7d722acaed9e7563c7802c97e7d73426c640f971dd6888bea1f8",
+      "migratedSha256": "dd125f40157c7d722acaed9e7563c7802c97e7d73426c640f971dd6888bea1f8"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/uncertainty_ladder_state.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/uncertainty_ladder_state.en.md",
+      "originalSha256": "0fde352c4a362beabdea509553d8f9bdc525b2a4f0387b3ebd9ae1c3ed42819a",
+      "migratedSha256": "0fde352c4a362beabdea509553d8f9bdc525b2a4f0387b3ebd9ae1c3ed42819a"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/uncertainty_ladder_state.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/uncertainty_ladder_state.md",
+      "originalSha256": "74071dc551dca42275c1559d9ac332b4f63667750a85c833cd36dfcf8282b66f",
+      "migratedSha256": "74071dc551dca42275c1559d9ac332b4f63667750a85c833cd36dfcf8282b66f"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/uncertainty_ladder_state.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/uncertainty_ladder_state.zh-CN.md",
+      "originalSha256": "61fd104ead1ac7ea94af32075c0def212b6c8fd8a7653272061a2a55403f20aa",
+      "migratedSha256": "61fd104ead1ac7ea94af32075c0def212b6c8fd8a7653272061a2a55403f20aa"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/voi_decision_gate.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/voi_decision_gate.en.md",
+      "originalSha256": "78557ff42089353605b11e7ba015da43ae804a523a024ade2184e165e0eb6e02",
+      "migratedSha256": "78557ff42089353605b11e7ba015da43ae804a523a024ade2184e165e0eb6e02"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/voi_decision_gate.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/voi_decision_gate.md",
+      "originalSha256": "f0a29f5db4c1386a1753406ecaa53bf673794cf3d698a848b8fec95653cd52c5",
+      "migratedSha256": "f0a29f5db4c1386a1753406ecaa53bf673794cf3d698a848b8fec95653cd52c5"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/voi_decision_gate.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/voi_decision_gate.zh-CN.md",
+      "originalSha256": "f0a29f5db4c1386a1753406ecaa53bf673794cf3d698a848b8fec95653cd52c5",
+      "migratedSha256": "f0a29f5db4c1386a1753406ecaa53bf673794cf3d698a848b8fec95653cd52c5"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/workflow_governance_review.en.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/workflow_governance_review.en.md",
+      "originalSha256": "55086296703f4641873f7e2dc51c13f393b3c9475c3d7e6909168674635f7030",
+      "migratedSha256": "55086296703f4641873f7e2dc51c13f393b3c9475c3d7e6909168674635f7030"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/workflow_governance_review.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/workflow_governance_review.md",
+      "originalSha256": "55086296703f4641873f7e2dc51c13f393b3c9475c3d7e6909168674635f7030",
+      "migratedSha256": "55086296703f4641873f7e2dc51c13f393b3c9475c3d7e6909168674635f7030"
+    },
+    {
+      "from": ".cursor/skills/paranoia-ai-system-evolver/templates/workflow_governance_review.zh-CN.md",
+      "to": "D:/creator/FFrame-asset-line/.cursor/skills/paranoia-ai-system-evolver/templates/workflow_governance_review.zh-CN.md",
+      "originalSha256": "4d4c5cbabeb6c6e3a0d8113b2bdb18114bbe864d2ff7fc2fea46d9df8416b6fd",
+      "migratedSha256": "4d4c5cbabeb6c6e3a0d8113b2bdb18114bbe864d2ff7fc2fea46d9df8416b6fd"
+    },
+    {
+      "from": "动物园app/README.md",
+      "to": "D:/creator/FFrame-zoo/策划/README.md",
+      "originalSha256": "12c5feb037c83e6319f686ed728372cd03837043da34817338128c5c19f748bd",
+      "migratedSha256": "2b47b58bad2d2d1f2b3e337c2024980216690ce270b09472754f75988ec6e8a2"
+    },
+    {
+      "from": "动物园app/初步.md",
+      "to": "D:/creator/FFrame-zoo/策划/初步.md",
+      "originalSha256": "017e6dbf262f9d5311c580546b6ac4e5718313d97d903776aa0a228217d706f7",
+      "migratedSha256": "8fe062c0b21957d8042f74a6345163ba9f56afed0d2b35708038d897ac00c593"
+    },
+    {
+      "from": "动物园app/区域生成.md",
+      "to": "D:/creator/FFrame-asset-line/scenes/动物园/区域生成.md",
+      "originalSha256": "f72ba946594004601f1d7cc423bb135c07eebe67a275f09ea12f0e73dc7e10ab",
+      "migratedSha256": "87bcfd66f18454752bbcdf14c7244fb4f85f4f7ae9fb0534d73b3fbbeb39a239"
+    },
+    {
+      "from": "动物园app/已定.md",
+      "to": "D:/creator/FFrame-zoo/策划/已定.md",
+      "originalSha256": "85f5a1592373ead8e49cefea2ceaf2b920abc7261ffafa9115876bca6110530c",
+      "migratedSha256": "dff71b3790f92ff117f8c69618bf1cd6f893b1a872311dff924163ba4ac8f5ee"
+    },
+    {
+      "from": "动物园app/手册/本对话全部游戏场景提示词.md",
+      "to": "D:/creator/FFrame-asset-line/scenes/动物园/手册/本对话全部游戏场景提示词.md",
+      "originalSha256": "f02507cbdec0ea62170bc8999cab7785c4ebe2bd5fc483d657ff7511291448ae",
+      "migratedSha256": "f02507cbdec0ea62170bc8999cab7785c4ebe2bd5fc483d657ff7511291448ae"
+    },
+    {
+      "from": "动物园app/手册/游戏美术资产生产手册.md",
+      "to": "D:/creator/FFrame-asset-line/scenes/动物园/手册/游戏美术资产生产手册.md",
+      "originalSha256": "0901032adf4223fae0e9a2815154e8821b06d4e0d50b6ba00e8a3facce322ec6",
+      "migratedSha256": "0901032adf4223fae0e9a2815154e8821b06d4e0d50b6ba00e8a3facce322ec6"
+    },
+    {
+      "from": "动物园app/拼图预览.html",
+      "to": "D:/creator/FFrame-asset-line/scenes/动物园/拼图预览.html",
+      "originalSha256": "f21880697bd4eb2c26305b53aa9cad9404b3c6f7a7a3cf97b82d6232ae363b20",
+      "migratedSha256": "3362c8afe5560b1f8132c884d16f42c1f9e82a2487125e727c69d75a0d62cd1a"
+    },
+    {
+      "from": "动物园app/竞品-MergeMansion.md",
+      "to": "D:/creator/FFrame-zoo/策划/竞品-MergeMansion.md",
+      "originalSha256": "8300660f5bed8cddf223f7af63c1c80c8dfc3d7e0165b8b6b5fb5c10adcdb7a7",
+      "migratedSha256": "8300660f5bed8cddf223f7af63c1c80c8dfc3d7e0165b8b6b5fb5c10adcdb7a7"
+    },
+    {
+      "from": "排表.md",
+      "to": "D:/creator/FFrame-asset-line/docs/系列策划/排表.md",
+      "originalSha256": "6a72e3f004e2dba115dd405d62395dab8dbd31f2fc12e1fb2e4bd8ff788e691b",
+      "migratedSha256": "6a72e3f004e2dba115dd405d62395dab8dbd31f2fc12e1fb2e4bd8ff788e691b"
+    },
+    {
+      "from": "现在做这个.md",
+      "to": "D:/creator/FFrame-asset-line/docs/系列策划/现在做这个.md",
+      "originalSha256": "fa21348bef6b78168a577e8de947ecbe98acb55b7457e01db558a1a9d670f2df",
+      "migratedSha256": "1c6c431b9fdca07d8c5cd1a2af2973f56ec659e4bc7f89fed4981d01b8a6ce6a"
+    },
+    {
+      "from": "策划总览.md",
+      "to": "D:/creator/FFrame-asset-line/docs/系列策划/策划总览.md",
+      "originalSha256": "cf81523b82ed01388b34ee57ba22c772bbd8b8ba22a0985f0ca77a56ce324cf5",
+      "migratedSha256": "cf81523b82ed01388b34ee57ba22c772bbd8b8ba22a0985f0ca77a56ce324cf5"
+    },
+    {
+      "from": "计划.md",
+      "to": "D:/creator/FFrame-asset-line/docs/系列策划/计划.md",
+      "originalSha256": "2c22cbbd22e60da0c8c7f3940cd360d5384d0460199c2be4e1f73e8e76ba0bc4",
+      "migratedSha256": "09ef4dd490784dc7b2a6bd78dca4d92c5e7c660033190e554ddb46a328933aee"
+    },
+    {
+      "from": "讨论/01-玩家承诺.md",
+      "to": "D:/creator/FFrame-asset-line/docs/系列策划/讨论/01-玩家承诺.md",
+      "originalSha256": "673c1f7591beb27eaa5ec5aab058fb677398be1c0d6e09b9eabf42efef99141b",
+      "migratedSha256": "673c1f7591beb27eaa5ec5aab058fb677398be1c0d6e09b9eabf42efef99141b"
+    },
+    {
+      "from": "讨论/02-规模与网格.md",
+      "to": "D:/creator/FFrame-asset-line/docs/系列策划/讨论/02-规模与网格.md",
+      "originalSha256": "41a5198682afe916e36cc6c204482eeabc553c6ba69bee6eac714a1cb3a5eb70",
+      "migratedSha256": "41a5198682afe916e36cc6c204482eeabc553c6ba69bee6eac714a1cb3a5eb70"
+    },
+    {
+      "from": "讨论/03-单店完成定义.md",
+      "to": "D:/creator/FFrame-asset-line/docs/系列策划/讨论/03-单店完成定义.md",
+      "originalSha256": "1d68196a53d004f5e913fb71099d3e3947cf22fa5e5de0bb5a377a6e40153e6b",
+      "migratedSha256": "1d68196a53d004f5e913fb71099d3e3947cf22fa5e5de0bb5a377a6e40153e6b"
+    },
+    {
+      "from": "讨论/04-天数合约.md",
+      "to": "D:/creator/FFrame-asset-line/docs/系列策划/讨论/04-天数合约.md",
+      "originalSha256": "200d9bf4dd8f7ecbcf139517dcd33092308fe5f79537478aed89d58e8c2728fc",
+      "migratedSha256": "200d9bf4dd8f7ecbcf139517dcd33092308fe5f79537478aed89d58e8c2728fc"
+    },
+    {
+      "from": "讨论/05-系列划分.md",
+      "to": "D:/creator/FFrame-asset-line/docs/系列策划/讨论/05-系列划分.md",
+      "originalSha256": "6ac51a4f6e4b39c71c8c394656ce474b3aecc89851395b5e66f2bda071b9841a",
+      "migratedSha256": "6ac51a4f6e4b39c71c8c394656ce474b3aecc89851395b5e66f2bda071b9841a"
+    },
+    {
+      "from": "讨论/06-城镇拼合.md",
+      "to": "D:/creator/FFrame-asset-line/docs/系列策划/讨论/06-城镇拼合.md",
+      "originalSha256": "72f44602ff9211d8c02365fb5cf3942ecf6f2722bfae094c88b5e1e1d6b9e641",
+      "migratedSha256": "72f44602ff9211d8c02365fb5cf3942ecf6f2722bfae094c88b5e1e1d6b9e641"
+    },
+    {
+      "from": "讨论/07-策划门禁.md",
+      "to": "D:/creator/FFrame-asset-line/docs/系列策划/讨论/07-策划门禁.md",
+      "originalSha256": "9c27b4079c7b35a31773150d2be305ee05d26f9746be9dc27ff7d370d8822144",
+      "migratedSha256": "9c27b4079c7b35a31773150d2be305ee05d26f9746be9dc27ff7d370d8822144"
+    },
+    {
+      "from": "讨论/23-动物园.md",
+      "to": "D:/creator/FFrame-zoo/策划/讨论/23-动物园.md",
+      "originalSha256": "e6b2020e18f47d78ca5d3c4e0574a97a8d8864787863df18787001e2cf5c8a28",
+      "migratedSha256": "5a53f46360f783251ce2c3cecf3c33f53840e0292611d8d43fb45e666d4b7f9f"
+    },
+    {
+      "from": "讨论/动物园效果图/动物园效果图.v01.md",
+      "to": "D:/creator/FFrame-asset-line/scenes/动物园/效果图/动物园效果图.v01.md",
+      "originalSha256": "fdcefa7a8a1c013ac8a41a410825cbe0894f4db5f1aaabf0a60c19c9df29f002",
+      "migratedSha256": "fdcefa7a8a1c013ac8a41a410825cbe0894f4db5f1aaabf0a60c19c9df29f002"
+    },
+    {
+      "from": "讨论/动物园效果图/动物园效果图.v01.png",
+      "to": "D:/creator/FFrame-asset-line/scenes/动物园/效果图/动物园效果图.v01.png",
+      "originalSha256": "7594354e2430feb557493a4826602f11e9e4606e9f3567ffad5bc2f460953640",
+      "migratedSha256": "7594354e2430feb557493a4826602f11e9e4606e9f3567ffad5bc2f460953640"
+    },
+    {
+      "from": "讨论/动物园效果图/动物园效果图.v02.md",
+      "to": "D:/creator/FFrame-asset-line/scenes/动物园/效果图/动物园效果图.v02.md",
+      "originalSha256": "95a195f3a9e93cecab118b0107f1cc3689bbd7d47857b830fbdf370c2e96e9ed",
+      "migratedSha256": "95a195f3a9e93cecab118b0107f1cc3689bbd7d47857b830fbdf370c2e96e9ed"
+    },
+    {
+      "from": "讨论/动物园效果图/动物园效果图.v02.png",
+      "to": "D:/creator/FFrame-asset-line/scenes/动物园/效果图/动物园效果图.v02.png",
+      "originalSha256": "a3406568ef38a24bd1b0a22beb8eb89161e40b78161489c1cc6eb5a1bace042c",
+      "migratedSha256": "a3406568ef38a24bd1b0a22beb8eb89161e40b78161489c1cc6eb5a1bace042c"
+    },
+    {
+      "from": "讨论/动物园效果图/动物园效果图.v03.md",
+      "to": "D:/creator/FFrame-asset-line/scenes/动物园/效果图/动物园效果图.v03.md",
+      "originalSha256": "d00a92c4a91bb6c88a78c933d2148d7d15fc915315527134eccb72fba987df77",
+      "migratedSha256": "d00a92c4a91bb6c88a78c933d2148d7d15fc915315527134eccb72fba987df77"
+    },
+    {
+      "from": "讨论/动物园效果图/动物园效果图.v03.png",
+      "to": "D:/creator/FFrame-asset-line/scenes/动物园/效果图/动物园效果图.v03.png",
+      "originalSha256": "7f21cae81d95aaf9aa0afa0706ecd6f766e6fb163fdb591f3a45d06a57545bbd",
+      "migratedSha256": "7f21cae81d95aaf9aa0afa0706ecd6f766e6fb163fdb591f3a45d06a57545bbd"
+    },
+    {
+      "from": "讨论/动物园效果图/动物园效果图.v04.md",
+      "to": "D:/creator/FFrame-asset-line/scenes/动物园/效果图/动物园效果图.v04.md",
+      "originalSha256": "f36e32c223cb57357bc59281d7d6fe1aac7ca8781ceb4c0bc0a68d9ae0c32f72",
+      "migratedSha256": "f36e32c223cb57357bc59281d7d6fe1aac7ca8781ceb4c0bc0a68d9ae0c32f72"
+    },
+    {
+      "from": "讨论/动物园效果图/动物园效果图.v04.png",
+      "to": "D:/creator/FFrame-asset-line/scenes/动物园/效果图/动物园效果图.v04.png",
+      "originalSha256": "6932961cbbc123381fb622348b2c523e39df0ec8ea1bded08723f4960852eeea",
+      "migratedSha256": "6932961cbbc123381fb622348b2c523e39df0ec8ea1bded08723f4960852eeea"
+    },
+    {
+      "from": "讨论/动物园效果图/动物园效果图.v05.md",
+      "to": "D:/creator/FFrame-asset-line/scenes/动物园/效果图/动物园效果图.v05.md",
+      "originalSha256": "6e1e2e90cf2f04767f9685d5a84b166c838013d9349c94d7f56709edcce9da28",
+      "migratedSha256": "6e1e2e90cf2f04767f9685d5a84b166c838013d9349c94d7f56709edcce9da28"
+    },
+    {
+      "from": "讨论/动物园效果图/动物园效果图.v05.png",
+      "to": "D:/creator/FFrame-asset-line/scenes/动物园/效果图/动物园效果图.v05.png",
+      "originalSha256": "9bc23e41eac9f3a3d24788607c8fde99a0137c69167020870d699796a3387de8",
+      "migratedSha256": "9bc23e41eac9f3a3d24788607c8fde99a0137c69167020870d699796a3387de8"
+    },
+    {
+      "from": "讨论/动物园效果图/动物园效果图.v06.md",
+      "to": "D:/creator/FFrame-asset-line/scenes/动物园/效果图/动物园效果图.v06.md",
+      "originalSha256": "fa101e218fe2208fa1d98448740793ffa29eb02aa399367356a36be7378e49c5",
+      "migratedSha256": "fa101e218fe2208fa1d98448740793ffa29eb02aa399367356a36be7378e49c5"
+    },
+    {
+      "from": "讨论/动物园效果图/动物园效果图.v06.png",
+      "to": "D:/creator/FFrame-asset-line/scenes/动物园/效果图/动物园效果图.v06.png",
+      "originalSha256": "fe4b1a2331792a6559e09c2ac9aaa93d98447e7cb17f879d465ac796b6b2d0c0",
+      "migratedSha256": "fe4b1a2331792a6559e09c2ac9aaa93d98447e7cb17f879d465ac796b6b2d0c0"
+    },
+    {
+      "from": "通用资源/README.md",
+      "to": "D:/creator/FFrame-asset-line/通用资源/README.md",
+      "originalSha256": "42212ed832bae011703bde94c365a8a22c5f7073db55a0e207fb0f83322dfac2",
+      "migratedSha256": "dd61fd335af6ae00ea1fadc629377d9b359540c566949a5a289b741401801bff"
+    },
+    {
+      "from": "通用资源/物品生成/README.md",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/README.md",
+      "originalSha256": "abc83ffe486540fcaa6cea89a2d264ea8dfa1f92d77147e8174420e7a61f4434",
+      "migratedSha256": "7f5c9109f9a4cdde269021e91769f56551ec9c9d367ab0cf20a13867c7c371b8"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_ad.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_ad.png",
+      "originalSha256": "5ebd33f57e0bfdaf8a7609c697adf77c27ed845a3d2e0a72615d12184be37f23",
+      "migratedSha256": "5ebd33f57e0bfdaf8a7609c697adf77c27ed845a3d2e0a72615d12184be37f23"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_bag.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_bag.png",
+      "originalSha256": "7ce952095d977cf509ec7005cda989397cedf556308b36eafd7b649dd668287a",
+      "migratedSha256": "7ce952095d977cf509ec7005cda989397cedf556308b36eafd7b649dd668287a"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_check.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_check.png",
+      "originalSha256": "5564fd38fdaa739e35aba818f11beb64d2844326e032328e0f90b4bf61f8b7b0",
+      "migratedSha256": "5564fd38fdaa739e35aba818f11beb64d2844326e032328e0f90b4bf61f8b7b0"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_chest.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_chest.png",
+      "originalSha256": "d0281e6d391820c649fc6f45626d02610305a3b98cf7a59ab1a053f418ecb7db",
+      "migratedSha256": "d0281e6d391820c649fc6f45626d02610305a3b98cf7a59ab1a053f418ecb7db"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_clock.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_clock.png",
+      "originalSha256": "ab6eddd0e0c614108a1a65c50e2738492f1c685652f9f945b29d53e52a3c00fa",
+      "migratedSha256": "ab6eddd0e0c614108a1a65c50e2738492f1c685652f9f945b29d53e52a3c00fa"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_crown.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_crown.png",
+      "originalSha256": "67e771436e853be074461ff7df724a279f10a4031d7ade43dcbe6a004c890dd9",
+      "migratedSha256": "67e771436e853be074461ff7df724a279f10a4031d7ade43dcbe6a004c890dd9"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_diamond.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_diamond.png",
+      "originalSha256": "fdc213ea9c9d4d85b4733ba7447d60cc561b41da40cdbc0958ad9ed633e9f77f",
+      "migratedSha256": "fdc213ea9c9d4d85b4733ba7447d60cc561b41da40cdbc0958ad9ed633e9f77f"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_energy.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_energy.png",
+      "originalSha256": "0196af8fb82fa161e7793d1b79141c6e9db5dc40e9edd6beee836751073ad95f",
+      "migratedSha256": "0196af8fb82fa161e7793d1b79141c6e9db5dc40e9edd6beee836751073ad95f"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_gift.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_gift.png",
+      "originalSha256": "b4580d3b751a73f70294837dcc2ba79a8feb6ea72d12b784f420294182e8c546",
+      "migratedSha256": "b4580d3b751a73f70294837dcc2ba79a8feb6ea72d12b784f420294182e8c546"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_gold.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_gold.png",
+      "originalSha256": "bb0faacfe6788238567fbadf6c3cb067eb15e174b5eaa453e12609bc136a5613",
+      "migratedSha256": "bb0faacfe6788238567fbadf6c3cb067eb15e174b5eaa453e12609bc136a5613"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_heart.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_heart.png",
+      "originalSha256": "c7314ad97b91f17ff86a0a5b35b1bb4e60dc95a3f006192811e7db36356f8eec",
+      "migratedSha256": "c7314ad97b91f17ff86a0a5b35b1bb4e60dc95a3f006192811e7db36356f8eec"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_home.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_home.png",
+      "originalSha256": "7996e7a01cb49028ed632acfc262187b1287f6c9434ab52c47f121c7fd794b28",
+      "migratedSha256": "7996e7a01cb49028ed632acfc262187b1287f6c9434ab52c47f121c7fd794b28"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_key.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_key.png",
+      "originalSha256": "9aa5aa4c8190a6bd148c16d9a31c9527b2a5efc89127512fa76a74239e8ae851",
+      "migratedSha256": "9aa5aa4c8190a6bd148c16d9a31c9527b2a5efc89127512fa76a74239e8ae851"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_leaf.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_leaf.png",
+      "originalSha256": "1505333b3705b03f5743af52f4b461c70a52ed457f9c6e65a5f8d8bf8c1f1da1",
+      "migratedSha256": "1505333b3705b03f5743af52f4b461c70a52ed457f9c6e65a5f8d8bf8c1f1da1"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_lock.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_lock.png",
+      "originalSha256": "24ece90ecdb16e412321a76481ea0de1790d10dec66439b6d88f8b610c6c22bb",
+      "migratedSha256": "24ece90ecdb16e412321a76481ea0de1790d10dec66439b6d88f8b610c6c22bb"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_mail.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_mail.png",
+      "originalSha256": "469fa8a627d1a52b0fc01acb6c839e4b9420eb3add5847a9fa5c0862cbb91054",
+      "migratedSha256": "469fa8a627d1a52b0fc01acb6c839e4b9420eb3add5847a9fa5c0862cbb91054"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_map.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_map.png",
+      "originalSha256": "3305f72bf5e2b3063c4aca76937dcabfee0f105824908617bdb91b7326d55d04",
+      "migratedSha256": "3305f72bf5e2b3063c4aca76937dcabfee0f105824908617bdb91b7326d55d04"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_meat.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_meat.png",
+      "originalSha256": "1c5546642a09a5966950e6e88a768b9457c71a26505bb70f0bbbd880bbeea4c2",
+      "migratedSha256": "1c5546642a09a5966950e6e88a768b9457c71a26505bb70f0bbbd880bbeea4c2"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_music.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_music.png",
+      "originalSha256": "851fa07aa935f51889eb60e8c9a8e52ad9bf50a209916f33b42377bf15100bb2",
+      "migratedSha256": "851fa07aa935f51889eb60e8c9a8e52ad9bf50a209916f33b42377bf15100bb2"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_pause.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_pause.png",
+      "originalSha256": "c6c411a78e4393bf5e05607bddb93be4afb7bc7fe00174cf3cc7f758bb0cc86b",
+      "migratedSha256": "c6c411a78e4393bf5e05607bddb93be4afb7bc7fe00174cf3cc7f758bb0cc86b"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_play.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_play.png",
+      "originalSha256": "5f89c298422c155a6ba4c7b9ab1d1f77597a782c0c7724c903a72d8353e298d3",
+      "migratedSha256": "5f89c298422c155a6ba4c7b9ab1d1f77597a782c0c7724c903a72d8353e298d3"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_settings.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_settings.png",
+      "originalSha256": "5bf7106632d48134d568befbaec486f6053a88fb3b2e8d8ce0c3f147934f415b",
+      "migratedSha256": "5bf7106632d48134d568befbaec486f6053a88fb3b2e8d8ce0c3f147934f415b"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_sfx.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_sfx.png",
+      "originalSha256": "993ed51e5d44000dd296924088a54352440a9e03cdb3f68e7be467fecfa6d501",
+      "migratedSha256": "993ed51e5d44000dd296924088a54352440a9e03cdb3f68e7be467fecfa6d501"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_shop.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_shop.png",
+      "originalSha256": "77f2d164d8fdfbb392464fad48faf625d4317d1620244e6650f04a8579b07258",
+      "migratedSha256": "77f2d164d8fdfbb392464fad48faf625d4317d1620244e6650f04a8579b07258"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_star.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_star.png",
+      "originalSha256": "aec200582346ac222fdd8c5eb3b4d1a6b19e370b97c0fa2957ece37f8e3056e6",
+      "migratedSha256": "aec200582346ac222fdd8c5eb3b4d1a6b19e370b97c0fa2957ece37f8e3056e6"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_ticket.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_ticket.png",
+      "originalSha256": "af66cf679d7a845dec6e6489a835cf50f9fce4b324c4904942ccc78ceb995ec9",
+      "migratedSha256": "af66cf679d7a845dec6e6489a835cf50f9fce4b324c4904942ccc78ceb995ec9"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_trophy.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_trophy.png",
+      "originalSha256": "f175eb1ddb67d0002b6785efe7a76b59966ae2940ae3765f038f98d35a493347",
+      "migratedSha256": "f175eb1ddb67d0002b6785efe7a76b59966ae2940ae3765f038f98d35a493347"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/icons/icon_wood.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/icons/icon_wood.png",
+      "originalSha256": "bf2547384614b09dc5ac553ebcfc180a1ff9904de4b9c2c9f86da2686c738a16",
+      "migratedSha256": "bf2547384614b09dc5ac553ebcfc180a1ff9904de4b9c2c9f86da2686c738a16"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/item-source-2048.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/item-source-2048.png",
+      "originalSha256": "9629d5cc00888e1944bc0965b7e283328badb0bdb33b8f022e67819d4d69eb26",
+      "migratedSha256": "9629d5cc00888e1944bc0965b7e283328badb0bdb33b8f022e67819d4d69eb26"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/item.json",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/item.json",
+      "originalSha256": "47f9274e8faa7298af6dc060eecda1d7cc04d54276dd3f6f21f6645ebf23803f",
+      "migratedSha256": "47f9274e8faa7298af6dc060eecda1d7cc04d54276dd3f6f21f6645ebf23803f"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/item.plist",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/item.plist",
+      "originalSha256": "85ae8b11a75f99a92d53f0893accbbf0105e6d2874b03541e19f23e09e559dbc",
+      "migratedSha256": "85ae8b11a75f99a92d53f0893accbbf0105e6d2874b03541e19f23e09e559dbc"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/item.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/item.png",
+      "originalSha256": "6f8bed3884ebc2472309542764dcc691273d9dc4e199387b466524f25e69a996",
+      "migratedSha256": "6f8bed3884ebc2472309542764dcc691273d9dc4e199387b466524f25e69a996"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/README.md",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/README.md",
+      "originalSha256": "7e04d684b3e02eb0e6f7f0dfc62091c0d8bbf192d72eaed3507b8fe6845c74bd",
+      "migratedSha256": "7e04d684b3e02eb0e6f7f0dfc62091c0d8bbf192d72eaed3507b8fe6845c74bd"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/替换前备份/item.plist",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/替换前备份/item.plist",
+      "originalSha256": "85ae8b11a75f99a92d53f0893accbbf0105e6d2874b03541e19f23e09e559dbc",
+      "migratedSha256": "85ae8b11a75f99a92d53f0893accbbf0105e6d2874b03541e19f23e09e559dbc"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/替换前备份/item.plist.meta",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/替换前备份/item.plist.meta",
+      "originalSha256": "1a241d2a063f5593251f937ffa9df4931ba114f53fee42a8c674bfcd21c689c9",
+      "migratedSha256": "1a241d2a063f5593251f937ffa9df4931ba114f53fee42a8c674bfcd21c689c9"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/替换前备份/item.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/替换前备份/item.png",
+      "originalSha256": "e7585a8aae11480de66a3bde1a9545fb2bcb71031b3686f316d8fe6b1f88b438",
+      "migratedSha256": "e7585a8aae11480de66a3bde1a9545fb2bcb71031b3686f316d8fe6b1f88b438"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/替换前备份/item.png.meta",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/替换前备份/item.png.meta",
+      "originalSha256": "21211d9d35b3de5212d0d46a453243078a1f2d778c559f111e6d12338052faf2",
+      "migratedSha256": "21211d9d35b3de5212d0d46a453243078a1f2d778c559f111e6d12338052faf2"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/检查报告.json",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/检查报告.json",
+      "originalSha256": "bc02c4c26c7f3d23bbe39c6c531e7145529b99aaf0ded4d7f76bd528dac8d09c",
+      "migratedSha256": "bc02c4c26c7f3d23bbe39c6c531e7145529b99aaf0ded4d7f76bd528dac8d09c"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/物品64像素-浅深底预览.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/物品64像素-浅深底预览.png",
+      "originalSha256": "3cb80401bc83cbdf0e1a78d868f1a9db785c221d98092923972b7f7f76b6be3a",
+      "migratedSha256": "3cb80401bc83cbdf0e1a78d868f1a9db785c221d98092923972b7f7f76b6be3a"
+    },
+    {
+      "from": "通用资源/物品生成/已处理/素材仓库-prompt.md",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/已处理/素材仓库-prompt.md",
+      "originalSha256": "2b173036b74fa03c52872a9bc621a735a4ce405131021934640a2d59e9c9b4ff",
+      "migratedSha256": "2b173036b74fa03c52872a9bc621a735a4ce405131021934640a2d59e9c9b4ff"
+    },
+    {
+      "from": "通用资源/物品生成/打包物品.mjs",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/打包物品.mjs",
+      "originalSha256": "7d42986b58171a34ed3f2c203f5b77de021f1c5abedb0d381f51a3e850544423",
+      "migratedSha256": "7d42986b58171a34ed3f2c203f5b77de021f1c5abedb0d381f51a3e850544423"
+    },
+    {
+      "from": "通用资源/物品生成/物品批量-01-gpt-image-2.5-flare-v1.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/物品批量-01-gpt-image-2.5-flare-v1.png",
+      "originalSha256": "0c326b101dc35d8df9c0509b9026ae43893c4d2e260004a40fe80c5b79a9468e",
+      "migratedSha256": "0c326b101dc35d8df9c0509b9026ae43893c4d2e260004a40fe80c5b79a9468e"
+    },
+    {
+      "from": "通用资源/物品生成/物品批量-01.md",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/物品批量-01.md",
+      "originalSha256": "2c3a2e9657a6ca82b855103e131b66c4e48bacc611086d05b356334da2bcd6ab",
+      "migratedSha256": "2c3a2e9657a6ca82b855103e131b66c4e48bacc611086d05b356334da2bcd6ab"
+    },
+    {
+      "from": "通用资源/物品生成/物品批量-02-gpt-image-2.5-flare-v1.png",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/物品批量-02-gpt-image-2.5-flare-v1.png",
+      "originalSha256": "17b870349576f5cf571d3d7e0c4fd306ea0a8362797c6aa12943e4596e34886a",
+      "migratedSha256": "17b870349576f5cf571d3d7e0c4fd306ea0a8362797c6aa12943e4596e34886a"
+    },
+    {
+      "from": "通用资源/物品生成/物品批量-02.md",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/物品批量-02.md",
+      "originalSha256": "5dd67b3e4661158882afb4773b86d9f570beded5582b75dbbd401602bb384f32",
+      "migratedSha256": "5dd67b3e4661158882afb4773b86d9f570beded5582b75dbbd401602bb384f32"
+    },
+    {
+      "from": "通用资源/物品生成/物品采用清单.json",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/物品采用清单.json",
+      "originalSha256": "a05260bf3e295d8d8946b3368156a31826abe1833f7017ba7ea47cc7220fb583",
+      "migratedSha256": "a05260bf3e295d8d8946b3368156a31826abe1833f7017ba7ea47cc7220fb583"
+    },
+    {
+      "from": "通用资源/物品生成/试产第一批.mjs",
+      "to": "D:/creator/FFrame-asset-line/通用资源/物品生成/试产第一批.mjs",
+      "originalSha256": "9e1a13e3db11d809fa390504f1430f8a79031a7378e9e4221daa47a18ab7ae2d",
+      "migratedSha256": "9e1a13e3db11d809fa390504f1430f8a79031a7378e9e4221daa47a18ab7ae2d"
+    }
+  ]
+}
