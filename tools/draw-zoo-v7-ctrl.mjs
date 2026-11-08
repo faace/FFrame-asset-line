@@ -223,8 +223,10 @@ function thinBar(w, h, face, hi) {
 
 function sliderThumb() {
     const data = blank(44, 44);
-    disc(data, 44, 44, 22, 22, 19, OLIVE);
-    disc(data, 44, 44, 22, 22, 16, CREAM);
+    const r = 19;
+    const stroke = STROKE + 1; // 圆边斜向会瘦一像素，比轨道的 3 多 1，看起来才一样粗
+    disc(data, 44, 44, 22, 22, r, OLIVE);
+    disc(data, 44, 44, 22, 22, r - stroke, CREAM);
     disc(data, 44, 44, 22, 16, 7, CREAM_HI);
     return data;
 }
@@ -533,7 +535,7 @@ function writeDocs(json) {
         '# v8',
         '',
         '采用。按已确认的 2 倍尺寸用脚本重画，硬边、空白 alpha 为 0。',
-        '描边统一为显示尺寸 3 像素。圆钮两侧是一对细条：浅橡木是背景，草地绿是前景。',
+        '描边统一为显示尺寸 3 像素，圆钮是 4 像素。圆钮两侧是一对细条：浅橡木是背景，草地绿是前景。',
         '选中框盖住木格的深色描边和浅橡木圈。浅橡木那一圈用浅草地绿，中间透空。',
         '叉、问号、加号、减号是圆角描边。问号用浅橡木，叉用按钮的深绿。',
         '风格句用 `style/ZooV7/style.md`。母版只作对照：`style/ZooV7/控件/history/v7/ui-sheet-v7.png`。',
