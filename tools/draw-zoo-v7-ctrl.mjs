@@ -183,15 +183,18 @@ function tabPlate(face, shade) {
     return plate(154, 72, 10, STROKE, OLIVE, face, null, shade, true);
 }
 
+/** 外圈 3 像素草地绿，再往里 7 像素浅绿色，盖住木格的浅橡木。中间透空 */
 function selectFrame() {
     const w = 88;
     const h = 88;
+    const oak = 7;
     const data = blank(w, h);
     for (let y = 0; y < h; y++) {
         for (let x = 0; x < w; x++) {
             const depth = -sdRoundRect(x + 0.5, y + 0.5, 0, 0, w, h, 12);
-            if (depth <= 0 || depth >= STROKE) continue;
-            put(data, w, x, y, depth < STROKE - 1 ? GREEN : GREEN_DK);
+            if (depth <= 0 || depth >= STROKE + oak) continue;
+            const rgb = depth < STROKE - 1 ? GREEN : depth < STROKE ? GREEN_DK : GREEN_HI;
+            put(data, w, x, y, rgb);
         }
     }
     return data;
@@ -531,6 +534,7 @@ function writeDocs(json) {
         '',
         '采用。按已确认的 2 倍尺寸用脚本重画，硬边、空白 alpha 为 0。',
         '描边统一为显示尺寸 3 像素。圆钮两侧是一对细条：浅橡木是背景，草地绿是前景。',
+        '选中框盖住木格的深色描边和浅橡木圈。浅橡木那一圈用浅草地绿，中间透空。',
         '叉、问号、加号、减号是圆角描边。问号用浅橡木，叉用按钮的深绿。',
         '风格句用 `style/ZooV7/style.md`。母版只作对照：`style/ZooV7/控件/history/v7/ui-sheet-v7.png`。',
         '没有调用绘图接口，也没有把 v7 的 1024 图放大。',
