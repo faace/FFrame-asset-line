@@ -405,32 +405,12 @@
                 88
             ]
         },
-        "switch": {
+        "switch_off": {
             "rect": [
+                1760,
                 32,
-                1394,
-                320,
-                144
-            ],
-            "border": [
-                32,
-                32,
-                24,
-                24
-            ],
-            "sliced": true,
-            "display": [
-                160,
-                72
-            ],
-            "reserved": true
-        },
-        "checkbox": {
-            "rect": [
-                384,
-                1394,
-                144,
-                144
+                192,
+                96
             ],
             "border": [
                 0,
@@ -440,10 +420,66 @@
             ],
             "sliced": false,
             "display": [
-                72,
-                72
+                96,
+                48
+            ]
+        },
+        "switch_on": {
+            "rect": [
+                1760,
+                160,
+                192,
+                96
             ],
-            "reserved": true
+            "border": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "sliced": false,
+            "display": [
+                96,
+                48
+            ]
+        },
+        "checkbox": {
+            "rect": [
+                384,
+                1394,
+                96,
+                96
+            ],
+            "border": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "sliced": false,
+            "display": [
+                48,
+                48
+            ]
+        },
+        "checkbox_mark": {
+            "rect": [
+                1728,
+                1394,
+                96,
+                96
+            ],
+            "border": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "sliced": false,
+            "display": [
+                48,
+                48
+            ]
         },
         "radio": {
             "rect": [

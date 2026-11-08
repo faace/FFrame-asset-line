@@ -347,6 +347,65 @@ function iconMinus() {
     return paintIcon((px, py) => sdCapsule(px, py, 20, 44, 68, 44, 14), OLIVE, RED, RED_HI, RED_DK);
 }
 
+/** 开关整张。关是浅橡木，开是草地绿。圆钮画在里面，不另占槽，也不拉伸 */
+function switchArt(on) {
+    const w = 96;
+    const h = 48;
+    const face = on ? GREEN : OAK;
+    const hi = on ? GREEN_HI : OAK_HI;
+    const data = plate(w, h, h / 2, STROKE, OLIVE, face, hi, null, false);
+    const knob = 20;
+    const stroke = STROKE + 1; // 跟圆钮一样，斜边多 1 像素才和直边一样粗
+    const cx = on ? w - 24 : 24;
+    const cy = h / 2;
+    disc(data, w, h, cx, cy, knob, OLIVE);
+    disc(data, w, h, cx, cy, knob - stroke, CREAM);
+    disc(data, w, h, cx, cy - 6, 7, CREAM_HI);
+    return data;
+}
+
+/** 圆角笔画。外圈是描边，内侧压暗，朝上加高光、朝下加暗面 */
+function paintGlyph(w, h, dist, stroke, face, hi, shade, strokeW) {
+    const data = blank(w, h);
+    for (let y = 0; y < h; y++) {
+        for (let x = 0; x < w; x++) {
+            const px = x + 0.5;
+            const py = y + 0.5;
+            const d = dist(px, py);
+            if (d >= 0) continue;
+            const depth = -d;
+            let rgb = stroke;
+            if (depth >= strokeW) {
+                rgb = face;
+                const e = 0.8;
+                const gy = dist(px, py + e) - dist(px, py - e);
+                const gx = dist(px + e, py) - dist(px - e, py);
+                const len = Math.hypot(gx, gy) || 1;
+                const ny = gy / len;
+                if (hi && ny < -0.3 && depth < strokeW + 2.4) rgb = hi;
+                else if (shade && ny > 0.4 && depth < strokeW + 3.2) rgb = shade;
+                if (depth < strokeW + 1) rgb = dark(rgb);
+            }
+            put(data, w, x, y, rgb);
+        }
+    }
+    return data;
+}
+
+/** 浅橡木框，中间奶油。描边仍是 3 像素深橄榄绿 */
+function checkboxBox() {
+    return frame(48, 48, 8, [[STROKE, OLIVE], [5, OAK], [2, CREAM_DK], [99, CREAM]]);
+}
+
+/** 草地绿的勾，画在 48 见方里，四周留空，好叠在框上 */
+function checkboxMark() {
+    const r = 5.5;
+    return paintGlyph(48, 48, (px, py) => Math.min(
+        sdCapsule(px, py, 18, 25, 23, 31, r),
+        sdCapsule(px, py, 23, 31, 32, 17, r),
+    ), GREEN_DK, GREEN, GREEN_HI, GREEN_DK, 2);
+}
+
 function crc32(buf) {
     let c = ~0;
     for (let i = 0; i < buf.length; i++) {
@@ -435,8 +494,10 @@ function buildPieces() {
         piece('icon_help', iconHelp(), 88, 88, [0, 0, 0, 0], false, 1032, 1186),
         piece('icon_plus', iconPlus(), 88, 88, [0, 0, 0, 0], false, 1240, 1186),
         piece('icon_minus', iconMinus(), 88, 88, [0, 0, 0, 0], false, 1448, 1186),
-        piece('switch', blank(160, 72), 160, 72, [16, 16, 12, 12], true, 32, 1394, true),
-        piece('checkbox', blank(72, 72), 72, 72, [0, 0, 0, 0], false, 384, 1394, true),
+        piece('switch_off', switchArt(false), 96, 48, [0, 0, 0, 0], false, 1760, 32),
+        piece('switch_on', switchArt(true), 96, 48, [0, 0, 0, 0], false, 1760, 160),
+        piece('checkbox', checkboxBox(), 48, 48, [0, 0, 0, 0], false, 384, 1394),
+        piece('checkbox_mark', checkboxMark(), 48, 48, [0, 0, 0, 0], false, 1728, 1394),
         piece('radio', blank(72, 72), 72, 72, [0, 0, 0, 0], false, 560, 1394, true),
         piece('input', blank(400, 72), 400, 72, [16, 16, 12, 12], true, 736, 1394, true),
         piece('badge', blank(64, 64), 64, 64, [0, 0, 0, 0], false, 1568, 1394, true),
@@ -536,6 +597,8 @@ function writeDocs(json) {
         '',
         '采用。按已确认的 2 倍尺寸用脚本重画，硬边、空白 alpha 为 0。',
         '描边统一为显示尺寸 3 像素，圆钮是 4 像素。圆钮两侧是一对细条：浅橡木是背景，草地绿是前景。',
+        '开关是两张：关掉浅橡木、圆钮在左；打开草地绿、圆钮在右。不占 checkbox。',
+        '勾选框是浅橡木框，勾是单独一张草地绿。不占开关。',
         '选中框盖住木格的深色描边和浅橡木圈。浅橡木那一圈用浅草地绿，中间透空。',
         '叉、问号、加号、减号是圆角描边。问号用浅橡木，叉用按钮的深绿。',
         '风格句用 `style/ZooV7/style.md`。母版只作对照：`style/ZooV7/控件/history/v7/ui-sheet-v7.png`。',
@@ -547,8 +610,8 @@ function writeDocs(json) {
 function main() {
     const list = buildPieces();
     const drawn = list.filter((item) => !item.reserved);
-    if (drawn.length !== 21) throw new Error(`实画 ${drawn.length} 件，名单是 21 个`);
-    if (list.length - drawn.length !== 10) throw new Error('预留不是 10 个');
+    if (drawn.length !== 25) throw new Error(`实画 ${drawn.length} 件，名单是 25 个`);
+    if (list.length - drawn.length !== 8) throw new Error('预留不是 8 个');
     const sheet = compose(list);
     assertSheet(sheet, list);
     fs.mkdirSync(outDir, { recursive: true });
