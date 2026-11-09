@@ -487,7 +487,7 @@ function buildPieces() {
         piece('stepper_plate', stepperPlate(), 140, 72, b, true, 824, 778),
         piece('bar_bg', barTrack(), 320, 52, [26, 26, 16, 16], true, 1136, 778),
         piece('bar_fill', capsule(100, 40, STROKE, GREEN, GREEN_HI, 4), 100, 40, [20, 20, 4, 4], true, 824, 954),
-        piece('progress_fill', progressBar(), 176, 18, [10, 10, 6, 6], true, 1328, 1092),
+        piece('slider_fill', progressBar(), 176, 18, [10, 10, 6, 6], true, 1328, 1092), // 游戏里用这个名，别改回 progress_fill
         piece('slider_track', thinBar(176, 18, OAK, OAK_HI), 176, 18, [10, 10, 6, 6], true, 824, 1092),
         piece('slider_thumb', sliderThumb(), 44, 44, [0, 0, 0, 0], false, 1208, 1066),
         piece('icon_close', iconClose(), 88, 88, [0, 0, 0, 0], false, 824, 1186),
