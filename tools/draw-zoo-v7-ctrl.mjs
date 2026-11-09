@@ -403,7 +403,7 @@ function checkboxMark() {
     return paintGlyph(48, 48, (px, py) => Math.min(
         sdCapsule(px, py, 18, 25, 23, 31, r),
         sdCapsule(px, py, 23, 31, 32, 17, r),
-    ), GREEN_DK, GREEN, GREEN_HI, GREEN_DK, 2);
+    ), GREEN_DK, GREEN, GREEN_HI, GREEN_DK, STROKE); // 描边和叉、问号、加减一样粗
 }
 
 function crc32(buf) {
