@@ -397,12 +397,12 @@ function checkboxBox() {
     return frame(48, 48, 8, [[STROKE, OLIVE], [5, OAK], [2, CREAM_DK], [99, CREAM]]);
 }
 
-/** 草地绿的勾，画在 48 见方里，四周留空，好叠在框上 */
+/** 草地绿的勾，画在 48 见方里，四周留空，好叠在框上。两条笔画横向各收 1 像素，让内容中心落在 24 */
 function checkboxMark() {
     const r = 5.5;
     return paintGlyph(48, 48, (px, py) => Math.min(
-        sdCapsule(px, py, 18, 25, 23, 31, r),
-        sdCapsule(px, py, 23, 31, 32, 17, r),
+        sdCapsule(px, py, 17, 25, 22, 31, r),
+        sdCapsule(px, py, 22, 31, 31, 17, r),
     ), GREEN_DK, GREEN, GREEN_HI, GREEN_DK, STROKE); // 描边和叉、问号、加减一样粗
 }
 
