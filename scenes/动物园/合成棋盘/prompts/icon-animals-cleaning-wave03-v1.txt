@@ -1,0 +1,27 @@
+Use case: stylized-concept.
+Asset type: ZooV7 merge game, sixteen independent item sprites on ONE native 2048x2048 PNG sheet with REAL ALPHA TRANSPARENCY.
+Input role: approved ZooV7 STYLE REFERENCE ONLY, not old subjects or background. Match chunky rounded pixel art, bold dark olive-brown contours, medium visible pixel steps, bright saturated colors, simple stepped shading, consistent top-left light. No smooth vectors, watercolor, realism, glossy 3D, tiny noisy texture or fine linework.
+Background: fully transparent alpha=0 everywhere outside objects, including holes and gaps. NO white background, NO checkerboard drawn into the picture, NO scenery, ground, shadows, floor, tile plates, frames, captions, labels, numbers or watermark. Isolated sprites only.
+Layout: precise invisible 4x4 grid, sixteen square cells of 512x512. Centers x=256,768,1280,1792 and y=256,768,1280,1792. One requested subject/group per cell. Each entirely contained with at least 64px margins, max extent 384px. No crossing, clipping or detached fragments. Shared absolute outer outline width approximately 12-16 source pixels throughout, same pixel grid and detail density, all complete cells later reduced uniformly to 64px by 1/8. Do not independently zoom subjects to fill cells. Small subjects 260-300px, medium 310-350px, largest 360-384px. Same thickness for animal contours, cleaning items and generators. Keep animal poses compact and fully visible, three-quarter front view, no human clothes or accessories.
+Exact row-major order:
+ROW 1, ANIMALS levels 1-4:
+1. One cute cream rabbit, compact sitting pose, two long upright ears, small pink nose and little paws, full body, not a head portrait.
+2. One orange fox, seated, pointed ears, white chest, bushy curled orange tail with white tip, full body.
+3. One gray raccoon, seated, clear dark eye mask and gray/dark ringed curled tail, full body, clearly not a panda.
+4. One warm brown monkey, seated, cream face and belly, rounded ears, visible curled long tail, full body.
+ROW 2, ANIMALS levels 5-7 and CLEANING level 1:
+5. One black-and-white giant panda, seated, round black ears, distinct black eye patches and black limbs, plump compact full body, no bamboo prop.
+6. One cute yellow giraffe with simple brown patches, compact folded-leg sitting pose but clearly long neck and two small ossicones, full body fits within cell, no neck clipping.
+7. One cute gray elephant, compact full body, big rounded ears, visible short curved trunk and four chunky feet, no props.
+8. Cleaning cloth: one folded turquoise cleaning rag with a folded corner, simple soft fabric folds. Not paper or a plank.
+ROW 3, CLEANING levels 2-5:
+9. Cleaning sponge: one chunky yellow rectangular sponge with a green scrub layer and a few large simple pores, clear two-layer silhouette, no foam or water.
+10. Cleaning spray: one green and blue trigger spray bottle with clearly angled trigger nozzle and simple plain label panel WITHOUT writing or symbols, no airborne spray.
+11. Cleaning bucket: one blue bucket with curved golden-oak handle, no tools inside, clearly hollow rim, no water splash.
+12. Cleaning caddy: one open green handled carrier basket containing folded turquoise cloth, yellow sponge and green spray bottle. One compact cohesive group, no scattered items.
+ROW 4, CLEANING level 6 and THREE INITIAL GENERATORS:
+13. Cleaning cart: compact green janitorial trolley with two visible wheels, blue bucket and mop upright in holder, compact full silhouette, no person, no scenery. Mop entirely within cell.
+14. Level-one animal reception station: one small pale-oak reception kiosk/cabinet with small green canopy, simple paw emblem on its front panel, no animals inside, no letters, no cage bars. Readable generator icon, not a full building scene.
+15. Level-one habitat nursery: one small pale-oak plant nursery workbench with green trim and two compact green plant seedlings in terracotta pots on top, one cohesive icon, no scenery or ground. Different silhouette from kiosk.
+16. Level-one visitor service cabinet: one compact pale-oak cabinet with green top, an open shelf holding simple blue cleaning bottle on one side and a few folded cream guide leaflets on the other; doors/drawers below. No letters, no counter attendant. Distinct from closed toolbox, nursery and reception kiosk.
+All sixteen subjects must have clearly distinct silhouettes and remain recognizable in 64px square cells. Preserve real alpha transparency. Exactly sixteen, no extra animals or props.

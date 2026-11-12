@@ -1,0 +1,18 @@
+Use case: precise-object-edit.
+Asset type: transparent ZooV7 wood-chain sprite sheet.
+Input image role: APPROVED wood sprite appearance and layout reference. Preserve the eight subjects, chunky rounded pixel-art style, golden oak palette, dark olive-brown contours, simple stepped shading and top-left light. Change the white background to genuine alpha transparency, and enforce the shared drawing scale below. Do not invent additional objects or change the plank bundle into logs.
+OUTPUT: Native 2048x2048 PNG, NOT a cropped or trimmed canvas. Invisible 4x4 grid of sixteen 512x512 cells. Exactly eight subjects in the FIRST TWO ROWS. Bottom TWO ROWS completely transparent. Do not change to a 4x2 layout or fill the empty area.
+BACKGROUND: actual alpha=0 outside objects, including gaps. Solid opaque subject interiors. No white/colored background, painted checkerboard, ground, shadows, plates, grid lines, labels, numbers or watermark. Preserve the full canvas and clean contours.
+SHARED SCALE: all eight subjects use the SAME absolute outer contour width of 12-16 SOURCE pixels and SAME medium stepped pixel grid. All complete 512px cells will uniformly reduce to 64px at 1/8 scale. Do not zoom simple small subjects to fill cells. Leave at least 64px margin per cell. Small subjects occupy less space; never thicken twig/log outlines relative to plank/station outlines. No crossing cell boundaries, detached fragments or clipping.
+Cell centers x=256,768,1280,1792; y=256,768. Exact row-major objects and maximum longest extents INCLUDING outlines:
+ROW 1:
+1. One slender Y-shaped small brown twig, no leaves. Extent 260px.
+2. One thicker bark-covered branching piece with two short cut side stubs, not separate logs. Extent 300px.
+3. One squat upright short cylindrical log, pale oval top cut face with simple rings. Extent 280px.
+4. One longer bark-covered log reclining diagonally with one pale circular cut end visible. Entire long log stays inside its own cell, far from short upright log. Extent 360px.
+ROW 2:
+5. Exactly ONE flat thin golden-oak sawn plank, broad flat face and very thin rectangular end, no bark. Extent 340px.
+6. Exactly THREE flat thin planks in a loose slightly staggered stack, readable separate thin layers, not square beams. Extent 350px.
+7. SIX to EIGHT THIN FLAT WIDE PLANKS in a horizontal layered bundle bound by TWO green straps. Width of each plank at least five times its thickness. Show broad top board and thin side layers. NO round log ends, NO bark, NO square-section beams. Extent 370px.
+8. Initial wood supply station: compact pale-oak open rack, two posts, simple green canopy and low base, storing thin flat rectangular planks. No circular log cross-sections or bark inside, no scenery or text. Extent 380px.
+ROWS 3 AND 4: all eight cells EMPTY with alpha=0. Exactly eight subjects total, no extras. Preserve clear chunky pixel style, not fuzzy painterly textures or smooth vector outlines. Native 2048x2048 transparent PNG, clean real alpha, consistent shared drawing scale.

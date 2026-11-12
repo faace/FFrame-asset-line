@@ -1,0 +1,21 @@
+Use case: stylized-concept.
+Asset type: ZooV7 merge-game production icon sheet, eight wood-chain assets.
+Input image: STYLE REFERENCE ONLY, not a layout or content reference. Match approved chunky rounded pixel craft, bold dark olive-brown outlines, saturated golden oak, bright simple stepped shading. No smooth vector, painterly texture, glossy 3D or fine noisy detail.
+
+OUTPUT AND LAYOUT LOCK: Exactly 2048x2048 pixels. Invisible FOUR columns by FOUR rows of square 512x512 cells. Draw exactly EIGHT icons in rows 1 and 2; rows 3 and 4 must remain completely empty pure white. Do NOT stretch into a 4x2 layout. First two row cell centers: x=256,768,1280,1792; y=256,768. Every icon is fully inside its cell with at least 64 pixels of pure white margin. No crossing cell boundaries. No captions, numbers, grid lines, borders, plates, backgrounds, shadows, checkerboards or watermark.
+
+CRITICAL SHARED DRAWING SCALE: All eight objects use the SAME pixel grid and SAME ABSOLUTE outer outline thickness of approximately 12-16 source pixels, yielding approximately 1.5-2 pixels when ALL 512px cells are uniformly reduced to 64px. Do NOT make twig outlines proportionally thicker. Do NOT individually zoom each item to fill a cell. Treat the sheet as one shared-scale sprite drawing, not eight independently scaled illustrations. Medium stepped pixel edges, same shading resolution, same light direction. Smaller simple items retain more white space. Target longest extents: twig 260px; thick branch 300px; short log 280px; long log 360px; single plank 340px; loose plank stack 350px; strapped plank bundle 370px; wood station 380px. These extents include outlines. Keep all geometry within safe margins. No duplicate icons.
+
+EXACT SUBJECTS, left to right:
+ROW 1:
+1. Small twig: one slender short brown Y-shaped twig with one little fork and no leaves. Same absolute outline width as every other item, not an oversized heavy silhouette.
+2. Thick branch: one thicker solid branching piece of wood with two short sawn side stubs and bark, not three separate logs. Clearly thicker than twig.
+3. Short log: one squat upright short cylindrical log, pale oval top cut face with simple rings and brown bark. Compact silhouette.
+4. Long log: one longer cylindrical bark-covered log reclining diagonally, pale circular end visible. Entire end and silhouette fully within its OWN cell, separated far from item 3.
+ROW 2:
+5. Single plank: exactly ONE flat thin sawn golden-oak board, broad flat face, straight edges and rectangular THIN end section. No bark or circular cut end.
+6. Plank stack: exactly THREE of the same thin flat boards in a loose slightly staggered stack, three readable separated layers. Wide thin rectangular end faces, not square beams.
+7. Strapped PLANK bundle: SIX to EIGHT THIN FLAT WIDE BOARDS stacked horizontally in layers and bound together by TWO green straps. Individual boards have broad faces and very thin rectangular end sections, width at least five times thickness. Clearly bundled PLANKS, not logs, not thick square-section timbers, not a 3-by-3 array of square blocks. No round end-grain rings. Show broad top board and many thin layers along the sides.
+8. Level-one wood supply station: a compact low pale-oak open rack with two upright posts, small simple green canopy and low base, storing a neat stack of THIN FLAT SAWN WOODEN PLANKS inside. Internal contents must be rectangular layered boards, NO ROUND LOGS, NO ROUND CROSS-SECTIONS, no bark. Icon only, no scenery or ground, no text/signs, simple silhouette readable at 64px. Same absolute outline and pixel scale as the other seven icons; do not add miniature fine architectural details.
+
+Uniform pure white background for later cutout. Strong separation through silhouette and quantity. Preserve consistent outline width especially between left twig/log icons and right plank/station icons. Final check: exactly eight subjects in top half, bottom half empty, sixteen equal square cell layout retained, all outer contours intact.

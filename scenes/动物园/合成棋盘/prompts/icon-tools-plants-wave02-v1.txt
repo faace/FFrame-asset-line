@@ -1,0 +1,30 @@
+Use case: stylized-concept.
+Asset type: ZooV7 merge game, sixteen independent production item icons on ONE 2048x2048 contact sheet.
+Input role: approved ZooV7 STYLE REFERENCE ONLY. New subjects below, not copies of reference subjects. Match chunky rounded pixel art, bold dark olive-brown contours, visible medium pixel steps, bright saturated palette and simple stepped shading, consistent lighting. Golden oak handles, silver-blue steel, grass green plants, green and yellow power tools. Not smooth vector, painterly, realistic, glossy 3D, washed out, micro-detail or fine antialiasing.
+
+EXACT LAYOUT: invisible 4x4 grid, equal 512x512 cells. Cell centers x=256,768,1280,1792; y=256,768,1280,1792. Exactly ONE icon/group per cell, all sixteen cells occupied, exact order below. Uniform pure white background, no shadows, scenery, ground patches, pedestals, tile plates, borders, labels, numbers, text, watermark or visible grid. EVERY silhouette entirely inside its own cell, at least 64px empty margins. Maximum icon extent 384px. No crossing boundaries or detached fragments.
+
+CRITICAL SAME DRAWING SCALE: all sixteen subjects share ONE source-pixel scale and fixed outer outline thickness about 12-16px, approximately 1.5-2px at uniform 1/8 reduction of complete 512px cells to 64px. Same pixel-step size and detail density, including tools and foliage. Do NOT zoom smaller subjects to fill cells. Twig-like grass blades and slender tool shafts must not have heavier outlines than large plants or boxes. Small icons roughly 260-300px long, medium 310-350px, largest 360-384px. Broad simplified shapes readable at 64px. No tiny ornamental patterns. Objects centered with consistent framing; differences expressed through shape and quantity, not individual magnification.
+
+ROW 1, TOOL CHAIN levels 1-4:
+1. Small basic hammer: short golden-oak handle and SMALL plain silver-blue rectangular head with two flat striking ends, NO claw. Diagonal, simple and compact.
+2. Claw hammer: longer golden-oak handle, larger silver-blue head with CLEAR curved split claw on one side and round striking face on the other. Clearly distinguishable from basic hammer.
+3. Screwdriver: single chunky green handle and straight silver-blue shaft with flat blade tip, diagonal, no screws or extra tools.
+4. Adjustable wrench: one single silver-blue adjustable spanner with visibly open adjustable jaws and simple adjustment wheel, diagonal. Not pliers.
+ROW 2, TOOL CHAIN levels 5-8:
+5. Hand saw: one broad silver-blue trapezoid saw blade with large readable teeth, golden-oak closed grip handle, no logs.
+6. Cordless electric hand drill: chunky green and yellow pistol-shaped drill with dark grip, battery base, one short silver bit, not a hairdryer.
+7. Handheld circular power saw: green and yellow motor body, top handle, visibly round toothed silver blade partly in protective housing and flat base shoe. Clearly a circular saw, not an angle grinder or standalone gear.
+8. Comprehensive tool set: OPEN compact golden-oak/green toolbox with clearly grouped hammer, screwdriver and wrench rising from it. One cohesive toolkit icon, no scattered external props. Largest tier, no letters.
+ROW 3, HABITAT PLANT CHAIN levels 1-4:
+9. Grass seedling: one tiny bright green tuft of THREE broad blades joined at base, no pot, soil or ground tile. Smallest plant.
+10. Grass clump: one fuller rounded tuft of about seven broad bright green blades, clearly fuller than seedling, no flowers, pot or soil.
+11. Flowering grass clump: the same fuller grass tuft with three simple yellow and pink flowers on short stems, distinct clear petals, no pot or soil.
+12. Small shrub: one compact rounded leafy green bush with a short visible woody trunk, no flowers, no grass-shaped blades, no pot or soil.
+ROW 4, HABITAT PLANT CHAIN levels 5-7 plus INITIAL GENERATOR:
+13. Dense shrub: one larger wider bush with three overlapping rounded foliage lobes and simple stepped leaf masses, small branching woody base, clearly denser than small shrub, not a tree, no flowers or pot.
+14. Shade tree: ONE simplified broad-crowned green deciduous tree with clear tall brown trunk and rounded spreading canopy. No ground, grass patch or pot. Trunk and canopy fit entire cell.
+15. Habitat plant combination: one cohesive arrangement of a small shade tree, a rounded shrub and grass with a few simple flowers grouped tightly at their roots. Clear different silhouettes and heights, no pot, soil tile, landscape, fence or scene. Large final plant tier, not three separate icons.
+16. Level-one park toolbox GENERATOR: one CLOSED sturdy portable golden-oak toolbox with green lid, raised carrying handle and one simple brass latch. No visible loose tools, no lettering, no electrical machinery. Distinct from the open comprehensive tool set in cell 8, same pixel style as reference backpack/chest.
+
+Final checks: sixteen exactly, correct order, all items centered and complete inside 512px square cells, shared absolute outline thickness, crisp chunky pixel craft, no captions. Plants must not be drawn as detailed scenery; tools must be recognizable in tiny form.

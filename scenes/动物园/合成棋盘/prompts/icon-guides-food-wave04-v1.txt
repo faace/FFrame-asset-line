@@ -1,0 +1,28 @@
+Use case: stylized-concept.
+Asset type: ZooV7 merge-game sprites. ONE native 2048x2048 PNG with genuine alpha transparency. Exactly THIRTEEN objects in a strict invisible 4x4 grid, last THREE cells empty and transparent. Do not crop canvas, trim, resize or change output resolution.
+Input image role: approved ZooV7 STYLE REFERENCE ONLY. Do not copy its objects or background.
+Style: chunky rounded pixel art, clearly visible medium pixel steps, bold dark olive-brown outlines, bright saturated colors, simple two/three-tone stepped shading, top-left light. Clean solid opaque interiors, not fuzzy painted fur or textured illustration. No fine grain, smooth vector, realism or glossy 3D.
+Scale invariants: each source cell is exactly 512x512. All objects share absolute 12-16px outline width and the SAME pixel grid. Complete source cells will be downscaled uniformly by 1/8 to 64x64. Do not independently enlarge small objects to fill the cells. Small item extent 260-300px, medium 310-350px, largest 360-384px. At least 64px safety margin on all sides, including handles. No crossings, detached fragments or clipping. Cell centers x=256,768,1280,1792; y=256,768,1280,1792.
+Background: REAL alpha=0 outside subjects, including gaps and handles. Subjects solid opaque. No white background or painted checkerboard, shadows, floor, scenery, grid lines, tile plates, labels, letters, numbers or watermark.
+Exact row-major contents:
+ROW 1:
+1. Animal introduction card: ONE cream rectangular card, green border, large simple orange fox-face illustration, rounded pixel corners, tilted slightly. No writing. Clearly one card, not a book.
+2. Animal card group: THREE slightly fanned cream animal cards with green borders, foremost has large panda face illustration. Clearly separate card edges, no writing or tiny details.
+3. Zoo guide folded leaflet: ONE cream accordion-folded brochure standing slightly open, three connected panels, broad green winding path and two large simple habitat patches, no writing. Distinct zigzag silhouette, not loose cards.
+4. Animal guide handbook: ONE compact closed green softcover booklet, visible cream page block, large simple paw emblem, no writing. Thinner than encyclopedia.
+ROW 2:
+5. Animal encyclopedia: ONE thick turquoise hardcover book with thick cream page block, strong spine, large simple giraffe head emblem, no writing. Clearly larger/heavier than handbook.
+6. Zoo tour guide kit: ONE compact cohesive green handled document pouch holding a folded cream leaflet, green handbook and animal card, a cream strap flap visible. No scattered props, food or writing. Complete recognizable kit silhouette.
+7. Small biscuit: ONE golden animal-shaped biscuit, simple bear silhouette with round ears and two broad baked marks, no wrapper or plate.
+8. Biscuit bag: ONE partly open cream-and-green snack bag containing THREE golden biscuits, folded packaging edges, no words or brand marks.
+ROW 3:
+9. Snack box: ONE small open turquoise paper snack carton holding golden biscuits and a few simple fruit chunks, no drink, no lettering. A coherent compact box, visibly different from bag.
+10. Single-person lunchbox: ONE green rectangular open compartment lunchbox with cream rice, orange vegetables and a small brown sandwich section, lid hinged behind, no writing or separate accessories.
+11. Zoo meal combo: ONE compact turquoise carry tray holding a green lunchbox, a small cream drink carton with straw and a small biscuit packet, all attached visually as one cohesive group, no labels or letters.
+12. Sharing picnic basket: ONE wicker basket with large curved handle, green cloth lining and generous packed food for sharing, two sandwiches, fruit and a plain cream drink carton, all within the basket silhouette. No loose objects, no scenery.
+ROW 4:
+13. INITIAL food stall generator: ONE small pale-oak food kiosk with green canopy, counter displaying a simple biscuit jar and small packed snack box, tiny plain paw emblem on front panel. No human, animals, menu writing, signs, background or full building scene. Keep canopy, counter and base together within the cell.
+14. EMPTY: fully transparent cell. No object.
+15. EMPTY: fully transparent cell. No object.
+16. EMPTY: fully transparent cell. No object.
+Exactly thirteen separate compact sprites. Guide progression must read through single card, card group, folded brochure, thin handbook, thick encyclopedia, complete kit, not tiny writing. Food progression must read through packaging and quantity. Preserve native 2048x2048 resolution and transparent alpha.
