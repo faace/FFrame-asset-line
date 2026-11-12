@@ -551,15 +551,109 @@
             "border": [
                 32,
                 32,
-                24,
-                24
+                30,
+                32
             ],
             "sliced": true,
             "display": [
                 320,
                 72
+            ]
+        },
+        "dropdown_list": {
+            "rect": [
+                1320,
+                912,
+                640,
+                128
             ],
-            "reserved": true
+            "border": [
+                32,
+                32,
+                36,
+                34
+            ],
+            "sliced": true,
+            "display": [
+                320,
+                64
+            ]
+        },
+        "dropdown_item_on": {
+            "rect": [
+                256,
+                1856,
+                640,
+                128
+            ],
+            "border": [
+                32,
+                32,
+                32,
+                32
+            ],
+            "sliced": true,
+            "display": [
+                320,
+                64
+            ]
+        },
+        "icon_arrow": {
+            "rect": [
+                1496,
+                32,
+                88,
+                88
+            ],
+            "border": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "sliced": false,
+            "display": [
+                44,
+                44
+            ]
+        },
+        "scrollbar": {
+            "rect": [
+                1656,
+                32,
+                32,
+                320
+            ],
+            "border": [
+                16,
+                16,
+                24,
+                24
+            ],
+            "sliced": true,
+            "display": [
+                16,
+                160
+            ]
+        },
+        "scrollbar_thumb": {
+            "rect": [
+                1656,
+                384,
+                32,
+                80
+            ],
+            "border": [
+                0,
+                0,
+                24,
+                24
+            ],
+            "sliced": true,
+            "display": [
+                16,
+                40
+            ]
         },
         "toast": {
             "rect": [
@@ -597,46 +691,6 @@
             "sliced": true,
             "display": [
                 96,
-                64
-            ],
-            "reserved": true
-        },
-        "scrollbar": {
-            "rect": [
-                1656,
-                32,
-                64,
-                320
-            ],
-            "border": [
-                16,
-                16,
-                24,
-                24
-            ],
-            "sliced": true,
-            "display": [
-                32,
-                160
-            ],
-            "reserved": true
-        },
-        "scrollbar_thumb": {
-            "rect": [
-                1656,
-                384,
-                64,
-                128
-            ],
-            "border": [
-                0,
-                0,
-                0,
-                0
-            ],
-            "sliced": false,
-            "display": [
-                32,
                 64
             ],
             "reserved": true

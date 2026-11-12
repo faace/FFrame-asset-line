@@ -406,6 +406,62 @@ function checkboxMark() {
     ), GREEN_DK, GREEN, GREEN_HI, GREEN_DK, STROKE); // 描边和叉、问号、加减一样粗
 }
 
+/** 下拉收起态的盒子。和面板同一套：深橄榄绿描边 + 浅橡木 + 奶油 */
+function dropdownBox() {
+    return frame(320, 72, 12, [[STROKE, OLIVE], [7, OAK], [2, CREAM_DK], [99, CREAM]]);
+}
+
+/** 下拉展开列表的底板。上边是直的（贴住盒子看不出缝），下边圆角 */
+function dropdownList() {
+    const w = 320;
+    const h = 64;
+    const radius = 12;
+    const data = blank(w, h);
+    for (let y = 0; y < h; y++) {
+        for (let x = 0; x < w; x++) {
+            const px = x + 0.5;
+            const py = y + 0.5;
+            const flatTop = py < radius; // 上边一小段按直角算，贴盒子那头才没有圆角
+            const sd = flatTop ? -Math.min(px, w - px, py) : sdRoundRect(px, py, 0, 0, w, h, radius);
+            if (sd >= 0) continue;
+            const depth = -sd;
+            let rgb = OLIVE;
+            if (depth >= STROKE) {
+                if (depth < STROKE + 7) rgb = OAK;
+                else if (depth < STROKE + 9) rgb = CREAM_DK;
+                else rgb = CREAM;
+                if (depth < STROKE + 1) rgb = dark(rgb);
+            }
+            put(data, w, x, y, rgb);
+        }
+    }
+    return data;
+}
+
+/** 下拉选中行的底板。草地绿圆角板，和选中的页签、开关同一套 */
+function dropdownItemOn() {
+    return plate(320, 64, 10, STROKE, OLIVE, GREEN, GREEN_HI, GREEN_DK, false);
+}
+
+/** 下拉的箭头：下尖的圆角折线（∨），浅橡木面深橄榄绿描边。展开时控件把它转 180° */
+function iconArrow() {
+    const r = 6;
+    return paintGlyph(44, 44, (px, py) => Math.min(
+        sdCapsule(px, py, 10, 17, 22, 29, r),
+        sdCapsule(px, py, 22, 29, 34, 17, r),
+    ), OLIVE, OAK, OAK_HI, OAK_DK, STROKE);
+}
+
+/** 滚动条槽。细长木框，中间奶油。宽 16，描边 2（比常规 3 细一档，窄条用 3 会糊） */
+function scrollTrack() {
+    return frame(16, 160, 8, [[2, OLIVE], [4, OAK], [1, CREAM_DK], [99, CREAM]]);
+}
+
+/** 滚动条滑块。浅橡木胶囊，宽 16（源图 32）。圆角取半宽，窄条别加顶部高光带 */
+function scrollThumb() {
+    return plate(16, 40, 8, 2, OLIVE, OAK, null, OAK_DK, false);
+}
+
 function crc32(buf) {
     let c = ~0;
     for (let i = 0; i < buf.length; i++) {
@@ -501,11 +557,13 @@ function buildPieces() {
         piece('radio', blank(72, 72), 72, 72, [0, 0, 0, 0], false, 560, 1394, true),
         piece('input', blank(400, 72), 400, 72, [16, 16, 12, 12], true, 736, 1394, true),
         piece('badge', blank(64, 64), 64, 64, [0, 0, 0, 0], false, 1568, 1394, true),
-        piece('dropdown', blank(320, 72), 320, 72, [16, 16, 12, 12], true, 32, 1570, true),
-        piece('toast', blank(480, 128), 480, 128, [20, 20, 20, 20], true, 704, 1570, true),
+        piece('dropdown', dropdownBox(), 320, 72, [16, 16, 15, 16], true, 32, 1570),
+        piece('dropdown_list', dropdownList(), 320, 64, [16, 16, 18, 17], true, 1320, 912),
+        piece('dropdown_item_on', dropdownItemOn(), 320, 64, [16, 16, 16, 16], true, 256, 1856),
+        piece('icon_arrow', iconArrow(), 44, 44, [0, 0, 0, 0], false, 1496, 32),
+        piece('scrollbar', scrollTrack(), 16, 160, [8, 8, 12, 12], true, 1656, 32),
+        piece('scrollbar_thumb', scrollThumb(), 16, 40, [0, 0, 12, 12], true, 1656, 384),        piece('toast', blank(480, 128), 480, 128, [20, 20, 20, 20], true, 704, 1570, true),
         piece('count_plate', blank(96, 64), 96, 64, [12, 12, 12, 12], true, 32, 1746, true),
-        piece('scrollbar', blank(32, 160), 32, 160, [8, 8, 12, 12], true, 1656, 32, true),
-        piece('scrollbar_thumb', blank(32, 64), 32, 64, [0, 0, 0, 0], false, 1656, 384, true),
     ];
     for (const item of list) {
         if (item.x < GAP || item.y < GAP || item.x + item.w > SHEET - GAP || item.y + item.h > SHEET - GAP) {
@@ -600,6 +658,8 @@ function writeDocs(json) {
         '开关是两张：关掉浅橡木、圆钮在左；打开草地绿、圆钮在右。不占 checkbox。',
         '勾选框是浅橡木框，勾是单独一张草地绿。不占开关。',
         '选中框盖住木格的深色描边和浅橡木圈。浅橡木那一圈用浅草地绿，中间透空。',
+        '下拉是四张：盒子沿用面板那圈浅橡木，列表底板的上边是直的（贴住盒子），选中行是草地绿板，箭头是浅橡木的 ∨。',
+        '滚动条两张：槽是细长木框奶油，滑块是浅橡木胶囊（九宫格上下各 16，纵向拉伸圆头不走形）。',
         '叉、问号、加号、减号是圆角描边。问号用浅橡木，叉用按钮的深绿。',
         '风格句用 `style/ZooV7/style.md`。母版只作对照：`style/ZooV7/控件/history/v7/ui-sheet-v7.png`。',
         '没有调用绘图接口，也没有把 v7 的 1024 图放大。',
@@ -610,8 +670,8 @@ function writeDocs(json) {
 function main() {
     const list = buildPieces();
     const drawn = list.filter((item) => !item.reserved);
-    if (drawn.length !== 25) throw new Error(`实画 ${drawn.length} 件，名单是 25 个`);
-    if (list.length - drawn.length !== 8) throw new Error('预留不是 8 个');
+    if (drawn.length !== 31) throw new Error(`实画 ${drawn.length} 件，名单是 31 个`);
+    if (list.length - drawn.length !== 5) throw new Error('预留不是 5 个');
     const sheet = compose(list);
     assertSheet(sheet, list);
     fs.mkdirSync(outDir, { recursive: true });
