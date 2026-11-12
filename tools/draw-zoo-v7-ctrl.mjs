@@ -411,6 +411,15 @@ function dropdownBox() {
     return frame(320, 72, 12, [[STROKE, OLIVE], [7, OAK], [2, CREAM_DK], [99, CREAM]]);
 }
 
+/**
+ * 轻提示条。和下拉盒子同一套皮：深橄榄绿描边 + 浅橡木 + 奶油。
+ * 480×72 是原生尺寸，游戏里按 1:1 显示，不压缩。
+ * 九宫格上下各 20，装饰带只有 14，中间那条横带是纯奶油，纵向拉伸也不会走样。
+ */
+function toastArt() {
+    return frame(480, 72, 12, [[STROKE, OLIVE], [7, OAK], [2, CREAM_DK], [99, CREAM]]);
+}
+
 /** 下拉展开列表的底板。上边是直的（贴住盒子看不出缝），下边圆角 */
 function dropdownList() {
     const w = 320;
@@ -562,7 +571,8 @@ function buildPieces() {
         piece('dropdown_item_on', dropdownItemOn(), 320, 64, [16, 16, 16, 16], true, 256, 1856),
         piece('icon_arrow', iconArrow(), 44, 44, [0, 0, 0, 0], false, 1496, 32),
         piece('scrollbar', scrollTrack(), 16, 160, [8, 8, 12, 12], true, 1656, 32),
-        piece('scrollbar_thumb', scrollThumb(), 16, 40, [0, 0, 12, 12], true, 1656, 384),        piece('toast', blank(480, 128), 480, 128, [20, 20, 20, 20], true, 704, 1570, true),
+        piece('scrollbar_thumb', scrollThumb(), 16, 40, [0, 0, 12, 12], true, 1656, 384),
+        piece('toast', toastArt(), 480, 72, [20, 20, 20, 20], true, 704, 1570),
         piece('count_plate', blank(96, 64), 96, 64, [12, 12, 12, 12], true, 32, 1746, true),
     ];
     for (const item of list) {
@@ -670,8 +680,8 @@ function writeDocs(json) {
 function main() {
     const list = buildPieces();
     const drawn = list.filter((item) => !item.reserved);
-    if (drawn.length !== 31) throw new Error(`实画 ${drawn.length} 件，名单是 31 个`);
-    if (list.length - drawn.length !== 5) throw new Error('预留不是 5 个');
+    if (drawn.length !== 32) throw new Error(`实画 ${drawn.length} 件，名单是 32 个`);
+    if (list.length - drawn.length !== 4) throw new Error('预留不是 4 个');
     const sheet = compose(list);
     assertSheet(sheet, list);
     fs.mkdirSync(outDir, { recursive: true });
