@@ -34,6 +34,9 @@ const BLUE_DK = [36, 124, 176];
 const RED = [214, 70, 66];
 const RED_HI = [240, 122, 106];
 const RED_DK = [162, 42, 46];
+const BADGE_FACE = [232, 85, 78]; // 角标红。跟随参照图的红族（S62 V91），比减号红更亮，靠明度区分
+const BADGE_RIM = [144, 53, 48]; // 角标边：同色压暗 0.62。按 style.md「one-pixel darker rim」，不用深橄榄绿（互补色会振动）
+const BADGE_RIM_W = 2; // 12 见方下 1 像素太弱、3 像素吃掉红芯，取 2
 const STROKE = 3;
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -471,6 +474,42 @@ function scrollThumb() {
     return plate(16, 40, 8, 2, OLIVE, OAK, null, OAK_DK, false);
 }
 
+/**
+ * 角标两颗。颜色和边同一套：红面 + 同色压暗的边（style.md 的「one-pixel darker rim」）。
+ * badge：不带数字。12×12 显示尺寸，源图 24，固定圆，不拉伸。
+ * badge_num：带数字。20×20 显示尺寸，源图 40，九宫格左右各 9、上下 0。
+ *            宽 20 时是圆，拉宽时中间那段上下连续，长成胶囊，数字用白字叠上去。
+ */
+function badgeDot() {
+    const size = 12;
+    const r = size / 2;
+    const data = blank(size, size);
+    for (let y = 0; y < size; y++) {
+        for (let x = 0; x < size; x++) {
+            const d = Math.hypot(x + 0.5 - r, y + 0.5 - r);
+            if (d >= r) continue;
+            put(data, size, x, y, d >= r - BADGE_RIM_W ? BADGE_RIM : BADGE_FACE);
+        }
+    }
+    return data;
+}
+
+function badgeCapsule() {
+    const w = 20;
+    const h = 20;
+    const r = h / 2;
+    const data = blank(w, h);
+    for (let y = 0; y < h; y++) {
+        for (let x = 0; x < w; x++) {
+            const cx = Math.min(Math.max(x + 0.5, r), w - r);
+            const d = Math.hypot(x + 0.5 - cx, y + 0.5 - r);
+            if (d >= r) continue;
+            put(data, w, x, y, d >= r - BADGE_RIM_W ? BADGE_RIM : BADGE_FACE);
+        }
+    }
+    return data;
+}
+
 function crc32(buf) {
     let c = ~0;
     for (let i = 0; i < buf.length; i++) {
@@ -565,7 +604,8 @@ function buildPieces() {
         piece('checkbox_mark', checkboxMark(), 48, 48, [0, 0, 0, 0], false, 1728, 1394),
         piece('radio', blank(72, 72), 72, 72, [0, 0, 0, 0], false, 560, 1394, true),
         piece('input', blank(400, 72), 400, 72, [16, 16, 12, 12], true, 736, 1394, true),
-        piece('badge', blank(64, 64), 64, 64, [0, 0, 0, 0], false, 1568, 1394, true),
+        piece('badge', badgeDot(), 12, 12, [0, 0, 0, 0], false, 1568, 1394),
+        piece('badge_num', badgeCapsule(), 20, 20, [9, 9, 0, 0], true, 1620, 1394),
         piece('dropdown', dropdownBox(), 320, 72, [16, 16, 15, 16], true, 32, 1570),
         piece('dropdown_list', dropdownList(), 320, 64, [16, 16, 18, 17], true, 1320, 912),
         piece('dropdown_item_on', dropdownItemOn(), 320, 64, [16, 16, 16, 16], true, 256, 1856),
@@ -680,8 +720,8 @@ function writeDocs(json) {
 function main() {
     const list = buildPieces();
     const drawn = list.filter((item) => !item.reserved);
-    if (drawn.length !== 32) throw new Error(`实画 ${drawn.length} 件，名单是 32 个`);
-    if (list.length - drawn.length !== 4) throw new Error('预留不是 4 个');
+    if (drawn.length !== 34) throw new Error(`实画 ${drawn.length} 件，名单是 34 个`);
+    if (list.length - drawn.length !== 3) throw new Error('预留不是 3 个');
     const sheet = compose(list);
     assertSheet(sheet, list);
     fs.mkdirSync(outDir, { recursive: true });

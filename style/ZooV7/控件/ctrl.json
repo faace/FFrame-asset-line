@@ -525,8 +525,8 @@
             "rect": [
                 1568,
                 1394,
-                128,
-                128
+                24,
+                24
             ],
             "border": [
                 0,
@@ -536,10 +536,28 @@
             ],
             "sliced": false,
             "display": [
-                64,
-                64
+                12,
+                12
+            ]
+        },
+        "badge_num": {
+            "rect": [
+                1620,
+                1394,
+                40,
+                40
             ],
-            "reserved": true
+            "border": [
+                18,
+                18,
+                0,
+                0
+            ],
+            "sliced": true,
+            "display": [
+                20,
+                20
+            ]
         },
         "dropdown": {
             "rect": [
