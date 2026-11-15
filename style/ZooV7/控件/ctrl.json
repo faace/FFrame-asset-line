@@ -215,7 +215,7 @@
                 72
             ]
         },
-        "stepper_plate": {
+        "input": {
             "rect": [
                 824,
                 778,
@@ -497,26 +497,6 @@
             "sliced": false,
             "display": [
                 72,
-                72
-            ],
-            "reserved": true
-        },
-        "input": {
-            "rect": [
-                736,
-                1394,
-                800,
-                144
-            ],
-            "border": [
-                32,
-                32,
-                24,
-                24
-            ],
-            "sliced": true,
-            "display": [
-                400,
                 72
             ],
             "reserved": true

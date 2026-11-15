@@ -14,7 +14,7 @@
 - 脚本：`tools/draw-zoo-v7-ctrl.mjs`
 - 画布 2048×2048。在显示尺寸上画硬边，最近邻放大 2 倍。空白像素 alpha 为 0。
 - 不把 v7 的 1024 图放大。v7 按钮写的是 288×80，和 2 倍规则不一致，只作风格对照。
-- 已画 34 个。原先数出来是 21 个（票面写过 20）。开关是 `switch_off`、`switch_on`。勾选框是 `checkbox`、`checkbox_mark`。下拉是 `dropdown`、`dropdown_list`、`dropdown_item_on`、`icon_arrow`。滚动条是 `scrollbar`、`scrollbar_thumb`。轻提示是 `toast`。角标是两张：`badge` 不带数字，`badge_num` 带数字。另有 3 个空槽，`reserved` 为 true，图上不画。已有那 25 件的位置和画法不动。
+- 已画 34 个。原先数出来是 21 个（票面写过 20）。开关是 `switch_off`、`switch_on`。勾选框是 `checkbox`、`checkbox_mark`。下拉是 `dropdown`、`dropdown_list`、`dropdown_item_on`、`icon_arrow`。滚动条是 `scrollbar`、`scrollbar_thumb`。轻提示是 `toast`。角标是两张：`badge` 不带数字，`badge_num` 带数字。输入底板是 `input`，原名 `stepper_plate`，图没重画，步进和输入框共用。另有 2 个空槽，`reserved` 为 true，图上不画。已有那 25 件的位置和画法不动。
 
 ## 历史
 

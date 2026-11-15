@@ -588,7 +588,7 @@ function buildPieces() {
         piece('frame_select', selectFrame(), 88, 88, [0, 0, 0, 0], false, 1416, 234),
         piece('tab_normal', tabPlate(CREAM, CREAM_DK), 154, 72, [10, 10, 10, 2], true, 824, 602),
         piece('tab_selected', tabPlate(GREEN, GREEN_DK), 154, 72, [10, 10, 10, 2], true, 1164, 602),
-        piece('stepper_plate', stepperPlate(), 140, 72, b, true, 824, 778),
+        piece('input', stepperPlate(), 140, 72, b, true, 824, 778), // 原名 stepper_plate。步进和输入框共用，不要再留空槽
         piece('bar_bg', barTrack(), 320, 52, [26, 26, 16, 16], true, 1136, 778),
         piece('bar_fill', capsule(100, 40, STROKE, GREEN, GREEN_HI, 4), 100, 40, [20, 20, 4, 4], true, 824, 954),
         piece('slider_fill', progressBar(), 176, 18, [10, 10, 6, 6], true, 1328, 1092), // 游戏里用这个名，别改回 progress_fill
@@ -603,7 +603,6 @@ function buildPieces() {
         piece('checkbox', checkboxBox(), 48, 48, [0, 0, 0, 0], false, 384, 1394),
         piece('checkbox_mark', checkboxMark(), 48, 48, [0, 0, 0, 0], false, 1728, 1394),
         piece('radio', blank(72, 72), 72, 72, [0, 0, 0, 0], false, 560, 1394, true),
-        piece('input', blank(400, 72), 400, 72, [16, 16, 12, 12], true, 736, 1394, true),
         piece('badge', badgeDot(), 12, 12, [0, 0, 0, 0], false, 1568, 1394),
         piece('badge_num', badgeCapsule(), 20, 20, [9, 9, 0, 0], true, 1620, 1394),
         piece('dropdown', dropdownBox(), 320, 72, [16, 16, 15, 16], true, 32, 1570),
@@ -721,7 +720,7 @@ function main() {
     const list = buildPieces();
     const drawn = list.filter((item) => !item.reserved);
     if (drawn.length !== 34) throw new Error(`实画 ${drawn.length} 件，名单是 34 个`);
-    if (list.length - drawn.length !== 3) throw new Error('预留不是 3 个');
+    if (list.length - drawn.length !== 2) throw new Error('预留不是 2 个');
     const sheet = compose(list);
     assertSheet(sheet, list);
     fs.mkdirSync(outDir, { recursive: true });
