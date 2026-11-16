@@ -400,6 +400,43 @@ function checkboxBox() {
     return frame(48, 48, 8, [[STROKE, OLIVE], [5, OAK], [2, CREAM_DK], [99, CREAM]]);
 }
 
+/** 空心圆。外缘 22，描边 3 深橄榄绿，再浅橡木、奶油，圆心透空给圆点 */
+function radioRing() {
+    const w = 48;
+    const data = blank(w, w);
+    const bands = [[STROKE, OLIVE], [5, OAK], [2, CREAM_DK], [2, CREAM]];
+    for (let y = 0; y < w; y++) {
+        for (let x = 0; x < w; x++) {
+            const dx = x + 0.5 - 24;
+            const dy = y + 0.5 - 24;
+            const dist = Math.hypot(dx, dy);
+            if (dist >= 22) continue;
+            let depth = 22 - dist;
+            let rgb = null;
+            for (const [band, color] of bands) {
+                if (depth < band) {
+                    rgb = color;
+                    break;
+                }
+                depth -= band;
+            }
+            if (!rgb) continue;
+            put(data, w, x, y, rgb);
+        }
+    }
+    return data;
+}
+
+/** 草地绿实心点，半径收到 8，叠在空心圆的透空里 */
+function radioMark() {
+    const w = 48;
+    const data = blank(w, w);
+    disc(data, w, w, 24, 24, 8, GREEN_DK);
+    disc(data, w, w, 24, 24, 6, GREEN);
+    disc(data, w, w, 23, 22, 3, GREEN_HI);
+    return data;
+}
+
 /** 草地绿的勾，画在 48 见方里，四周留空，好叠在框上。两条笔画横向各收 1 像素，让内容中心落在 24 */
 function checkboxMark() {
     const r = 5.5;
@@ -602,7 +639,8 @@ function buildPieces() {
         piece('switch_on', switchArt(true), 96, 48, [0, 0, 0, 0], false, 1760, 160),
         piece('checkbox', checkboxBox(), 48, 48, [0, 0, 0, 0], false, 384, 1394),
         piece('checkbox_mark', checkboxMark(), 48, 48, [0, 0, 0, 0], false, 1728, 1394),
-        piece('radio', blank(72, 72), 72, 72, [0, 0, 0, 0], false, 560, 1394, true),
+        piece('radio', radioRing(), 48, 48, [0, 0, 0, 0], false, 560, 1394),
+        piece('radio_mark', radioMark(), 48, 48, [0, 0, 0, 0], false, 688, 1394),
         piece('badge', badgeDot(), 12, 12, [0, 0, 0, 0], false, 1568, 1394),
         piece('badge_num', badgeCapsule(), 20, 20, [9, 9, 0, 0], true, 1620, 1394),
         piece('dropdown', dropdownBox(), 320, 72, [16, 16, 15, 16], true, 32, 1570),
@@ -706,6 +744,7 @@ function writeDocs(json) {
         '描边统一为显示尺寸 3 像素，圆钮是 4 像素。圆钮两侧是一对细条：浅橡木是背景，草地绿是前景。',
         '开关是两张：关掉浅橡木、圆钮在左；打开草地绿、圆钮在右。不占 checkbox。',
         '勾选框是浅橡木框，勾是单独一张草地绿。不占开关。',
+        '单选是两张：空心木圆，实心点是草地绿。不占 count_plate。',
         '选中框盖住木格的深色描边和浅橡木圈。浅橡木那一圈用浅草地绿，中间透空。',
         '下拉是四张：盒子沿用面板那圈浅橡木，列表底板的上边是直的（贴住盒子），选中行是草地绿板，箭头是浅橡木的 ∨。',
         '滚动条两张：槽是细长木框奶油，滑块是浅橡木胶囊（九宫格上下各 16，纵向拉伸圆头不走形）。',
@@ -719,8 +758,8 @@ function writeDocs(json) {
 function main() {
     const list = buildPieces();
     const drawn = list.filter((item) => !item.reserved);
-    if (drawn.length !== 34) throw new Error(`实画 ${drawn.length} 件，名单是 34 个`);
-    if (list.length - drawn.length !== 2) throw new Error('预留不是 2 个');
+    if (drawn.length !== 36) throw new Error(`实画 ${drawn.length} 件，名单是 36 个`);
+    if (list.length - drawn.length !== 1) throw new Error('预留不是 1 个');
     const sheet = compose(list);
     assertSheet(sheet, list);
     fs.mkdirSync(outDir, { recursive: true });

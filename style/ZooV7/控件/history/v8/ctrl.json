@@ -485,8 +485,8 @@
             "rect": [
                 560,
                 1394,
-                144,
-                144
+                96,
+                96
             ],
             "border": [
                 0,
@@ -496,10 +496,28 @@
             ],
             "sliced": false,
             "display": [
-                72,
-                72
+                48,
+                48
+            ]
+        },
+        "radio_mark": {
+            "rect": [
+                688,
+                1394,
+                96,
+                96
             ],
-            "reserved": true
+            "border": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "sliced": false,
+            "display": [
+                48,
+                48
+            ]
         },
         "badge": {
             "rect": [
