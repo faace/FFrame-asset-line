@@ -111,8 +111,8 @@
             "border": [
                 96,
                 96,
-                40,
-                40
+                64,
+                64
             ],
             "sliced": true,
             "display": [

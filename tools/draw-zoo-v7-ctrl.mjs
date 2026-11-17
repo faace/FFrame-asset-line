@@ -163,14 +163,32 @@ function buttonSecondary() {
     return data;
 }
 
+/** 四角铆钉。圆心距左右 24、距上下 20，半径 6，整颗落在九宫格角块里 */
 function titleBar() {
     const w = 320;
     const h = 85;
+    const left = 48;
+    const right = 48;
+    const top = 32; // 与下边之和等于标题最小档高 64，小档角块不被压扁
+    const bottom = 32;
     const data = plate(w, h, 16, STROKE, OLIVE, OAK, OAK_HI, OAK_DK, false);
-    disc(data, w, h, 24, 42, 6, OLIVE_DK);
-    disc(data, w, h, 24, 41, 3, OAK_HI);
-    disc(data, w, h, w - 24, 42, 6, OLIVE_DK);
-    disc(data, w, h, w - 24, 41, 3, OAK_HI);
+    const spots = [[24, 20], [w - 24, 20], [24, h - 20], [w - 24, h - 20]];
+    for (const [cx, cy] of spots) {
+        disc(data, w, h, cx, cy, 6, OLIVE_DK);
+        disc(data, w, h, cx, cy - 1, 3, OAK_HI);
+    }
+    let nails = 0;
+    for (let y = 0; y < h; y++) {
+        for (let x = 0; x < w; x++) {
+            const i = (y * w + x) * 4;
+            if (data[i] !== OLIVE_DK[0] || data[i + 1] !== OLIVE_DK[1] || data[i + 2] !== OLIVE_DK[2]) continue;
+            nails++;
+            const inX = x < left || x >= w - right;
+            const inY = y < top || y >= h - bottom;
+            if (!inX || !inY) throw new Error(`标题铆钉跑出角块 ${x},${y}`);
+        }
+    }
+    if (nails < 40) throw new Error(`标题铆钉像素太少 ${nails}`);
     return data;
 }
 
@@ -619,7 +637,7 @@ function buildPieces() {
         piece('btn_warning', button(YELLOW, YELLOW_HI, YELLOW_DK), 380, 120, b, true, 32, 576),
         piece('btn_neutral', button(SAND, SAND_HI, SAND_DK), 380, 120, b, true, 32, 848),
         piece('btn_info', button(BLUE, BLUE_HI, BLUE_DK), 380, 120, b, true, 32, 1120),
-        piece('title_bar', titleBar(), 320, 85, [48, 48, 20, 20], true, 824, 32),
+        piece('title_bar', titleBar(), 320, 85, [48, 48, 32, 32], true, 824, 32), // 上下 32：四角铆钉在角块里，拉高只拉中间纯色
         piece('panel', panelPlate(), 176, 168, [20, 20, 20, 20], true, 824, 234),
         piece('slot_item', slotPlate(), 88, 88, b, true, 1208, 234),
         piece('frame_select', selectFrame(), 88, 88, [0, 0, 0, 0], false, 1416, 234),
@@ -747,6 +765,7 @@ function writeDocs(json) {
         '选中框盖住木格的深色描边和浅橡木圈。浅橡木那一圈用浅草地绿，中间透空。',
         '下拉是四张：盒子沿用面板那圈浅橡木，列表底板的上边是直的（贴住盒子），选中行是草地绿板，箭头是浅橡木的 ∨。',
         '滚动条两张：槽是细长木框奶油，滑块是浅橡木胶囊（九宫格上下各 16，纵向拉伸圆头不走形）。',
+        '标题木牌四角各一颗铆钉，九宫格左 48、右 48、上 32、下 32。上下边之和等于标题最小档高 64，拉高时只拉中间纯色。',
         '叉、问号、加号、减号是圆角描边。问号用浅橡木，叉用按钮的深绿。',
         '风格句用 `style/ZooV7/style.md`。母版只作对照：`style/ZooV7/控件/history/v7/ui-sheet-v7.png`。',
         '没有调用绘图接口，也没有把 v7 的 1024 图放大。',
