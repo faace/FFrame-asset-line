@@ -689,26 +689,6 @@
                 480,
                 72
             ]
-        },
-        "count_plate": {
-            "rect": [
-                32,
-                1746,
-                192,
-                128
-            ],
-            "border": [
-                24,
-                24,
-                24,
-                24
-            ],
-            "sliced": true,
-            "display": [
-                96,
-                64
-            ],
-            "reserved": true
         }
     }
 }

@@ -650,7 +650,6 @@ function buildPieces() {
         piece('scrollbar', scrollTrack(), 16, 160, [8, 8, 12, 12], true, 1656, 32),
         piece('scrollbar_thumb', scrollThumb(), 16, 40, [0, 0, 12, 12], true, 1656, 384),
         piece('toast', toastArt(), 480, 72, [20, 20, 20, 20], true, 704, 1570),
-        piece('count_plate', blank(96, 64), 96, 64, [12, 12, 12, 12], true, 32, 1746, true),
     ];
     for (const item of list) {
         if (item.x < GAP || item.y < GAP || item.x + item.w > SHEET - GAP || item.y + item.h > SHEET - GAP) {
@@ -744,7 +743,7 @@ function writeDocs(json) {
         '描边统一为显示尺寸 3 像素，圆钮是 4 像素。圆钮两侧是一对细条：浅橡木是背景，草地绿是前景。',
         '开关是两张：关掉浅橡木、圆钮在左；打开草地绿、圆钮在右。不占 checkbox。',
         '勾选框是浅橡木框，勾是单独一张草地绿。不占开关。',
-        '单选是两张：空心木圆，实心点是草地绿。不占 count_plate。',
+        '单选是两张：空心木圆，实心点是草地绿。',
         '选中框盖住木格的深色描边和浅橡木圈。浅橡木那一圈用浅草地绿，中间透空。',
         '下拉是四张：盒子沿用面板那圈浅橡木，列表底板的上边是直的（贴住盒子），选中行是草地绿板，箭头是浅橡木的 ∨。',
         '滚动条两张：槽是细长木框奶油，滑块是浅橡木胶囊（九宫格上下各 16，纵向拉伸圆头不走形）。',
@@ -759,7 +758,7 @@ function main() {
     const list = buildPieces();
     const drawn = list.filter((item) => !item.reserved);
     if (drawn.length !== 36) throw new Error(`实画 ${drawn.length} 件，名单是 36 个`);
-    if (list.length - drawn.length !== 1) throw new Error('预留不是 1 个');
+    if (list.length !== drawn.length) throw new Error(`预留应是 0，实际 ${list.length - drawn.length}`);
     const sheet = compose(list);
     assertSheet(sheet, list);
     fs.mkdirSync(outDir, { recursive: true });
